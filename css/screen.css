@@ -1,4 +1,4 @@
-/* screen.css: Screen Styles */
+﻿/* screen.css: Screen Styles */
 
 /* Base Styles */
 
@@ -12,6 +12,7 @@ abbr,acronym { border-bottom: 1px dotted; cursor: help; }
 /* Body */
 
 body {
+  font-family: 'Open Sans', sans-serif;
 }
 
 /* Major Divisions */
@@ -30,6 +31,7 @@ div#header h1 a {
 div#header p.tagline {
 }
 div#header ul.accessibility {
+  display: none;
 }
 
 /* Content */
