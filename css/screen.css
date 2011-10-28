@@ -13,6 +13,7 @@ abbr,acronym { border-bottom: 1px dotted; cursor: help; }
 
 body {
   font-family: 'Open Sans', sans-serif;
+  margin: auto 0px;
 }
 
 /* Major Divisions */
@@ -25,6 +26,8 @@ div#page {
 div#header {
 }
 div#header h1 {
+  font-size: 24px;
+  line-height: 36px;
 }
 div#header h1 a {
 }
@@ -118,4 +121,3 @@ div#content a:visited {
 div#content a:hover,
 div#content a:focus {
 }
-
