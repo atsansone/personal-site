@@ -13,29 +13,41 @@ abbr,acronym { border-bottom: 1px dotted; cursor: help; }
 
 body {
   font-family: 'Open Sans', sans-serif;
-  margin: auto 0px;
 }
 
 /* Major Divisions */
 
 /* Page (Containing Div) */
 div#page {
+  margin: 0px auto;
 }
 
 /* Header */
 div#header {
+  position: relative;
+  background-color: #000;
+  padding: 0px 12px; 
 }
 div#header h1 {
-  font-size: 24px;
-  line-height: 36px;
 }
 div#header h1 a {
+  font-family: 'Volkhov', serif;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
 }
 div#header p.tagline {
+  color: #fff;
 }
 div#header ul.accessibility {
   display: none;
 }
+
+/* Contact Details */
+div#header .contact {
+  color: #fff;
+}
+
 
 /* Content */
 div#content {
@@ -77,6 +89,8 @@ ul#navigation li a:focus {
 
 /*Content Typography: Headings*/
 div#content h2 {
+  font-family: 'Volkhov', serif;
+  font-weight: 700;
 }
 div#content h3 {
 }
@@ -89,6 +103,7 @@ div#content h6 {
 
 /*Content Typography: Paragraphs*/
 div#content p {
+  font-family: 'Volkhov', serif;
 }
 
 /*Content Typography: Unordered Lists*/
@@ -120,4 +135,212 @@ div#content a:visited {
 }
 div#content a:hover,
 div#content a:focus {
+}
+
+/* Grids */
+
+@media screen {
+  /* See http://978.gs/ */
+  #page {
+    width: 300px; /*Total with works out to 320*/
+    padding: 0px 10px 0px 10px;
+    background-image: url('img/300-grid.png');
+    /* border: 1px #000 solid; */
+  }
+  body {
+    line-height: 18px;
+    font-size: 12px;
+    background-image: url('img/18px-baseline.png');
+  }
+  body div#header h1 {
+    text-align: center;
+    line-height: 36px;
+    font-size: 24px;
+  }
+  div#content h2 {
+    margin-top: 18px;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* See http://978.gs/ */
+  #page {
+    width: 748px; /*Total with works out to 1008*/
+    padding: 0px 10px 0px 10px;
+    background-image: url('img/748-grid.png');
+    /* border: 1px #000 solid; */
+  }
+  body div#header h1 {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1002px) {
+  /* See http://978.gs/ */
+  #page {
+    width: 978px; /*Total with works out to 1008*/
+    padding: 0px 12px 0px 12px;
+    background-image: url('img/978-grid.png');
+    /* border: 1px #000 solid; */
+  }
+  body div#header h1 {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1248px) {
+  /* See http://978.gs/ */
+  #page {
+    width: 1218px; /*Total with works out to 1008*/
+    padding: 0px 15px 0px 15px;
+    background-image: url('img/1248-grid.png');
+    /* border: 1px #000 solid; */
+  }
+  body {
+    line-height: 18px;
+    font-size: 14px;
+    background-image: url('img/18px-baseline.png');
+  }
+  body div#header h1 {
+    text-align: left;
+    line-height: 36px;
+    font-size: 28px;
+  }
+
+}
+@media screen and (min-width: 1408px) {
+  #page {
+    width: 1378px; /*Total with works out to 1408*/
+    padding: 0px 15px 0px 15px;
+    background-image: url('img/1378-grid.png');
+    /* border: 1px #000 solid; */
+  }
+  body {
+    line-height: 24px;
+    font-size: 18px;
+    background-image: url('img/24px-baseline.png');
+  }
+  body div#header h1 {
+    line-height: 48px;
+    font-size: 42px;
+  }
+  #page .tagline {
+    width: 938px;
+    line-height: 24px;
+    font-size: 14px;
+  }
+  div#header {
+    position: relative;
+    width: 1354px;
+    height: 96px;
+  }
+  div#header .contact {
+    line-height: 24px;
+    font-size: 14px;
+    text-align: right;
+    position: absolute;
+    top: 48px;
+    left: 968px;
+    width: 400px;
+  }
+  #page div#navigation {
+    position: relative;
+    width: 1354px;
+    height: 72px;
+  }
+  div#content {
+    position: relative;
+  }
+  div#content div#mainblockleft, div#content div#mainblockcenter, div#content div#mainblockright {
+    position: absolute;
+    top: 28px;
+  }
+  div#content div#mainblockleft {
+    left: 0px;
+    width: 410px;
+  }
+  div#content div#mainblockcenter {
+    left: 440px;
+    width: 498px;
+  }
+  div#content div#mainblockright {
+    left: 968px;
+    width: 410px;
+  }
+}
+
+/* Typographic Grids */
+
+.t10 {
+  line-height: 10px;
+  font-size: 8px;
+  background-image: url('img/10px-baseline.png');
+}
+.t12 {
+  line-height: 12px;
+  font-size: 8px;
+  background-image: url('img/12px-baseline.png');
+}
+.t14 {
+  line-height: 14px;
+  font-size: 10px;
+  background-image: url('img/14px-baseline.png');
+}
+.t16 {
+  line-height: 16px;
+  font-size: 12px;
+  background-image: url('img/16px-baseline.png');
+}
+.t18 {
+  line-height: 18px;
+  font-size: 12px;
+  background-image: url('img/18px-baseline.png');
+}
+.t20 {
+  line-height: 20px;
+  font-size: 14px;
+  background-image: url('img/20px-baseline.png');
+}
+.t22 {
+  line-height: 22px;
+  font-size: 14px;
+  background-image: url('img/22px-baseline.png');
+}
+.t24 {
+  line-height: 24px;
+  font-size: 16px;
+  background-image: url('img/24px-baseline.png');
+}
+
+
+/* Headers */
+
+.t10 div#header h1 {
+  line-height: 20px;
+  font-size: 16px;
+}
+.t12 div#header h1 {
+  line-height: 24px;
+  font-size: 16px;
+}
+.t14 div#header h1 {
+  line-height: 28px;
+  font-size: 20px;
+}
+.t16 div#header h1 {
+  line-height: 32px;
+  font-size: 24px;
+}
+.t18 div#header h1 {
+  line-height: 36px;
+  font-size: 24px;
+}
+.t20 div#header h1 {
+  line-height: 40px;
+  font-size: 28px;
+}
+.t22 div#header h1 {
+  line-height: 44px;
+  font-size: 36px;
+}
+.t24 div#header h1 {
+  line-height: 48px;
+  font-size: 42px;
 }
