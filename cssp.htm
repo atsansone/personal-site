@@ -1,0 +1,106 @@
+<html>
+<head>
+<title>Testing of CSS Positioning</title>
+<script type="text/javascript" src="http://use.typekit.com/zqz3gvl.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<link rel="stylesheet" type="text/css" media="screen, print" href="/css/reset.css" />
+<link href='http://fonts.googleapis.com/css?family=Questrial|News+Cycle|Muli|Ubuntu+Condensed|Changa+One|Open+Sans+Condensed:300|Cuprum|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,600,300|Francois+One' rel='stylesheet' type='text/css'>
+<style>
+body {
+  font-family: 'Volkhov', serif;
+}
+content {
+  position: relative;
+  display: block;
+  margin: 0px auto;
+  width: 768px;
+  height: 900px;
+  background-color: #a2aba5;
+}
+
+#navigation {
+  position: absolute;
+  width: 400px;
+/*  height: 50px; */
+  right: 0px;
+  top: 0px;
+  background-color: #2b2b2e;
+  padding: 0px;
+}
+
+
+#navigation ul {
+  margin: 0px;
+  padding: 5px;
+}
+#navigation li {
+  display: inline;
+  font-family: "Open Sans Condensed"
+  font-size: 12px;
+  line-height: 18px;
+}
+#navigation ul li a {
+  text-decoration:none;
+  margin: 4px;
+  padding: 5px 20px 5px 20px;
+  color: #fff;
+  background: #595855;
+}
+#navigation ul li a:hover {
+  color: purple;
+  background: yellow;
+}
+
+content div#main {
+  position: relative;
+  display: block;
+  top: 100px;
+  left: 50px;
+  width: 668px;
+  height: 700px;
+  background-color: #fff;
+}
+
+.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12, .col13, .col14, .col15, .col16 { float: left; margin-left: 30px; }
+.col1:first-child, .col2:first-child, .col3:first-child, .col4:first-child, .col5:first-child, .col6:first-child, .col7:first-child, .col8:first-child, .col9:first-child, .col10:first-child, .col11:first-child, .col12:first-child, .col13:first-child, .col14:first-child, .col15:first-child, .col16:first-child { margin-left: 0px; }
+.grid01col { width: 58px; }
+.grid02col { width: 146px; }
+.grid03col { width: 234px; }
+.grid04col { width: 322px; }
+.grid05col { width: 410px; }
+.grid06col { width: 498px; }
+.grid07col { width: 586px; }
+.grid08col { width: 674px; }
+.grid09col { width: 762px; }
+.grid10col { width: 850px; }
+.grid11col { width: 938px; }
+.grid12col { width: 1026px; }
+.grid13col { width: 1114px; }
+.grid14col { width: 1202px; }
+.grid15col { width: 1290px; }
+.grid16col { width: 1378px; }
+
+
+
+</style>
+<link href='http://fonts.googleapis.com/css?family=IM+Fell+DW+Pica:400,400italic|IM+Fell+DW+Pica+SC|PT+Serif:400,700,400italic,700italic|Bowlby+One+SC|Special+Elite|Gentium+Book+Basic:400,400italic,700,700italic|Volkhov:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<content>
+<div id="navigation">
+<ul>
+  <li id="firstnav"><a href="about.htm">About</a></li>
+  <li id="secondnav"><a href="resume.htm">Resume</a></li>
+  <li id="thirdnav"><a href="test.htm">Test</a></li>
+</ul>
+</div>
+
+<div id="main">
+
+</div>
+</content>
+
+
+
+</body>
+</html>

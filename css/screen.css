@@ -19,6 +19,7 @@ body {
 
 /* Page (Containing Div) */
 div#page {
+  position: relative;
   margin: 0px auto;
 }
 
@@ -137,7 +138,31 @@ div#content a:hover,
 div#content a:focus {
 }
 
+/* Navigation Bar */
+
+#navigation ul {
+  margin: 0px;
+  padding: 0px;
+}
+#navigation li {
+  display: inline;
+  font-family: "Open Sans"
+}
+#navigation ul li a {
+  text-decoration:none;
+  margin: 0px 4px;
+  padding: 4px 20px 4px 20px;
+  color: #fff;
+  background: #595855;
+}
+#navigation ul li a:hover {
+  color: #CAE6E8;
+  background: #313F54;
+}
+
 /* Grids */
+
+/* Basic / 300px Grid */
 
 @media screen {
   /* See http://978.gs/ */
@@ -147,9 +172,9 @@ div#content a:focus {
     background-image: url('img/300-grid.png');
     /* border: 1px #000 solid; */
   }
-  body {
+  html {
     line-height: 18px;
-    font-size: 12px;
+    font-size: 14px;
     background-image: url('img/18px-baseline.png');
   }
   body div#header h1 {
@@ -160,7 +185,14 @@ div#content a:focus {
   div#content h2 {
     margin-top: 18px;
   }
+  #page div#navigation {
+    position: relative;
+    background-color: #000;
+  }
 }
+
+/* 748 Grid */
+
 @media screen and (min-width: 768px) {
   /* See http://978.gs/ */
   #page {
@@ -169,10 +201,22 @@ div#content a:focus {
     background-image: url('img/748-grid.png');
     /* border: 1px #000 solid; */
   }
+  html {
+    line-height: 18px;
+    font-size: 14px;
+    background-image: url('img/18px-baseline.png');
+  }
   body div#header h1 {
     text-align: left;
   }
+  #page div#navigation {
+    position: relative;
+    background-color: #000;
+  }
 }
+
+/* 978 Grid */
+
 @media screen and (min-width: 1002px) {
   /* See http://978.gs/ */
   #page {
@@ -181,10 +225,22 @@ div#content a:focus {
     background-image: url('img/978-grid.png');
     /* border: 1px #000 solid; */
   }
+  html {
+    line-height: 18px;
+    font-size: 14px;
+    background-image: url('img/18px-baseline.png');
+  }
   body div#header h1 {
     text-align: left;
   }
+  #page div#navigation {
+    position: relative;
+    background-color: #000;
+  }
 }
+
+/* 1248 Grid */
+
 @media screen and (min-width: 1248px) {
   /* See http://978.gs/ */
   #page {
@@ -193,7 +249,7 @@ div#content a:focus {
     background-image: url('img/1248-grid.png');
     /* border: 1px #000 solid; */
   }
-  body {
+  html {
     line-height: 18px;
     font-size: 14px;
     background-image: url('img/18px-baseline.png');
@@ -204,7 +260,14 @@ div#content a:focus {
     font-size: 28px;
   }
 
+  #page div#navigation {
+    position: relative;
+    background-color: #000;
+  }
 }
+
+/* 1378 Grid */
+
 @media screen and (min-width: 1408px) {
   #page {
     width: 1378px; /*Total with works out to 1408*/
@@ -212,7 +275,7 @@ div#content a:focus {
     background-image: url('img/1378-grid.png');
     /* border: 1px #000 solid; */
   }
-  body {
+  html {
     line-height: 24px;
     font-size: 18px;
     background-image: url('img/24px-baseline.png');
@@ -242,27 +305,55 @@ div#content a:focus {
   }
   #page div#navigation {
     position: relative;
-    width: 1354px;
-    height: 72px;
+    background-color: #000;
+    font-size: 12px;
+    line-height: 24px;
+    margin-bottom: 24px;
   }
   div#content {
     position: relative;
+    background-color: A2ABA5;
   }
-  div#content div#mainblockleft, div#content div#mainblockcenter, div#content div#mainblockright {
-    position: absolute;
-    top: 28px;
+  
+  div#content div {
+      display: inline;
+      font-family: "Open Sans"
+  }
+  
+/*  
+  div#content div {
+    display: block;
   }
   div#content div#mainblockleft {
+    top: 0px;
     left: 0px;
     width: 410px;
+    background-color: #fff;
   }
   div#content div#mainblockcenter {
+    top: 0px;
     left: 440px;
     width: 498px;
   }
   div#content div#mainblockright {
     left: 968px;
     width: 410px;
+  }
+*/
+
+  /* Footer */
+  div#footer {
+    position: relative;
+    left: 0px;
+    bottom: 0px;
+  }
+  div#footer p.credits {
+  }
+  div#footer ul.validators {
+  }
+  div#footer ul.validators li {
+    display: inline;
+    font-family: "Open Sans"
   }
 }
 
