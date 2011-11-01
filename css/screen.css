@@ -27,7 +27,7 @@ div#page {
 div#header {
   position: relative;
   background-color: #000;
-  padding: 0px 12px; 
+  padding: 0px 12px;
 }
 div#header h1 {
 }
@@ -259,10 +259,31 @@ div#content a:focus {
     line-height: 36px;
     font-size: 28px;
   }
-
+  #page .tagline {
+    width: 828px;
+    line-height: 24px;
+    font-size: 14px;
+  }
+  div#header {
+    position: relative;
+    width: 1194px;
+    height: 96px;
+  }
+  div#header .contact {
+    line-height: 24px;
+    font-size: 14px;
+    text-align: right;
+    position: absolute;
+    top: 36px;
+    left: 858px;
+    width: 350px;
+  }
   #page div#navigation {
     position: relative;
     background-color: #000;
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 18px;
   }
 }
 
@@ -314,13 +335,13 @@ div#content a:focus {
     position: relative;
     background-color: A2ABA5;
   }
-  
+
   div#content div {
-      display: inline;
-      font-family: "Open Sans"
+    display: inline;
+    font-family: "Open Sans"
   }
-  
-/*  
+
+/*
   div#content div {
     display: block;
   }
@@ -435,3 +456,4 @@ div#content a:focus {
   line-height: 48px;
   font-size: 42px;
 }
+
