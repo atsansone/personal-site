@@ -150,8 +150,10 @@ div#content a:focus {
 }
 #navigation ul li a {
   text-decoration:none;
+/*
   margin: 0px 4px;
   padding: 4px 20px 4px 20px;
+*/
   color: #fff;
   background: #595855;
 }
@@ -174,7 +176,7 @@ div#content a:focus {
   }
   html {
     line-height: 18px;
-    font-size: 14px;
+    font-size: 12px;
     background-image: url('img/18px-baseline.png');
   }
   body div#header h1 {
@@ -185,10 +187,75 @@ div#content a:focus {
   div#content h2 {
     margin-top: 18px;
   }
+
+  /* BEGIN - Navigation Bar at the Top of the Page below the header - BEGIN */
+
+/*
   #page div#navigation {
     position: relative;
     background-color: #000;
   }
+  #navigation li {
+    float: left;
+    width: 144px;
+    display: block;
+    background: #595855;
+  }
+
+  #navigation ul li a {
+    width: 144px;
+    height: 36px;
+    margin-left: 12px;
+    text-align: center;
+  }
+  #navigation ul li:first-child a {
+    margin-left: 0px;
+  }
+*/
+
+  #page div#navigation {
+    /* position: relative; */
+    background-color: #000;
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 18px;
+  }
+
+  #navigation ul li a {
+    float: left;
+    width: 144px;
+    padding: 9px 0px;
+    margin-left: 12px;
+    text-align: center;
+  }
+
+  #navigation ul li:first-child a, #navigation ul li a.cut {
+    margin-left: 0px;
+  }
+
+  /* END - Navigation Bar at the Top of the Page below the header - END */
+
+  .content {
+    clear: both;
+  }
+
+  /* General Column Widths for 300px Grid - For Reference Only */
+
+  .g1, .g2, .g3, .g4, .g5, .g6, .g7, .g8 {
+    float: left; margin-left: 12px;
+  }
+  .g1:first-child, .g2:first-child, .g3:first-child, .g4:first-child,
+  .g5:first-child, .g6:first-child, .g7:first-child, .g8:first-child {
+    margin-left: 0px;
+  }
+  .g1 { width: 27px; }
+  .g2 { width: 66px; }
+  .g3 { width: 105px; }
+  .g4 { width: 144px; }
+  .g5 { width: 183px; }
+  .g6 { width: 222px; }
+  .g7 { width: 261px; }
+  .g8 { width: 300px; }
 }
 
 /* 748 Grid */
@@ -201,18 +268,66 @@ div#content a:focus {
     background-image: url('img/748-grid.png');
     /* border: 1px #000 solid; */
   }
-  html {
+  html { /* Set font / line height / background */
     line-height: 18px;
-    font-size: 14px;
+    font-size: 12px;
     background-image: url('img/18px-baseline.png');
   }
   body div#header h1 {
     text-align: left;
   }
+
+  /* BEGIN - Navigation Bar at the Top of the Page below the header - BEGIN */
+
   #page div#navigation {
-    position: relative;
+    /* position: relative; */
     background-color: #000;
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 18px;
   }
+
+  #navigation ul li a, #navigation ul li a.cut  {
+    float: left;
+    height: 18px;
+    width: 108px;
+    margin-left: 20px;
+    text-align: center;
+  }
+
+  #navigation ul li:first-child a {
+    margin-left: 0px;
+  }
+  /* END - Navigation Bar at the Top of the Page below the header - END */
+
+  .grid {
+    clear: both;
+  }
+
+
+  /* General Column Widths for 748px Grid - For Reference Only */
+  .g1, .g2, .g3, .g4, .g5, .g6, .g7, .g8, .g9, .g10, .g11, .g12 {
+    float: left;
+    margin-left: 20px;
+  }
+  .g1:first-child, .g2:first-child, .g3:first-child, .g4:first-child,
+  .g5:first-child, .g6:first-child, .g7:first-child, .g8:first-child,
+  .g9:first-child, .g10:first-child, .g11:first-child, .g12:first-child {
+    margin-left: 0px;
+  }
+  .g1 { width: 44px; }
+  .g2 { width: 108px; }
+  .g3 { width: 172px; }
+  .g4 { width: 236px; }
+  .g5 { width: 300px; }
+  .g6 { width: 364px; }
+  .g7 { width: 428px; }
+  .g8 { width: 492px; }
+  .g9 { width: 556px; }
+  .g10 { width: 620px; }
+  .g11 { width: 684px; }
+  .g12 { width: 748px; }
+
 }
 
 /* 978 Grid */
@@ -225,7 +340,7 @@ div#content a:focus {
     background-image: url('img/978-grid.png');
     /* border: 1px #000 solid; */
   }
-  html {
+  html { /* Set font / line height / background */
     line-height: 18px;
     font-size: 14px;
     background-image: url('img/18px-baseline.png');
@@ -237,6 +352,60 @@ div#content a:focus {
     position: relative;
     background-color: #000;
   }
+
+  /* BEGIN - Navigation Bar at the Top of the Page below the header - BEGIN */
+
+  #page div#navigation {
+    /* position: relative; */
+    background-color: #000;
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 18px;
+  }
+
+  #navigation ul li a, #navigation ul li a.cut {
+    float: left;
+    width: 138px;
+    margin-left: 30px;
+    text-align: center;
+  }
+
+  #navigation ul li:first-child a {
+    margin-left: 0px;
+  }
+
+  /* END - Navigation Bar at the Top of the Page below the header - END */
+
+  .grid {
+    clear: both;
+  }
+
+  /* General Column Widths for 978px Grid - For Reference Only */
+
+  .g1, .g2, .g3, .g4, .g5, .g6, .g7, .g8, .g9, .g10, .g11, .g12 {
+    float: left;
+    margin-left: 30px;
+  }
+
+  .g1:first-child, .g2:first-child, .g3:first-child, .g4:first-child,
+  .g5:first-child, .g6:first-child, .g7:first-child, .g8:first-child,
+  .g9:first-child, .g10:first-child, .g11:first-child, .g12:first-child {
+    margin-left: 0px;
+  }
+
+  .g1 { width: 54px; }
+  .g2 { width: 138px; }
+  .g3 { width: 222px; }
+  .g4 { width: 306px; }
+  .g5 { width: 390px; }
+  .g6 { width: 474px; }
+  .g7 { width: 558px; }
+  .g8 { width: 642px; }
+  .g9 { width: 726px; }
+  .g10 { width: 810px; }
+  .g11 { width: 894px; }
+  .g12 { width: 978px; }
+
 }
 
 /* 1248 Grid */
@@ -244,12 +413,12 @@ div#content a:focus {
 @media screen and (min-width: 1248px) {
   /* See http://978.gs/ */
   #page {
-    width: 1218px; /*Total with works out to 1008*/
+    width: 1218px; /*Total with works out to 1248*/
     padding: 0px 15px 0px 15px;
     background-image: url('img/1248-grid.png');
     /* border: 1px #000 solid; */
   }
-  html {
+  html { /* Set font / line height / background */
     line-height: 18px;
     font-size: 14px;
     background-image: url('img/18px-baseline.png');
@@ -266,8 +435,8 @@ div#content a:focus {
   }
   div#header {
     position: relative;
-    width: 1194px;
-    height: 96px;
+    float: none;
+    height: 72px;
   }
   div#header .contact {
     line-height: 24px;
@@ -278,13 +447,95 @@ div#content a:focus {
     left: 858px;
     width: 350px;
   }
+
+  /* BEGIN - Navigation Bar at the Top of the Page below the header - BEGIN */
+
   #page div#navigation {
-    position: relative;
+    /* position: relative; */
     background-color: #000;
     font-size: 12px;
     line-height: 18px;
     margin-bottom: 18px;
   }
+
+  #navigation ul li a, #navigation ul li a.cut {
+    width: 126px;
+    float: left;
+    margin-left: 30px;
+    text-align: center;
+  }
+
+  #navigation ul li:first-child a {
+    margin-left: 0px;
+  }
+
+  /* END - Navigation Bar at the Top of the Page below the header - END */
+
+  .block {
+    width: 386px;
+    float: left;
+    margin-left: 30px;
+  }
+
+  .block:first-child {
+    margin-left: 0px;
+  }
+
+  /* General Column Widths for 1248px Grid - For Reference Only */
+
+  .g1 { width: 48px; }
+  .g2 { width: 126px; }
+  .g3 { width: 204px; }
+  .g4 { width: 282px; }
+  .g5 { width: 360px; }
+  .g6 { width: 438px; }
+  .g7 { width: 516px; }
+  .g8 { width: 594px; }
+  .g9 { width: 672px; }
+  .g10 { width: 750px; }
+  .g11 { width: 828px; }
+  .g12 { width: 906px; }
+  .g13 { width: 984px; }
+  .g14 { width: 1062px; }
+  .g15 { width: 1140px; }
+  .g16 { width: 1218px; }
+
+  .g1, .g2, .g3, .g4, .g5, .g6, .g7, .g8, .g9, .g10, .g11, .g12, .g13, .g14, .g15, .g16 {
+    float: left;
+    margin-left: 30px;
+  }
+  .g1:first-child, .g2:first-child, .g3:first-child, .g4:first-child,
+  .g5:first-child, .g6:first-child, .g7:first-child, .g8:first-child,
+  .g9:first-child, .g10:first-child, .g11:first-child, .g12:first-child,
+  .g13:first-child, .g14:first-child, .g15:first-child, .g16:first-child {
+    margin-left: 0px;
+  }
+
+/*
+  .g1, .g2, .g3, .g4, .g5, .g6, .g7, .g8, .g9, .g10, .g11, .g12, .g13, .g14, .g15, .g16, .g {
+    margin: 0 30px;
+    overflow: hidden;
+    float: left;
+    display: inline;
+  }
+*/
+
+  /* Footer */
+  div#footer {
+    clear: both;
+    position: relative;
+    left: 0px;
+    bottom: 0px;
+  }
+  div#footer p.credits {
+  }
+  div#footer ul.validators {
+  }
+  div#footer ul.validators li {
+    display: inline;
+    font-family: "Open Sans"
+  }
+
 }
 
 /* 1378 Grid */
@@ -296,7 +547,7 @@ div#content a:focus {
     background-image: url('img/1378-grid.png');
     /* border: 1px #000 solid; */
   }
-  html {
+  html { /* Set font / line height / background */
     line-height: 24px;
     font-size: 18px;
     background-image: url('img/24px-baseline.png');
@@ -376,6 +627,36 @@ div#content a:focus {
     display: inline;
     font-family: "Open Sans"
   }
+
+  /* General Column Widths for 1378px Grid - For Reference Only */
+
+  .g1, .g2, .g3, .g4, .g5, .g6, .g7, .g8, .g9, .g10, .g11, .g12, .g13, .g14, .g15, .g16 {
+    float: left;
+    margin-left: 30px;
+  }
+  .g1:first-child, .g2:first-child, .g3:first-child, .g4:first-child,
+  .g5:first-child, .g6:first-child, .g7:first-child, .g8:first-child,
+  .g9:first-child, .g10:first-child, .g11:first-child, .g12:first-child,
+  .g13:first-child, .g14:first-child, .g15:first-child, .g16:first-child {
+    margin-left: 0px;
+  }
+  .g1 { width: 58px; }
+  .g2 { width: 146px; }
+  .g3 { width: 234px; }
+  .g4 { width: 322px; }
+  .g5 { width: 410px; }
+  .g6 { width: 498px; }
+  .g7 { width: 586px; }
+  .g8 { width: 674px; }
+  .g9 { width: 762px; }
+  .g10 { width: 850px; }
+  .g11 { width: 938px; }
+  .g12 { width: 1026px; }
+  .g13 { width: 1114px; }
+  .g14 { width: 1202px; }
+  .g15 { width: 1290px; }
+  .g16 { width: 1378px; }
+
 }
 
 /* Typographic Grids */
