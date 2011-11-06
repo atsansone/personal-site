@@ -25,7 +25,6 @@ div#page {
 
 /* Header */
 div#header {
-  position: relative;
   background-color: #000;
   padding: 0px 12px;
 }
@@ -52,6 +51,7 @@ div#header .contact {
 
 /* Content */
 div#content {
+  background-color: #A2ABA5;
 }
 
 div#main {
@@ -71,6 +71,10 @@ div#footer ul.validators li {
 }
 
 /*Navigation*/
+
+#page div#navigation {
+  background-color: #000;
+}
 ul#navigation {
 }
 
@@ -140,27 +144,44 @@ div#content a:focus {
 
 /* Navigation Bar */
 
-#navigation ul {
-  margin: 0px;
-  padding: 0px;
-}
-#navigation li {
-  display: inline;
-  font-family: "Open Sans"
-}
-#navigation ul li a {
-  text-decoration:none;
-/*
-  margin: 0px 4px;
-  padding: 4px 20px 4px 20px;
-*/
-  color: #fff;
-  background: #595855;
-}
-#navigation ul li a:hover {
-  color: #CAE6E8;
-  background: #313F54;
-}
+/* Limiting this section to font, color and decoration */
+
+  #navigation ul {
+  }
+  #navigation li {
+    font-family: "Open Sans"
+  }
+  #navigation ul li a {
+    text-decoration:none;
+    color: #fff;
+    background: #595855;
+  }
+  #navigation ul li a:hover {
+    color: #CAE6E8;
+    background: #313F54;
+  }
+
+/* Visual Aids for Positioning */
+
+  div#page {
+    border: 1px #000 solid;
+  }
+  
+  div#navigation ul li a {
+    border: 1px solid #fff;
+  }
+
+  div#content {
+    border: 1px #900 solid;
+  }
+
+  div#header {
+    border: 1px #090 solid;
+  }
+
+  div#footer {
+    border: 1px #009 solid;
+  }
 
 /* Grids */
 
@@ -172,90 +193,74 @@ div#content a:focus {
     width: 300px; /*Total with works out to 320*/
     padding: 0px 10px 0px 10px;
     background-image: url('img/300-grid.png');
-    /* border: 1px #000 solid; */
   }
   html {
     line-height: 18px;
     font-size: 12px;
     background-image: url('img/18px-baseline.png');
   }
+  div#header {
+    height: 108px;
+  }
   body div#header h1 {
     text-align: center;
     line-height: 36px;
     font-size: 24px;
   }
-  div#content h2 {
-    margin-top: 18px;
+  div#header p {
+    text-align: center;
   }
 
   /* BEGIN - Navigation Bar at the Top of the Page below the header - BEGIN */
 
-/*
-  #page div#navigation {
-    position: relative;
-    background-color: #000;
-  }
-  #navigation li {
-    float: left;
-    width: 144px;
-    display: block;
-    background: #595855;
-  }
+    /* Using display:table to set up a flexible set of navigation buttons */
+    #page div#navigation { 
+      display: inline-table;
+      width: 100%;
+      margin: 18px 0px;
+    }
 
-  #navigation ul li a {
-    width: 144px;
-    height: 36px;
-    margin-left: 12px;
-    text-align: center;
-  }
-  #navigation ul li:first-child a {
-    margin-left: 0px;
-  }
-*/
+    div#navigation ul {
+      display: table-row;
+    }
 
-  #page div#navigation {
-    /* position: relative; */
-    background-color: #000;
-    font-size: 12px;
-    line-height: 18px;
-    margin-bottom: 18px;
-  }
+    div#navigation ul li, div#navigation ul li a {
+      height: 36px;
+      width: 144px;
+    }
 
-  #navigation ul li a {
-    float: left;
-    width: 144px;
-    padding: 9px 0px;
-    margin-left: 12px;
-    text-align: center;
-  }
+    div#navigation ul li {
+      float: left;
+      margin-bottom: 18px;
+      margin-left: 12px;
+    }
 
-  #navigation ul li:first-child a, #navigation ul li a.cut {
-    margin-left: 0px;
-  }
+    div#navigation ul li a {
+      display: table-cell;
+      padding: 0px 0px;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    div#navigation ul li:first-child, div#navigation ul li.cut {
+      margin-left: 0px;
+    }
 
   /* END - Navigation Bar at the Top of the Page below the header - END */
 
-  .content {
+  div#content {
     clear: both;
+    margin: 18px 0px;
   }
 
-  /* General Column Widths for 300px Grid - For Reference Only */
+  div#content h2 {
+    margin: 9px 0px;
+  }
 
-  .g1, .g2, .g3, .g4, .g5, .g6, .g7, .g8 {
-    float: left; margin-left: 12px;
+  div#content div#main .block:first-child {
+    margin: 0px 0px;
   }
-  .g1:first-child, .g2:first-child, .g3:first-child, .g4:first-child,
-  .g5:first-child, .g6:first-child, .g7:first-child, .g8:first-child {
-    margin-left: 0px;
-  }
-  .g1 { width: 27px; }
-  .g2 { width: 66px; }
-  .g3 { width: 105px; }
-  .g4 { width: 144px; }
-  .g5 { width: 183px; }
-  .g6 { width: 222px; }
-  .g7 { width: 261px; }
-  .g8 { width: 300px; }
+
 }
 
 /* 748 Grid */
@@ -273,60 +278,69 @@ div#content a:focus {
     font-size: 12px;
     background-image: url('img/18px-baseline.png');
   }
+  div#header {
+    height: 90px;
+  }
   body div#header h1 {
+    text-align: left;
+  }
+  div#header p {
     text-align: left;
   }
 
   /* BEGIN - Navigation Bar at the Top of the Page below the header - BEGIN */
 
-  #page div#navigation {
-    /* position: relative; */
-    background-color: #000;
-    font-size: 12px;
-    line-height: 18px;
-    margin-bottom: 18px;
-  }
+    #page div#navigation { 
+      clear: both;
+      display: inline-table;
+      margin: 18px 0px;
+    }
 
-  #navigation ul li a, #navigation ul li a.cut  {
-    float: left;
-    height: 18px;
-    width: 108px;
-    margin-left: 20px;
-    text-align: center;
-  }
+    #page div#navigation ul {
+      display: table-row;
+    }
 
-  #navigation ul li:first-child a {
-    margin-left: 0px;
-  }
+    #page div#navigation ul li, #page div#navigation ul li a {
+      height: 36px;
+      width: 108px;
+    }
+
+    #page div#navigation ul li, #page div#navigation ul li.cut {
+      margin-bottom: 0px;
+      margin-left: 20px;
+    }
+
+    #page div#navigation ul li a {
+      display: table-cell;
+      padding: 0px 0px;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    #page div#navigation ul li:first-child {
+      margin-left: 0px;
+    }
+
   /* END - Navigation Bar at the Top of the Page below the header - END */
 
-  .grid {
-    clear: both;
-  }
+  /* BEGIN - Main Content Block - BEGIN */
 
+    #page div#content {
+      clear: both;
+      width: 100%;
+    }
+    
+    #page div#content div.block {
+      width: 364px;
+      float: left;
+      margin-left: 20px;
+    }
 
-  /* General Column Widths for 748px Grid - For Reference Only */
-  .g1, .g2, .g3, .g4, .g5, .g6, .g7, .g8, .g9, .g10, .g11, .g12 {
-    float: left;
-    margin-left: 20px;
-  }
-  .g1:first-child, .g2:first-child, .g3:first-child, .g4:first-child,
-  .g5:first-child, .g6:first-child, .g7:first-child, .g8:first-child,
-  .g9:first-child, .g10:first-child, .g11:first-child, .g12:first-child {
-    margin-left: 0px;
-  }
-  .g1 { width: 44px; }
-  .g2 { width: 108px; }
-  .g3 { width: 172px; }
-  .g4 { width: 236px; }
-  .g5 { width: 300px; }
-  .g6 { width: 364px; }
-  .g7 { width: 428px; }
-  .g8 { width: 492px; }
-  .g9 { width: 556px; }
-  .g10 { width: 620px; }
-  .g11 { width: 684px; }
-  .g12 { width: 748px; }
+    #page div#content div.block:first-child, #page div#content div#block3 {
+      margin-left: 0px;
+    }
+
+  /* END - Main Content Block - END */
 
 }
 
@@ -338,7 +352,6 @@ div#content a:focus {
     width: 978px; /*Total with works out to 1008*/
     padding: 0px 12px 0px 12px;
     background-image: url('img/978-grid.png');
-    /* border: 1px #000 solid; */
   }
   html { /* Set font / line height / background */
     line-height: 18px;
@@ -348,63 +361,59 @@ div#content a:focus {
   body div#header h1 {
     text-align: left;
   }
-  #page div#navigation {
-    position: relative;
-    background-color: #000;
-  }
 
   /* BEGIN - Navigation Bar at the Top of the Page below the header - BEGIN */
 
-  #page div#navigation {
-    /* position: relative; */
-    background-color: #000;
-    font-size: 12px;
-    line-height: 18px;
-    margin-bottom: 18px;
-  }
+    #page div#navigation { 
+      display: table;
+      margin: 18px 0px;
+    }
 
-  #navigation ul li a, #navigation ul li a.cut {
-    float: left;
-    width: 138px;
-    margin-left: 30px;
-    text-align: center;
-  }
+    #page div#navigation ul {
+      display: table-row;
+    }
 
-  #navigation ul li:first-child a {
-    margin-left: 0px;
-  }
+    #page div#navigation ul li, #page div#navigation ul li a {
+      height: 36px;
+      width: 138px;
+    }
+
+    #page div#navigation ul li, #page div#navigation ul li.cut {
+      margin-bottom: 0px;
+      margin-left: 30px;
+    }
+
+    #page div#navigation ul li a {
+      display: table-cell;
+      padding: 0px 0px;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    #page div#navigation ul li:first-child {
+      margin-left: 0px;
+    }
 
   /* END - Navigation Bar at the Top of the Page below the header - END */
 
-  .grid {
-    clear: both;
-  }
+  /* BEGIN - Main Content Block - BEGIN */
 
-  /* General Column Widths for 978px Grid - For Reference Only */
+    #content {
+      clear: both;
+      width: 100%;
+    }
+    
+    .block {
+      width: 306px;
+      float: left;
+      margin-left: 20px;
+    }
 
-  .g1, .g2, .g3, .g4, .g5, .g6, .g7, .g8, .g9, .g10, .g11, .g12 {
-    float: left;
-    margin-left: 30px;
-  }
+    .block:first-child {
+      margin-left: 0px;
+    }
 
-  .g1:first-child, .g2:first-child, .g3:first-child, .g4:first-child,
-  .g5:first-child, .g6:first-child, .g7:first-child, .g8:first-child,
-  .g9:first-child, .g10:first-child, .g11:first-child, .g12:first-child {
-    margin-left: 0px;
-  }
-
-  .g1 { width: 54px; }
-  .g2 { width: 138px; }
-  .g3 { width: 222px; }
-  .g4 { width: 306px; }
-  .g5 { width: 390px; }
-  .g6 { width: 474px; }
-  .g7 { width: 558px; }
-  .g8 { width: 642px; }
-  .g9 { width: 726px; }
-  .g10 { width: 810px; }
-  .g11 { width: 894px; }
-  .g12 { width: 978px; }
+  /* END - Main Content Block - END */
 
 }
 
@@ -416,7 +425,6 @@ div#content a:focus {
     width: 1218px; /*Total with works out to 1248*/
     padding: 0px 15px 0px 15px;
     background-image: url('img/1248-grid.png');
-    /* border: 1px #000 solid; */
   }
   html { /* Set font / line height / background */
     line-height: 18px;
@@ -430,17 +438,11 @@ div#content a:focus {
   }
   #page .tagline {
     width: 828px;
-    line-height: 24px;
-    font-size: 14px;
   }
   div#header {
-    position: relative;
-    float: none;
     height: 72px;
   }
   div#header .contact {
-    line-height: 24px;
-    font-size: 14px;
     text-align: right;
     position: absolute;
     top: 36px;
@@ -450,75 +452,52 @@ div#content a:focus {
 
   /* BEGIN - Navigation Bar at the Top of the Page below the header - BEGIN */
 
-  #page div#navigation {
-    /* position: relative; */
-    background-color: #000;
-    font-size: 12px;
-    line-height: 18px;
-    margin-bottom: 18px;
-  }
+    #page div#navigation { 
+      display: table;
+      margin: 18px 0px;
+    }
 
-  #navigation ul li a, #navigation ul li a.cut {
-    width: 126px;
-    float: left;
-    margin-left: 30px;
-    text-align: center;
-  }
+    #page div#navigation ul {
+      display: table-row;
+    }
 
-  #navigation ul li:first-child a {
-    margin-left: 0px;
-  }
+    #page div#navigation ul li, #page div#navigation ul li a {
+      height: 36px;
+      width: 126px;
+    }
+    
+    #page div#navigation ul li, #page div#navigation ul li.cut {
+      margin-bottom: 0px;
+      margin-left: 30px;
+    }
+
+    #page div#navigation ul li a {
+      display: table-cell;
+      padding: 0px 0px;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    #page div#navigation ul li:first-child {
+      margin-left: 0px;
+    }
 
   /* END - Navigation Bar at the Top of the Page below the header - END */
 
-  .block {
-    width: 386px;
-    float: left;
-    margin-left: 30px;
-  }
 
-  .block:first-child {
-    margin-left: 0px;
-  }
+  /* BEGIN - Main Content Block - BEGIN */
 
-  /* General Column Widths for 1248px Grid - For Reference Only */
+    .block, #block3 {
+      width: 386px;
+      float: left;
+      margin-left: 30px;
+    }
 
-  .g1 { width: 48px; }
-  .g2 { width: 126px; }
-  .g3 { width: 204px; }
-  .g4 { width: 282px; }
-  .g5 { width: 360px; }
-  .g6 { width: 438px; }
-  .g7 { width: 516px; }
-  .g8 { width: 594px; }
-  .g9 { width: 672px; }
-  .g10 { width: 750px; }
-  .g11 { width: 828px; }
-  .g12 { width: 906px; }
-  .g13 { width: 984px; }
-  .g14 { width: 1062px; }
-  .g15 { width: 1140px; }
-  .g16 { width: 1218px; }
+    .block:first-child {
+      margin-left: 0px;
+    }
 
-  .g1, .g2, .g3, .g4, .g5, .g6, .g7, .g8, .g9, .g10, .g11, .g12, .g13, .g14, .g15, .g16 {
-    float: left;
-    margin-left: 30px;
-  }
-  .g1:first-child, .g2:first-child, .g3:first-child, .g4:first-child,
-  .g5:first-child, .g6:first-child, .g7:first-child, .g8:first-child,
-  .g9:first-child, .g10:first-child, .g11:first-child, .g12:first-child,
-  .g13:first-child, .g14:first-child, .g15:first-child, .g16:first-child {
-    margin-left: 0px;
-  }
-
-/*
-  .g1, .g2, .g3, .g4, .g5, .g6, .g7, .g8, .g9, .g10, .g11, .g12, .g13, .g14, .g15, .g16, .g {
-    margin: 0 30px;
-    overflow: hidden;
-    float: left;
-    display: inline;
-  }
-*/
+  /* END - Main Content Block - END */
 
   /* Footer */
   div#footer {
@@ -543,9 +522,9 @@ div#content a:focus {
 @media screen and (min-width: 1408px) {
   #page {
     width: 1378px; /*Total with works out to 1408*/
+    /*height: 900px;*/
     padding: 0px 15px 0px 15px;
     background-image: url('img/1378-grid.png');
-    /* border: 1px #000 solid; */
   }
   html { /* Set font / line height / background */
     line-height: 24px;
@@ -558,183 +537,86 @@ div#content a:focus {
   }
   #page .tagline {
     width: 938px;
-    line-height: 24px;
-    font-size: 14px;
   }
-  div#header {
-    position: relative;
-    width: 1354px;
+  #page div#header {
     height: 96px;
   }
-  div#header .contact {
-    line-height: 24px;
-    font-size: 14px;
+  #page div#header .contact {
     text-align: right;
     position: absolute;
     top: 48px;
     left: 968px;
     width: 400px;
   }
-  #page div#navigation {
-    position: relative;
-    background-color: #000;
-    font-size: 12px;
-    line-height: 24px;
-    margin-bottom: 24px;
-  }
-  div#content {
-    position: relative;
-    background-color: A2ABA5;
-  }
 
-  div#content div {
-    display: inline;
-    font-family: "Open Sans"
-  }
+  /* BEGIN - Navigation Bar at the Top of the Page below the header - BEGIN */
 
-/*
-  div#content div {
-    display: block;
-  }
-  div#content div#mainblockleft {
-    top: 0px;
-    left: 0px;
-    width: 410px;
-    background-color: #fff;
-  }
-  div#content div#mainblockcenter {
-    top: 0px;
-    left: 440px;
-    width: 498px;
-  }
-  div#content div#mainblockright {
-    left: 968px;
-    width: 410px;
-  }
-*/
+    #page div#navigation { 
+      display: table;
+      margin: 0px 0px;
+      width: 100%;
+    }
+
+    #page div#navigation ul {
+      display: table-row;
+    }
+
+    #page div#navigation ul li, #page div#navigation ul li a {
+      height: 48px;
+      width: 146px;
+    }
+
+    #page div#navigation ul li, #page div#navigation ul li.cut {
+      margin-bottom: 0px;
+      margin-left: 30px;
+    }
+
+    #page div#navigation ul li a {
+      display: table-cell;
+      padding: 0px 0px;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    #page div#navigation ul li:first-child {
+      margin-left: 0px;
+    }
+
+  /* END - Navigation Bar at the Top of the Page below the header - END */
+
+  /* BEGIN - Main Content Block - BEGIN */
+
+    #content {
+/*      position: relative; */
+    }
+
+    #content .block, #block2, #block3 {
+      width: 438px;
+      float: left;
+      margin-left: 30px;
+    }
+
+    #page .block:first-child {
+      margin-left: 0px;
+    }
+
+  /* END - Main Content Block - END */
 
   /* Footer */
-  div#footer {
-    position: relative;
-    left: 0px;
-    bottom: 0px;
+  #page div#footer {
+    font-family: "Open Sans"
   }
   div#footer p.credits {
+    font-size: 9px;
+    line-height: 24px;
   }
   div#footer ul.validators {
   }
   div#footer ul.validators li {
     display: inline;
-    font-family: "Open Sans"
+    font-size: 9px;
+    line-height: 24px;
   }
 
-  /* General Column Widths for 1378px Grid - For Reference Only */
-
-  .g1, .g2, .g3, .g4, .g5, .g6, .g7, .g8, .g9, .g10, .g11, .g12, .g13, .g14, .g15, .g16 {
-    float: left;
-    margin-left: 30px;
-  }
-  .g1:first-child, .g2:first-child, .g3:first-child, .g4:first-child,
-  .g5:first-child, .g6:first-child, .g7:first-child, .g8:first-child,
-  .g9:first-child, .g10:first-child, .g11:first-child, .g12:first-child,
-  .g13:first-child, .g14:first-child, .g15:first-child, .g16:first-child {
-    margin-left: 0px;
-  }
-  .g1 { width: 58px; }
-  .g2 { width: 146px; }
-  .g3 { width: 234px; }
-  .g4 { width: 322px; }
-  .g5 { width: 410px; }
-  .g6 { width: 498px; }
-  .g7 { width: 586px; }
-  .g8 { width: 674px; }
-  .g9 { width: 762px; }
-  .g10 { width: 850px; }
-  .g11 { width: 938px; }
-  .g12 { width: 1026px; }
-  .g13 { width: 1114px; }
-  .g14 { width: 1202px; }
-  .g15 { width: 1290px; }
-  .g16 { width: 1378px; }
-
-}
-
-/* Typographic Grids */
-
-.t10 {
-  line-height: 10px;
-  font-size: 8px;
-  background-image: url('img/10px-baseline.png');
-}
-.t12 {
-  line-height: 12px;
-  font-size: 8px;
-  background-image: url('img/12px-baseline.png');
-}
-.t14 {
-  line-height: 14px;
-  font-size: 10px;
-  background-image: url('img/14px-baseline.png');
-}
-.t16 {
-  line-height: 16px;
-  font-size: 12px;
-  background-image: url('img/16px-baseline.png');
-}
-.t18 {
-  line-height: 18px;
-  font-size: 12px;
-  background-image: url('img/18px-baseline.png');
-}
-.t20 {
-  line-height: 20px;
-  font-size: 14px;
-  background-image: url('img/20px-baseline.png');
-}
-.t22 {
-  line-height: 22px;
-  font-size: 14px;
-  background-image: url('img/22px-baseline.png');
-}
-.t24 {
-  line-height: 24px;
-  font-size: 16px;
-  background-image: url('img/24px-baseline.png');
-}
-
-
-/* Headers */
-
-.t10 div#header h1 {
-  line-height: 20px;
-  font-size: 16px;
-}
-.t12 div#header h1 {
-  line-height: 24px;
-  font-size: 16px;
-}
-.t14 div#header h1 {
-  line-height: 28px;
-  font-size: 20px;
-}
-.t16 div#header h1 {
-  line-height: 32px;
-  font-size: 24px;
-}
-.t18 div#header h1 {
-  line-height: 36px;
-  font-size: 24px;
-}
-.t20 div#header h1 {
-  line-height: 40px;
-  font-size: 28px;
-}
-.t22 div#header h1 {
-  line-height: 44px;
-  font-size: 36px;
-}
-.t24 div#header h1 {
-  line-height: 48px;
-  font-size: 42px;
 }
 
