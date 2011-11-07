@@ -23,6 +23,7 @@ body {
 
 /* Page (Containing Div) */
 div#page {
+  background: #fff;
   position: relative;
   margin: 0px auto;
 }
@@ -48,7 +49,8 @@ div#header ul.accessibility {
 }
 
 /* Contact Details */
-div#header .contact {
+div#header p.contact {
+  background-color: #500;
   color: #fff;
 }
 
@@ -173,6 +175,33 @@ div#content a:focus {
     color: #CAE6E8;
     background: #313F54;
   }
+  #navigation ul li a.selected {
+    text-decoration:none;
+    color: #595855;
+    background: #fff;
+  }
+
+
+  #navigation div.navblock {
+  }
+  #navigation p {
+    font-family: "Open Sans"
+  }
+  #navigation p a {
+    text-decoration:none;
+    color: #fff;
+    background: #595855;
+  }
+  #navigation p a:hover {
+    color: #CAE6E8;
+    background: #313F54;
+  }
+  #navigation p a.selected {
+    text-decoration:none;
+    color: #595855;
+    background: #fff;
+  }
+
 
 /* Visual Aids for Positioning */
 
@@ -234,7 +263,9 @@ div#content a:focus {
   /* BEGIN - Navigation Bar at the Top of the Page below the header - BEGIN */
 
     /* Using display:table to set up a flexible set of navigation buttons */
-    #content div#navigation { 
+
+   #content div#navigation { 
+      float: right;
       display: inline-table;
       width: 100%;
       margin: 0px 0px;
@@ -245,8 +276,8 @@ div#content a:focus {
     }
 
     div#navigation ul li, div#navigation ul li a {
-      height: 36px;
-      width: 144px;
+      height: 54px;
+      width: 66px;
     }
 
     div#navigation ul li {
@@ -262,7 +293,7 @@ div#content a:focus {
       vertical-align: middle;
     }
 
-    div#navigation ul li:first-child, div#navigation ul li.cut {
+    div#navigation ul li:first-child {
       margin-left: 0px;
     }
 
@@ -663,8 +694,8 @@ div#content a:focus {
 
     #page div#navigation ul li, #page div#navigation ul li a {
       height: 36px;
-      width: 146px;
-      font-size: 15px;
+      width: 58px;
+      font-size: 12px;
     }
 
     #page div#navigation ul li, #page div#navigation ul li.cut {
