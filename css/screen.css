@@ -25,7 +25,7 @@ div#page {
 
 /* Header */
 div#header {
-  background-color: #000;
+  background-color: #500;
   padding: 0px 12px;
 }
 div#header h1 {
@@ -51,7 +51,7 @@ div#header .contact {
 
 /* Content */
 div#content {
-  background-color: #A2ABA5;
+  background-color: #555;
 }
 
 div#main {
@@ -73,7 +73,7 @@ div#footer ul.validators li {
 /*Navigation*/
 
 #page div#navigation {
-  background-color: #000;
+  background-color: #300;
 }
 ul#navigation {
 }
@@ -163,6 +163,7 @@ div#content a:focus {
 
 /* Visual Aids for Positioning */
 
+/*
   div#page {
     border: 1px #000 solid;
   }
@@ -182,6 +183,7 @@ div#content a:focus {
   div#footer {
     border: 1px #009 solid;
   }
+*/
 
 /* Grids */
 
@@ -192,15 +194,20 @@ div#content a:focus {
   #page {
     width: 300px; /*Total with works out to 320*/
     padding: 0px 10px 0px 10px;
+/*
     background-image: url('img/300-grid.png');
+*/
   }
   html {
     line-height: 18px;
     font-size: 12px;
+/*
     background-image: url('img/18px-baseline.png');
+*/
   }
   div#header {
     height: 108px;
+    padding: 18px 0px 18px 0px;
   }
   body div#header h1 {
     text-align: center;
@@ -214,10 +221,10 @@ div#content a:focus {
   /* BEGIN - Navigation Bar at the Top of the Page below the header - BEGIN */
 
     /* Using display:table to set up a flexible set of navigation buttons */
-    #page div#navigation { 
+    #content div#navigation { 
       display: inline-table;
       width: 100%;
-      margin: 18px 0px;
+      margin: 0px 0px;
     }
 
     div#navigation ul {
@@ -235,6 +242,22 @@ div#content a:focus {
       margin-left: 12px;
     }
 
+/*
+    div#navigation ul li:nth-child(2), div#navigation ul li:last-child {
+      margin-bottom: 0px;
+    }
+
+    div#navigation ul li:nth-last-child(1) {
+      margin-bottom: 0px;
+      background-color: #f00;
+    }
+
+    div#navigation ul li a:last-child {
+      margin-bottom: 0px;
+      background-color: #f00;
+    }
+*/
+
     div#navigation ul li a {
       display: table-cell;
       padding: 0px 0px;
@@ -250,17 +273,34 @@ div#content a:focus {
 
   div#content {
     clear: both;
-    margin: 18px 0px;
+    margin: 0px 0px;
+    padding: 0px 0px 18px 0px;
   }
 
   div#content h2 {
-    margin: 9px 0px;
+    padding: 18px 0px 18px 0px;
   }
 
   div#content div#main .block:first-child {
     margin: 0px 0px;
   }
 
+  /* BEGIN - Footer - BEGIN */
+
+    #page div#footer {
+      font-family: "Open Sans"
+      font-size: 12px;
+      line-height: 18px;
+    }
+    div#footer p.credits {
+    }
+    div#footer ul.validators {
+    }
+    div#footer ul.validators li {
+      display: inline;
+    }
+
+  /* END - Footer - END */
 }
 
 /* 748 Grid */
@@ -279,7 +319,7 @@ div#content a:focus {
     background-image: url('img/18px-baseline.png');
   }
   div#header {
-    height: 90px;
+    height: 108px;
   }
   body div#header h1 {
     text-align: left;
@@ -291,6 +331,8 @@ div#content a:focus {
   /* BEGIN - Navigation Bar at the Top of the Page below the header - BEGIN */
 
     #page div#navigation { 
+      position: absolute;
+      top: 90px;
       clear: both;
       display: inline-table;
       margin: 18px 0px;
@@ -326,7 +368,7 @@ div#content a:focus {
   /* BEGIN - Main Content Block - BEGIN */
 
     #page div#content {
-      clear: both;
+      overflow: auto;
       width: 100%;
     }
     
@@ -338,10 +380,27 @@ div#content a:focus {
 
     #page div#content div.block:first-child, #page div#content div#block3 {
       margin-left: 0px;
+      float: clear;
     }
 
   /* END - Main Content Block - END */
 
+  /* BEGIN - Footer - BEGIN */
+
+    #page div#footer {
+      font-family: "Open Sans"
+      font-size: 12px;
+      line-height: 18px;
+    }
+    div#footer p.credits {
+    }
+    div#footer ul.validators {
+    }
+    div#footer ul.validators li {
+      display: inline;
+    }
+
+  /* END - Footer - END */
 }
 
 /* 978 Grid */
@@ -358,6 +417,9 @@ div#content a:focus {
     font-size: 14px;
     background-image: url('img/18px-baseline.png');
   }
+  div#header {
+    height: 108px;
+  }
   body div#header h1 {
     text-align: left;
   }
@@ -365,6 +427,8 @@ div#content a:focus {
   /* BEGIN - Navigation Bar at the Top of the Page below the header - BEGIN */
 
     #page div#navigation { 
+      position: absolute;
+      top: 90px;
       display: table;
       margin: 18px 0px;
     }
@@ -402,19 +466,35 @@ div#content a:focus {
       clear: both;
       width: 100%;
     }
-    
-    .block {
+
+    #page div#content div.block, #page div#content div#block3 {
       width: 306px;
       float: left;
       margin-left: 20px;
     }
 
-    .block:first-child {
+    #page div#content div.block:first-child {
       margin-left: 0px;
     }
 
   /* END - Main Content Block - END */
 
+  /* BEGIN - Footer - BEGIN */
+
+    #page div#footer {
+      font-family: "Open Sans"
+      font-size: 12px;
+      line-height: 18px;
+    }
+    div#footer p.credits {
+    }
+    div#footer ul.validators {
+    }
+    div#footer ul.validators li {
+      display: inline;
+    }
+
+  /* END - Footer - END */
 }
 
 /* 1248 Grid */
@@ -436,16 +516,18 @@ div#content a:focus {
     line-height: 36px;
     font-size: 28px;
   }
-  #page .tagline {
+  #page p.contact, #page p.tagline {
+    position: absolute;
+    top: 54px;
+  }
+  #page p.tagline {
     width: 828px;
   }
-  div#header {
-    height: 72px;
+  #page div#header {
+    height: 90px;
   }
-  div#header .contact {
+  div#header p.contact {
     text-align: right;
-    position: absolute;
-    top: 36px;
     left: 858px;
     width: 350px;
   }
@@ -453,8 +535,10 @@ div#content a:focus {
   /* BEGIN - Navigation Bar at the Top of the Page below the header - BEGIN */
 
     #page div#navigation { 
-      display: table;
+      top: 72px;
+      display: inline-table;
       margin: 18px 0px;
+      width: 100%;
     }
 
     #page div#navigation ul {
@@ -487,33 +571,34 @@ div#content a:focus {
 
   /* BEGIN - Main Content Block - BEGIN */
 
-    .block, #block3 {
+    #page div#content div.block, #page div#content div#block3 {
       width: 386px;
       float: left;
       margin-left: 30px;
     }
 
-    .block:first-child {
+    #page div#content div.block:first-child {
       margin-left: 0px;
     }
 
   /* END - Main Content Block - END */
 
-  /* Footer */
-  div#footer {
-    clear: both;
-    position: relative;
-    left: 0px;
-    bottom: 0px;
-  }
-  div#footer p.credits {
-  }
-  div#footer ul.validators {
-  }
-  div#footer ul.validators li {
-    display: inline;
-    font-family: "Open Sans"
-  }
+  /* BEGIN - Footer - BEGIN */
+
+    #page div#footer {
+      font-family: "Open Sans"
+      font-size: 12px;
+      line-height: 18px;
+    }
+    div#footer p.credits {
+    }
+    div#footer ul.validators {
+    }
+    div#footer ul.validators li {
+      display: inline;
+    }
+
+  /* END - Footer - END */
 
 }
 
@@ -531,20 +616,26 @@ div#content a:focus {
     font-size: 18px;
     background-image: url('img/24px-baseline.png');
   }
+
+  #page div#header {
+    height: 108px;
+  }
   body div#header h1 {
     line-height: 48px;
     font-size: 42px;
   }
-  #page .tagline {
+  #page div#header p {
+    font-size: 15px;
+  }
+  #page div#header p.tagline {
+    position: absolute;
+    top: 72px;
     width: 938px;
   }
-  #page div#header {
-    height: 96px;
-  }
-  #page div#header .contact {
+  #page div#header p.contact {
     text-align: right;
     position: absolute;
-    top: 48px;
+    top: 72px;
     left: 968px;
     width: 400px;
   }
@@ -552,6 +643,9 @@ div#content a:focus {
   /* BEGIN - Navigation Bar at the Top of the Page below the header - BEGIN */
 
     #page div#navigation { 
+      position: absolute;
+      top: 108px;
+      clear: both;
       display: table;
       margin: 0px 0px;
       width: 100%;
@@ -562,7 +656,7 @@ div#content a:focus {
     }
 
     #page div#navigation ul li, #page div#navigation ul li a {
-      height: 48px;
+      height: 36px;
       width: 146px;
     }
 
@@ -586,8 +680,14 @@ div#content a:focus {
 
   /* BEGIN - Main Content Block - BEGIN */
 
-    #content {
-/*      position: relative; */
+    div#content {
+      clear: both;
+      margin: 0px 0px;
+      padding: 24px 0px;
+    }
+
+    div#content h2 {
+      padding: 0px 0px 24px 0px;
     }
 
     #content .block, #block2, #block3 {
@@ -603,19 +703,17 @@ div#content a:focus {
   /* END - Main Content Block - END */
 
   /* Footer */
-  #page div#footer {
+  #page div#footer p.credits, #page div#footer ul.validators li {
     font-family: "Open Sans"
+    font-size: 12px;
+    line-height: 24px;
   }
   div#footer p.credits {
-    font-size: 9px;
-    line-height: 24px;
   }
   div#footer ul.validators {
   }
   div#footer ul.validators li {
     display: inline;
-    font-size: 9px;
-    line-height: 24px;
   }
 
 }
