@@ -288,7 +288,7 @@ div#content a:focus {
   /* BEGIN - Footer - BEGIN */
 
     #page div#footer {
-      font-family: "Open Sans"
+      font-family: "Open Sans";
       font-size: 12px;
       line-height: 18px;
     }
@@ -310,13 +310,16 @@ div#content a:focus {
   #page {
     width: 748px; /*Total with works out to 1008*/
     padding: 0px 10px 0px 10px;
+/*
     background-image: url('img/748-grid.png');
-    /* border: 1px #000 solid; */
+*/
   }
   html { /* Set font / line height / background */
     line-height: 18px;
     font-size: 12px;
+/*
     background-image: url('img/18px-baseline.png');
+*/
   }
   div#header {
     height: 108px;
@@ -380,7 +383,6 @@ div#content a:focus {
 
     #page div#content div.block:first-child, #page div#content div#block3 {
       margin-left: 0px;
-      float: clear;
     }
 
   /* END - Main Content Block - END */
@@ -388,7 +390,7 @@ div#content a:focus {
   /* BEGIN - Footer - BEGIN */
 
     #page div#footer {
-      font-family: "Open Sans"
+      font-family: "Open Sans";
       font-size: 12px;
       line-height: 18px;
     }
@@ -410,12 +412,16 @@ div#content a:focus {
   #page {
     width: 978px; /*Total with works out to 1008*/
     padding: 0px 12px 0px 12px;
+/*
     background-image: url('img/978-grid.png');
+*/
   }
   html { /* Set font / line height / background */
     line-height: 18px;
     font-size: 14px;
+/*
     background-image: url('img/18px-baseline.png');
+*/
   }
   div#header {
     height: 108px;
@@ -482,7 +488,7 @@ div#content a:focus {
   /* BEGIN - Footer - BEGIN */
 
     #page div#footer {
-      font-family: "Open Sans"
+      font-family: "Open Sans";
       font-size: 12px;
       line-height: 18px;
     }
@@ -504,12 +510,16 @@ div#content a:focus {
   #page {
     width: 1218px; /*Total with works out to 1248*/
     padding: 0px 15px 0px 15px;
+/*
     background-image: url('img/1248-grid.png');
+*/
   }
   html { /* Set font / line height / background */
     line-height: 18px;
     font-size: 14px;
+/*
     background-image: url('img/18px-baseline.png');
+*/
   }
   body div#header h1 {
     text-align: left;
@@ -586,7 +596,7 @@ div#content a:focus {
   /* BEGIN - Footer - BEGIN */
 
     #page div#footer {
-      font-family: "Open Sans"
+      font-family: "Open Sans";
       font-size: 12px;
       line-height: 18px;
     }
@@ -607,14 +617,17 @@ div#content a:focus {
 @media screen and (min-width: 1408px) {
   #page {
     width: 1378px; /*Total with works out to 1408*/
-    /*height: 900px;*/
     padding: 0px 15px 0px 15px;
+/*
     background-image: url('img/1378-grid.png');
+*/
   }
   html { /* Set font / line height / background */
     line-height: 24px;
     font-size: 18px;
+/*
     background-image: url('img/24px-baseline.png');
+*/
   }
 
   #page div#header {
@@ -704,7 +717,7 @@ div#content a:focus {
 
   /* Footer */
   #page div#footer p.credits, #page div#footer ul.validators li {
-    font-family: "Open Sans"
+    font-family: "Open Sans";
     font-size: 12px;
     line-height: 24px;
   }
