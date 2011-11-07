@@ -9,10 +9,14 @@ i,em,cite { font-style: italic; }
 /* Dotted border and help cursor to abbr and acronym: */
 abbr,acronym { border-bottom: 1px dotted; cursor: help; }
 
+html {
+  background: #313F54;
+}
+
 /* Body */
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Istok Web', sans-serif;
 }
 
 /* Major Divisions */
@@ -29,10 +33,10 @@ div#header {
   padding: 0px 12px;
 }
 div#header h1 {
+  font-family: 'Carter One', sans-serif;
 }
 div#header h1 a {
-  font-family: 'Volkhov', serif;
-  font-weight: 700;
+  font-family: 'Carter One', sans-serif;
   text-decoration: none;
   color: #fff;
 }
@@ -51,7 +55,8 @@ div#header .contact {
 
 /* Content */
 div#content {
-  background-color: #555;
+  font-family: 'Istok Web', sans-serif;
+  background-color: #eee;
 }
 
 div#main {
@@ -62,6 +67,9 @@ div#supporting {
 
 /* Footer */
 div#footer {
+  border-top: 1px solid #500;
+  background-color: #fff;
+  font-family: 'Istok Web', sans-serif;
 }
 div#footer p.credits {
 }
@@ -72,10 +80,8 @@ div#footer ul.validators li {
 
 /*Navigation*/
 
-#page div#navigation {
-  background-color: #300;
-}
 ul#navigation {
+  background-color: #500;
 }
 
 ul#navigation li {
@@ -94,8 +100,10 @@ ul#navigation li a:focus {
 
 /*Content Typography: Headings*/
 div#content h2 {
-  font-family: 'Volkhov', serif;
+  font-family: 'Carter One', sans-serif;
+/*  font-family: 'Istok Web', sans-serif; */
   font-weight: 700;
+  font-size: 1.1em;
 }
 div#content h3 {
 }
@@ -105,10 +113,15 @@ div#content h5 {
 }
 div#content h6 {
 }
+div#content h2 a {
+  text-decoration: none;
+}
+
+
 
 /*Content Typography: Paragraphs*/
 div#content p {
-  font-family: 'Volkhov', serif;
+  font-family: 'Istok Web', serif;
 }
 
 /*Content Typography: Unordered Lists*/
@@ -242,22 +255,6 @@ div#content a:focus {
       margin-left: 12px;
     }
 
-/*
-    div#navigation ul li:nth-child(2), div#navigation ul li:last-child {
-      margin-bottom: 0px;
-    }
-
-    div#navigation ul li:nth-last-child(1) {
-      margin-bottom: 0px;
-      background-color: #f00;
-    }
-
-    div#navigation ul li a:last-child {
-      margin-bottom: 0px;
-      background-color: #f00;
-    }
-*/
-
     div#navigation ul li a {
       display: table-cell;
       padding: 0px 0px;
@@ -288,7 +285,6 @@ div#content a:focus {
   /* BEGIN - Footer - BEGIN */
 
     #page div#footer {
-      font-family: "Open Sans";
       font-size: 12px;
       line-height: 18px;
     }
@@ -390,7 +386,6 @@ div#content a:focus {
   /* BEGIN - Footer - BEGIN */
 
     #page div#footer {
-      font-family: "Open Sans";
       font-size: 12px;
       line-height: 18px;
     }
@@ -488,7 +483,6 @@ div#content a:focus {
   /* BEGIN - Footer - BEGIN */
 
     #page div#footer {
-      font-family: "Open Sans";
       font-size: 12px;
       line-height: 18px;
     }
@@ -596,7 +590,6 @@ div#content a:focus {
   /* BEGIN - Footer - BEGIN */
 
     #page div#footer {
-      font-family: "Open Sans";
       font-size: 12px;
       line-height: 18px;
     }
@@ -671,6 +664,7 @@ div#content a:focus {
     #page div#navigation ul li, #page div#navigation ul li a {
       height: 36px;
       width: 146px;
+      font-size: 15px;
     }
 
     #page div#navigation ul li, #page div#navigation ul li.cut {
@@ -717,7 +711,6 @@ div#content a:focus {
 
   /* Footer */
   #page div#footer p.credits, #page div#footer ul.validators li {
-    font-family: "Open Sans";
     font-size: 12px;
     line-height: 24px;
   }
