@@ -129,6 +129,8 @@ div#content ul {
 div#content ul li {
   list-style-type: square; 
   list-style-position:inside;
+  margin-left: 12px;
+  text-indent: -12px;
 }
 /*Nested*/
 div#content * li ul {
@@ -150,11 +152,26 @@ div#content * li ol li {
 
 /*Content Typography: Links*/
 div#content a {
+  color: #313F54;
+  text-decoration: none;
 }
 div#content a:visited {
+  color: #444;
 }
 div#content a:hover,
 div#content a:focus {
+}
+
+/*Content Typography: Links*/
+div#footer a {
+  color: #313F54;
+  text-decoration: none;
+}
+div#footer a:visited {
+  color: #444;
+}
+div#footer a:hover,
+div#footer a:focus {
 }
 
 /* Navigation Bar */
@@ -205,17 +222,99 @@ div#content a:focus {
 
 /* Job Tools Block */
 
-#page ul.tools {
-  background-color: #eee;
-  margin-top: 9px;
-  margin-bottom: 9px;
-  border: 1px solid #bbb;
+body#resume div#content ul.tools {
+  font-size: 10px;
+  line-height: 12px;
+  background-color: #fff;
+  margin: 12px 0px;
+  border: 1px #888 solid;
 }
-#page ul.tools li {
+body#resume div#content ul.tools li {
   list-style-type: none;
-  padding: 9px;
+  padding: 12px;
 }
 
+body#resume div#content ul.tools > li {
+  list-style-type: none;
+  margin-left: 40px;
+  text-indent: -40px;
+}
+
+body#resume div#content p.company {
+  border-top: 1px #888 solid;
+}
+
+body#resume div#content ul.job, body#resume h3 {
+  overflow: auto;
+}
+body#resume div#content ul.job {
+  display: table;
+}
+body#resume div#content ul.job > li {
+  display: table-cell;
+  margin-left: 0px;
+  text-indent: 0px;
+  list-style-type: none;
+  float: left;
+}
+body#resume div#content ul.job > li + li {
+  display: table-cell;
+  margin-left: 10px;
+  list-style-type: square;
+}
+body#resume div#content .job {
+  margin-bottom: 0px;
+}
+
+/* Skills Tables */
+
+table.skills {
+  margin: 10px 0px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+table.skills tr > td {
+  width: 60%;
+  padding-left: 10px;
+  line-height: 10px;
+}
+table.skills tr > td + td {
+  text-align: center;
+  width: 15%;
+  padding-left: 0px;
+  line-height: 10px;
+}
+tr > td {
+  padding: 7px;
+  font-size: 10px;
+}
+table.skills tr.skilldiv {
+  background-color: #ddd;
+}
+table.skills tr.skilldiv > td {
+  font-weight: 700;
+  padding-left: 7px;
+}
+
+/* General Table Formats */
+
+td.altrow {
+  background-color: #eee;
+}
+tr > th {
+  background-color: #ccc;
+  padding: 7px;
+  font-size: 10px;
+  font-weight: 700;
+  text-align: center;
+}
+
+tr:nth-child(odd) {
+  background-color:#eee;
+}
+tr:nth-child(even) {
+  background-color:#fff;
+}
 
 /* Visual Aids for Positioning */
 
@@ -332,6 +431,10 @@ div#content a:focus {
   div#content div.main h2 {
     clear: both;
     margin-bottom: 18px;
+  }
+
+  body#resume div#content div.main h2, body#resume div#content div.main h3 {
+    margin-top: 18px;
   }
 
   div#content p {
