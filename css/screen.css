@@ -127,7 +127,7 @@ div#content p {
 div#content ul {
 }
 div#content ul li {
-  list-style-type: square; 
+  list-style-type: square;
   list-style-position:inside;
   margin-left: 12px;
   text-indent: -12px;
@@ -136,7 +136,7 @@ div#content ul li {
 div#content * li ul {
 }
 div#content * li ul li {
-  list-style-type: square; 
+  list-style-type: square;
 }
 
 /*Content Typography: Ordered Lists*/
@@ -322,7 +322,7 @@ tr:nth-child(even) {
   div#page {
     border: 1px #000 solid;
   }
-  
+
   div#header {
     border: 1px #090 solid;
   }
@@ -346,12 +346,19 @@ tr:nth-child(even) {
 
 @media screen {
   /* See http://978.gs/ */
-  #page {
+  body.px #page {
     width: 300px; /*Total with works out to 320*/
     padding: 0px 10px;
-/*
+  }
+  body.pxg #page {
+    width: 300px; /*Total with works out to 320*/
+    padding: 0px 10px;
     background-image: url('img/300-grid.png');
-*/
+  }
+  body.pct #page {
+    width: 90%; /*Total with works out to 320*/
+    min-width: 300px; /*Total with works out to 320*/
+    padding: 0px 1.5%;
   }
   html {
     line-height: 18px;
@@ -361,9 +368,14 @@ tr:nth-child(even) {
 */
   }
 
-  #page div#header, #page div#content, #page div#footer {
+  body.px #page div#header, body.px #page div#content, body.px #page div#footer {
     padding: 18px 10px;
     margin: 0px -10px;
+  }
+
+  body.pct #page div#header, body.pct #page div#content, body.pct #page div#footer {
+    padding: 18px 2%;
+    margin: 0px -2%;
   }
 
   div#header {
@@ -382,24 +394,41 @@ tr:nth-child(even) {
 
     /* Using display:table to set up a flexible set of navigation buttons */
 
-   #page div#navigation { 
+   body.px #page div#navigation {
       display: inline-table;
       padding: 0px 10px 18px 10px;
       margin: 0px -10px;
+    }
+
+   body.pct #page div#navigation {
+      display: inline-table;
+      padding: 0px 2%;
+      margin: 0px -2%;
+      width: 100%
     }
 
     div#navigation ul {
       display: table-row;
     }
 
-    div#navigation ul li, div#navigation ul li a {
+    body.px div#navigation ul li, body.px div#navigation ul li a {
       height: 54px;
       width: 66px;
     }
 
-    div#navigation ul li {
+    body.pct div#navigation ul li, body.pct div#navigation ul li a {
+      height: 54px;
+      width: 22%;
+    }
+
+    body.px div#navigation ul li {
       float: left;
       margin-left: 12px;
+    }
+
+    body.pct div#navigation ul li {
+      float: left;
+      margin-left: 4%;
     }
 
     div#navigation ul li a {
@@ -408,10 +437,15 @@ tr:nth-child(even) {
       vertical-align: middle;
     }
 
-    div#navigation ul li:first-child {
+    body.px div#navigation ul li:first-child {
       margin-left: 0px;
     }
-    div#navigation ul li a.selected {
+
+    body.pct div#navigation ul li:first-child {
+      margin-left: 0%;
+    }
+
+    body.px div#navigation ul li a.selected {
       border: 1px solid #aaa;
       text-decoration:none;
       color: #595855;
@@ -420,12 +454,27 @@ tr:nth-child(even) {
       width: 64px;
     }
 
+    body.pct div#navigation ul li a.selected {
+      border: 1px solid #aaa;
+      text-decoration:none;
+      color: #595855;
+      background: #fff;
+      height: 52px;
+      width: 21.3333%;
+    }
+
   /* END - Navigation Bar at the Top of the Page below the header - END */
 
-  div#content {
+  body.px div#content {
     clear: both;
     padding: 18px 10px;
     margin: 0px -10px;
+  }
+
+  body.pct div#content {
+    clear: both;
+    padding: 18px 1.5%;
+    margin: 0px -1.7%;
   }
 
   div#content div.main h2 {
@@ -445,7 +494,7 @@ tr:nth-child(even) {
   div#content p:last-child {
     margin-bottom: 18px;
   }
-  
+
   div#content #block1 h2 {
     padding: 0px;
   }
@@ -459,8 +508,6 @@ tr:nth-child(even) {
     #page div#footer {
       font-size: 9px;
       line-height: 18px;
-      padding: 0px 10px;
-      margin-top: -5px;
     }
     div#footer p.credits {
     }
@@ -485,13 +532,7 @@ tr:nth-child(even) {
 
 @media screen and (min-width: 768px) {
   /* See http://978.gs/ */
-  #page {
-    width: 748px; /*Total with works out to 1008*/
-    padding: 0px 10px;
-/*
-    background-image: url('img/748-grid.png');
-*/
-  }
+
   html { /* Set font / line height / background */
     line-height: 18px;
     font-size: 12px;
@@ -500,9 +541,31 @@ tr:nth-child(even) {
 */
   }
 
-  #page div#header, #page div#content, #page div#footer {
+  body.px #page {
+    width: 748px; /*Total with works out to 768*/
+    padding: 0px 10px;
+  }
+
+  body.pxg #page {
+    width: 748px; /*Total with works out to 768*/
+    padding: 0px 10px;
+    background-image: url('img/748-grid.png');
+  }
+
+  body.pct #page {
+    width: 90%; /*Total with works out to 768*/
+    min-width: 748px; /*Total with works out to 768*/
+    padding: 0px 3%;
+  }
+
+  body.px #page div#header, body.px #page div#content, body.px #page div#footer {
     padding: 18px 10px;
     margin: 0px -10px;
+  }
+
+  body.pct #page div#header, body.pct #page div#content, body.pct #page div#footer {
+    padding: 18px 3%;
+    margin: 0px -3.3%;
   }
 
   div#header {
@@ -519,7 +582,7 @@ tr:nth-child(even) {
 
   /* BEGIN - Navigation Bar at the Top of the Page below the header - BEGIN */
 
-    #page div#navigation { 
+    body.px #page div#navigation {
       position: absolute;
       top: 90px;
       clear: both;
@@ -527,29 +590,41 @@ tr:nth-child(even) {
       margin: 18px -10px;
     }
 
+    body.pct #page div#navigation {
+      position: absolute;
+      top: 90px;
+      clear: both;
+      display: inline-table;
+      margin: 18px -2%;
+    }
+
     #page div#navigation ul {
       display: table-row;
     }
 
-    #page div#navigation ul li, #page div#navigation ul li a {
+    body.px #page div#navigation ul li, body.px #page div#navigation ul li a {
       height: 36px;
       width: 108px;
     }
 
-    #page div#navigation ul li, #page div#navigation ul li.cut {
-      margin-bottom: 0px;
-      margin-left: 20px;
+    body.pct #page div#navigation ul li, body.pct #page div#navigation ul li a {
+      height: 36px;
+      width: 14.4385027%;
     }
 
-    #page div#navigation ul li a {
+    body.px #page div#navigation ul li a {
       display: table-cell;
       padding: 0px 0px;
       text-align: center;
       vertical-align: middle;
     }
 
-    #page div#navigation ul li:first-child {
+    body.px #page div#navigation ul li:first-child {
       margin-left: 0px;
+    }
+
+    body.pct #page div#navigation ul li:first-child {
+      margin-left: 0%;
     }
 
   /* END - Navigation Bar at the Top of the Page below the header - END */
@@ -559,19 +634,29 @@ tr:nth-child(even) {
     #page div#content {
       overflow: auto;
     }
-    
-    #page div#content div.block {
+
+    body.px #page div#content div.block {
       width: 364px;
       float: left;
       margin-left: 20px;
+    }
+
+    body.pct #page div#content div.block {
+      width: 48.6631016%;
+      float: left;
+      margin-left: 2.6737968%;
     }
 
     div#content h2 {
       padding-top: 0px;
     }
 
-    #page div#content div.block:first-child, #page div#content div#block3 {
+    body.px #page div#content div.block:first-child, body.px #page div#content div#block3 {
       margin-left: 0px;
+    }
+
+    body.pct #page div#content div.block:first-child, body.pct #page div#content div#block3 {
+      margin-left: 0%;
     }
 
   /* END - Main Content Block - END */
@@ -597,13 +682,7 @@ tr:nth-child(even) {
 
 @media screen and (min-width: 1002px) {
   /* See http://978.gs/ */
-  #page {
-    width: 978px; /*Total with works out to 1008*/
-    padding: 0px 12px 0px 12px;
-/*
-    background-image: url('img/978-grid.png');
-*/
-  }
+
   html { /* Set font / line height / background */
     line-height: 18px;
     font-size: 14px;
@@ -612,9 +691,30 @@ tr:nth-child(even) {
 */
   }
 
-  #page div#header, #page div#content, #page div#footer {
+  body.px #page {
+    width: 978px; /*Total with works out to 1008*/
+    padding: 0px 12px;
+  }
+
+  body.pxg #page {
+    width: 978px; /*Total with works out to 1008*/
+    padding: 0px 12px;
+    background-image: url('img/978-grid.png');
+  }
+
+  body.pct #page {
+    width: 90%; /*Total with works out to 1008*/
+    padding: 0px 2%;
+  }
+
+  body.px #page div#header, body.px #page div#content, body.px #page div#footer {
     padding: 18px 12px;
     margin: 0px -12px;
+  }
+
+  body.pct #page div#header, body.pct #page div#content, body.pct #page div#footer {
+    padding: 18px 2%;
+    margin: 0px -2.2%;
   }
 
   div#header {
@@ -626,23 +726,36 @@ tr:nth-child(even) {
 
   /* BEGIN - Navigation Bar at the Top of the Page below the header - BEGIN */
 
-    #page div#navigation { 
+    body.px #page div#navigation {
       position: absolute;
       top: 90px;
-      display: table;
-      margin: 18px 0px;
+      clear: both;
+      display: inline-table;
+      margin: 18px -10px;
+    }
+
+    body.pct #page div#navigation {
+      position: absolute;
+      top: 90px;
+      clear: both;
+      display: inline-table;
+      margin: 18px -2%;
     }
 
     #page div#navigation ul {
       display: table-row;
     }
 
-    #page div#navigation ul li, #page div#navigation ul li a {
+    body.px #page div#navigation ul li, body.px #page div#navigation ul li a {
       height: 36px;
       width: 138px;
+      margin-bottom: 0px;
+      margin-left: 30px;
     }
 
-    #page div#navigation ul li, #page div#navigation ul li.cut {
+    body.pct #page div#navigation ul li, body.pct #page div#navigation ul li a {
+      height: 36px;
+      width: 14.1104294%;
       margin-bottom: 0px;
       margin-left: 30px;
     }
@@ -654,8 +767,12 @@ tr:nth-child(even) {
       vertical-align: middle;
     }
 
-    #page div#navigation ul li:first-child {
+    body.px #page div#navigation ul li:first-child {
       margin-left: 0px;
+    }
+
+    body.pct #page div#navigation ul li:first-child {
+      margin-left: 0%;
     }
 
   /* END - Navigation Bar at the Top of the Page below the header - END */
@@ -665,14 +782,24 @@ tr:nth-child(even) {
     div#content {
     }
 
-    #page div#content div.block, #page div#content div#block3 {
+    body.px #page div#content div.block, body.px #page div#content div#block3 {
       width: 306px;
       float: left;
-      margin-left: 20px;
+      margin-left: 30px;
     }
 
-    #page div#content div.block:first-child {
+    body.pct #page div#content div.block, body.pct #page div#content div#block3 {
+      width: 31.2883436%;
+      float: left;
+      margin-left: 3.0674847%;
+    }
+
+    body.px #page div#content div.block:first-child {
       margin-left: 0px;
+    }
+
+    body.pct #page div#content div.block:first-child {
+      margin-left: 0%;
     }
 
   /* END - Main Content Block - END */
@@ -698,13 +825,7 @@ tr:nth-child(even) {
 
 @media screen and (min-width: 1248px) {
   /* See http://978.gs/ */
-  #page {
-    width: 1218px; /*Total with works out to 1248*/
-    padding: 0px 15px;
-/*
-    background-image: url('img/1248-grid.png');
-*/
-  }
+
   html { /* Set font / line height / background */
     line-height: 18px;
     font-size: 14px;
@@ -713,9 +834,30 @@ tr:nth-child(even) {
 */
   }
 
-  #page div#header, #page div#content, #page div#footer {
+  body.px #page {
+    width: 1218px; /*Total with works out to 1248*/
+    padding: 0px 15px;
+  }
+
+  body.pxg #page {
+    width: 1218px; /*Total with works out to 1248*/
+    padding: 0px 15px;
+    background-image: url('img/1248-grid.png');
+  }
+
+  body.pct #page {
+    width: 90%; /*Total with works out to 1248*/
+    padding: 0px 2%;
+  }
+
+  body.px #page div#header, body.px #page div#content, body.px #page div#footer {
     padding: 18px 15px;
     margin: 0px -15px;
+  }
+
+  body.pct #page div#header, body.pct #page div#content, body.pct #page div#footer {
+    padding: 18px 2%;
+    margin: 0px -2.3%;
   }
 
   body div#header h1 {
@@ -723,28 +865,51 @@ tr:nth-child(even) {
     line-height: 36px;
     font-size: 28px;
   }
+
   #page p.contact, #page p.tagline {
     position: absolute;
     top: 54px;
   }
-  #page p.tagline {
+
+  body.px #page p.tagline {
     width: 828px;
   }
+
+  body.pct #page p.tagline {
+    width: 67.9802956%;
+  }
+
   #page div#header {
     height: 90px;
   }
-  div#header p.contact {
+
+  body.px div#header p.contact {
     text-align: right;
     left: 858px;
     width: 350px;
   }
 
+  body.pct div#header p.contact {
+    text-align: right;
+    left: 69.6546871%;
+    width: 29.5566502%;
+  }
+
   /* BEGIN - Navigation Bar at the Top of the Page below the header - BEGIN */
 
-    #page div#navigation { 
+    body.px #page div#navigation {
       top: 72px;
       display: inline-table;
       margin: 18px 0px;
+      padding: 0px;
+      width: 100%;
+    }
+
+    body.pct #page div#navigation {
+      top: 72px;
+      display: inline-table;
+      margin: 18px -0.3%;
+      padding: 0px;
       width: 100%;
     }
 
@@ -752,14 +917,24 @@ tr:nth-child(even) {
       display: table-row;
     }
 
-    #page div#navigation ul li, #page div#navigation ul li a {
+    body.px #page div#navigation ul li, body.px #page div#navigation ul li a {
       height: 36px;
       width: 126px;
     }
-    
-    #page div#navigation ul li, #page div#navigation ul li.cut {
+
+    body.pct #page div#navigation ul li, body.pct #page div#navigation ul li a {
+      height: 36px;
+      width: 10.3448276%;
+    }
+
+    body.px #page div#navigation ul li {
       margin-bottom: 0px;
       margin-left: 30px;
+    }
+
+    body.pct #page div#navigation ul li {
+      margin-bottom: 0px;
+      margin-left: 2.4630542%;
     }
 
     #page div#navigation ul li a {
@@ -769,7 +944,7 @@ tr:nth-child(even) {
       vertical-align: middle;
     }
 
-    #page div#navigation ul li:first-child {
+    body.px #page div#navigation ul li:first-child {
       margin-left: 0px;
     }
 
@@ -782,13 +957,13 @@ tr:nth-child(even) {
 
     }
 
-    #page div#content div.block, #page div#content div#block3 {
+    body.px #page div#content div.block, #page div#content div#block3 {
       width: 386px;
       float: left;
       margin-left: 30px;
     }
 
-    #page div#content div.block:first-child {
+    body.px #page div#content div.block:first-child {
       margin-left: 0px;
     }
 
@@ -815,13 +990,6 @@ tr:nth-child(even) {
 /* 1378 Grid */
 
 @media screen and (min-width: 1408px) {
-  #page {
-    width: 1378px; /*Total with works out to 1408*/
-    padding: 0px 15px 0px 15px;
-/*
-    background-image: url('img/1378-grid.png');
-*/
-  }
   html { /* Set font / line height / background */
     line-height: 24px;
     font-size: 18px;
@@ -830,9 +998,31 @@ tr:nth-child(even) {
 */
   }
 
-  #page div#header, #page div#content, #page div#footer {
+  body.px #page {
+    width: 1378px; /*Total with works out to 1408*/
+    padding: 0px 15px;
+  }
+
+  body.pxg #page {
+    width: 1378px; /*Total with works out to 1408*/
+    padding: 0px 15px;
+    background-image: url('img/1378-grid.png');
+  }
+
+  body.pct #page {
+    width: 90%; /*Total with works out to 1408*/
+    max-width: 1378px;
+    padding: 0px 2%;
+  }
+
+  body.px #page div#header, body.px #page div#content, body.px #page div#footer {
     padding: 18px 15px;
     margin: 0px -15px;
+  }
+
+  body.pct #page div#header, body.px #page div#content, body.px #page div#footer {
+    padding: 18px 2%;
+    margin: 0px -2.3%;
   }
 
   #page div#header {
@@ -845,12 +1035,19 @@ tr:nth-child(even) {
   #page div#header p {
     font-size: 15px;
   }
-  #page div#header p.tagline {
+  body.px #page div#header p.tagline {
     position: absolute;
     top: 72px;
     width: 938px;
   }
-  #page div#header p.contact {
+
+  body.pct #page div#header p.tagline {
+    position: absolute;
+    top: 72px;
+    width: 68.0696662%;
+  }
+
+  body.px #page div#header p.contact {
     text-align: right;
     position: absolute;
     top: 72px;
@@ -858,9 +1055,17 @@ tr:nth-child(even) {
     width: 400px;
   }
 
+  body.pct #page div#header p.contact {
+    text-align: right;
+    position: absolute;
+    top: 72px;
+    left: 69.5515893%;
+    width: 29.7532656%;
+  }
+
   /* BEGIN - Navigation Bar at the Top of the Page below the header - BEGIN */
 
-    #page div#navigation { 
+    #page div#navigation {
       position: absolute;
       top: 108px;
       clear: both;
@@ -873,15 +1078,26 @@ tr:nth-child(even) {
       display: table-row;
     }
 
-    #page div#navigation ul li, #page div#navigation ul li a {
+    body.px #page div#navigation ul li, body.px #page div#navigation ul li a {
       height: 36px;
-      width: 58px;
+      width: 146px;
       font-size: 12px;
     }
 
-    #page div#navigation ul li, #page div#navigation ul li.cut {
+    body.pct #page div#navigation ul li, body.pct #page div#navigation ul li a {
+      height: 36px;
+      width: 10.5950653%;
+      font-size: 12px;
+    }
+
+    body.px #page div#navigation ul li {
       margin-bottom: 0px;
       margin-left: 30px;
+    }
+
+    body.pct #page div#navigation ul li {
+      margin-bottom: 0px;
+      margin-left: 2.1770682%;
     }
 
     #page div#navigation ul li a {
@@ -891,7 +1107,7 @@ tr:nth-child(even) {
       vertical-align: middle;
     }
 
-    #page div#navigation ul li:first-child {
+    body.px #page div#navigation ul li:first-child {
       margin-left: 0px;
     }
 
@@ -907,13 +1123,19 @@ tr:nth-child(even) {
       padding: 0px;
     }
 
-    #content .block, #block2, #block3 {
+    body.px #content .block, #block2, #block3 {
       width: 438px;
       float: left;
       margin-left: 30px;
     }
 
-    #page .block:first-child {
+    body.px #content .block, #block2, #block3 {
+      width: 31.8819545%;
+      float: left;
+      margin-left: 2.1770682%;
+    }
+
+    body.px #page .block:first-child {
       margin-left: 0px;
     }
 
@@ -933,3 +1155,4 @@ tr:nth-child(even) {
   }
 
 }
+
