@@ -22,6 +22,7 @@ body {
 /* Major Divisions */
 
 /* Page (Containing Div) */
+
 div#page {
   background: #fff;
   position: relative;
@@ -29,21 +30,26 @@ div#page {
 }
 
 /* Header */
+
 div#header {
   background-color: #500;
   padding: 0px 12px;
 }
+
 div#header h1 {
   font-family: museo-slab, sans-serif;
 }
+
 div#header h1 a {
   font-family: museo-slab, sans-serif;
   text-decoration: none;
   color: #fff;
 }
+
 div#header p.tagline {
   color: #fff;
 }
+
 div#header ul.accessibility {
   display: none;
 }
@@ -101,18 +107,29 @@ ul#navigation li a:focus {
 }
 
 /*Content Typography: Headings*/
+div#content h1 {
+  font-family: museo-slab, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 18px;
+}
 div#content h2 {
   font-family: museo-slab, sans-serif;
   font-weight: 700;
   font-size: 1.1em;
 }
 div#content h3 {
+  font-family: museo-slab, sans-serif;
 }
 div#content h4 {
+  font-family: museo-slab, sans-serif;
 }
 div#content h5 {
+  font-family: museo-slab, sans-serif;
 }
 div#content h6 {
+  font-family: museo-slab, sans-serif;
 }
 div#content h2 a {
   text-decoration: none;
@@ -346,46 +363,51 @@ tr:nth-child(even) {
 
 @media screen {
   /* See http://978.gs/ */
+
+  html {
+    line-height: 18px;
+    font-size: 12px;
+  }
+
+  html.grid {
+    background-image: url('img/18px-baseline.png');
+  }
+
   body.px #page {
-    width: 300px; /*Total with works out to 320*/
-    padding: 0px 10px;
+    width: 320px; /*Total with works out to 320*/
+    padding: 0px 0px;
   }
   body.pxg #page {
-    width: 300px; /*Total with works out to 320*/
-    padding: 0px 10px;
+    width: 320px; /*Total with works out to 320*/
+    padding: 0px 0px;
     background-image: url('img/300-grid.png');
   }
   body.pct #page {
     width: 90%; /*Total with works out to 320*/
-    min-width: 300px; /*Total with works out to 320*/
-    padding: 0px 1.5%;
-  }
-  html {
-    line-height: 18px;
-    font-size: 12px;
-/*
-    background-image: url('img/18px-baseline.png');
-*/
+    min-width: 320px; /*Total with works out to 320*/
+    padding: 0px 0%;
   }
 
   body.px #page div#header, body.px #page div#content, body.px #page div#footer {
     padding: 18px 10px;
-    margin: 0px -10px;
+    margin: 0px 0px;
   }
 
   body.pct #page div#header, body.pct #page div#content, body.pct #page div#footer {
-    padding: 18px 2%;
-    margin: 0px -2%;
+    padding: 18px 3.1250%;
+    margin: 0px 0%;
   }
 
   div#header {
-    height: 108px;
+    height: 90px;
   }
+  
   body div#header h1 {
     text-align: center;
     line-height: 36px;
     font-size: 24px;
   }
+  
   div#header p {
     text-align: center;
   }
@@ -395,15 +417,16 @@ tr:nth-child(even) {
     /* Using display:table to set up a flexible set of navigation buttons */
 
    body.px #page div#navigation {
-      display: inline-table;
+      display: table;
       padding: 0px 10px 18px 10px;
-      margin: 0px -10px;
+      margin: 0px 0px;
+      width: 100%
     }
 
    body.pct #page div#navigation {
-      display: inline-table;
-      padding: 0px 2%;
-      margin: 0px -2%;
+      display: table;
+      padding: 18px 3.1250%;
+      margin: 0px 0%;
       width: 100%
     }
 
@@ -500,7 +523,7 @@ tr:nth-child(even) {
   }
 
   div#content h2 {
-    padding-top: 18px;
+    padding-top: 0px;
   }
 
   /* BEGIN - Footer - BEGIN */
@@ -536,66 +559,73 @@ tr:nth-child(even) {
   html { /* Set font / line height / background */
     line-height: 18px;
     font-size: 12px;
-/*
+  }
+
+  html.grid { /* Set Visible Baseline Grid */
     background-image: url('img/18px-baseline.png');
-*/
   }
 
-  body.px #page {
-    width: 748px; /*Total with works out to 768*/
-    padding: 0px 10px;
-  }
+  /* BEGIN - Body Widths - BEGIN */
 
-  body.pxg #page {
-    width: 748px; /*Total with works out to 768*/
-    padding: 0px 10px;
-    background-image: url('img/748-grid.png');
-  }
+    body.px #page { /* Set #page to 748 plus 10 margin for 768 */
+      width: 768px; 
+      padding: 0px 0px;
+    }
 
-  body.pct #page {
-    width: 90%; /*Total with works out to 768*/
-    min-width: 748px; /*Total with works out to 768*/
-    padding: 0px 3%;
-  }
+    body.pxg #page { /* Set #page to 748 plus 10 margin for 768 */
+      width: 768px; 
+      padding: 0px 0px;
+      background-image: url('img/748-grid.png');
+    }
 
-  body.px #page div#header, body.px #page div#content, body.px #page div#footer {
-    padding: 18px 10px;
-    margin: 0px -10px;
-  }
+    body.pct #page { /* Set #page to 748 plus 10 margin for 768 */
+      width: 90%; 
+      min-width: 748px; /* Set Minimum Width of 748 px */
+      padding: 0px 0%;
+    }
 
-  body.pct #page div#header, body.pct #page div#content, body.pct #page div#footer {
-    padding: 18px 3%;
-    margin: 0px -3.3%;
-  }
+    body.px #page div#header, body.px #page div#navigation, body.px #page div#content, body.px #page div#footer {
+      padding: 18px 10px;
+      margin: 0px 0px;
+    }
 
-  div#header {
-    height: 108px;
-  }
+    body.pct #page div#header, body.pct #page div#navigation, body.pct #page div#content, body.pct #page div#footer {
+      padding: 18px 1.3021%;
+      margin: 0px 0%;
+    }
 
-  body div#header h1 {
-    text-align: left;
-  }
+  /* END - Body Widths - END */
 
-  div#header p {
-    text-align: left;
-  }
+  /* BEGIN - Header - BEGIN */
+
+    div#header {
+      height: 102px;
+    }
+
+    body div#header h1 {
+      text-align: left;
+    }
+
+    div#header p {
+      text-align: left;
+    }
+
+  /* END - Header - END */
 
   /* BEGIN - Navigation Bar at the Top of the Page below the header - BEGIN */
 
     body.px #page div#navigation {
       position: absolute;
-      top: 90px;
+      top: 84px;
       clear: both;
       display: inline-table;
-      margin: 18px -10px;
     }
 
     body.pct #page div#navigation {
       position: absolute;
-      top: 90px;
+      top: 84px;
       clear: both;
       display: inline-table;
-      margin: 18px -2%;
     }
 
     #page div#navigation ul {
@@ -686,35 +716,36 @@ tr:nth-child(even) {
   html { /* Set font / line height / background */
     line-height: 18px;
     font-size: 14px;
-/*
+  }
+
+  html.grid { 
     background-image: url('img/18px-baseline.png');
-*/
   }
 
   body.px #page {
-    width: 978px; /*Total with works out to 1008*/
-    padding: 0px 12px;
+    width: 1002px; /*Total with works out to 1008*/
+    padding: 0px 0px;
   }
 
   body.pxg #page {
-    width: 978px; /*Total with works out to 1008*/
-    padding: 0px 12px;
+    width: 1002px; /*Total with works out to 1008*/
+    padding: 0px 0px;
     background-image: url('img/978-grid.png');
   }
 
   body.pct #page {
     width: 90%; /*Total with works out to 1008*/
-    padding: 0px 2%;
+    padding: 0px 0%;
   }
 
-  body.px #page div#header, body.px #page div#content, body.px #page div#footer {
+  body.px #page div#header, body.px #page div#navigation, body.px #page div#content, body.px #page div#footer {
     padding: 18px 12px;
-    margin: 0px -12px;
+    margin: 0px 0px;
   }
 
-  body.pct #page div#header, body.pct #page div#content, body.pct #page div#footer {
-    padding: 18px 2%;
-    margin: 0px -2.2%;
+  body.pct #page div#header, body.pct #page div#navigation, body.pct #page div#content, body.pct #page div#footer {
+    padding: 18px 1.1976%;
+    margin: 0px 0%;
   }
 
   div#header {
@@ -731,7 +762,6 @@ tr:nth-child(even) {
       top: 90px;
       clear: both;
       display: inline-table;
-      margin: 18px -10px;
     }
 
     body.pct #page div#navigation {
@@ -739,7 +769,6 @@ tr:nth-child(even) {
       top: 90px;
       clear: both;
       display: inline-table;
-      margin: 18px -2%;
     }
 
     #page div#navigation ul {
@@ -829,35 +858,36 @@ tr:nth-child(even) {
   html { /* Set font / line height / background */
     line-height: 18px;
     font-size: 14px;
-/*
+  }
+
+  html.grid { /* Set font / line height / background */
     background-image: url('img/18px-baseline.png');
-*/
   }
 
   body.px #page {
     width: 1218px; /*Total with works out to 1248*/
-    padding: 0px 15px;
+    padding: 0px 0px;
   }
 
   body.pxg #page {
     width: 1218px; /*Total with works out to 1248*/
-    padding: 0px 15px;
+    padding: 0px 0px;
     background-image: url('img/1248-grid.png');
   }
 
   body.pct #page {
     width: 90%; /*Total with works out to 1248*/
-    padding: 0px 2%;
+    padding: 0px 0%;
   }
 
-  body.px #page div#header, body.px #page div#content, body.px #page div#footer {
+  body.px #page div#header, body.px #page div#navigation. body.px #page div#content, body.px #page div#footer {
     padding: 18px 15px;
-    margin: 0px -15px;
+    margin: 0px 0px;
   }
 
-  body.pct #page div#header, body.pct #page div#content, body.pct #page div#footer {
-    padding: 18px 2%;
-    margin: 0px -2.3%;
+  body.pct #page div#header, body.pct #page div#navigation, body.pct #page div#content, body.pct #page div#footer {
+    padding: 18px 1.2019%;
+    margin: 0px 0%;
   }
 
   body div#header h1 {
@@ -900,16 +930,12 @@ tr:nth-child(even) {
     body.px #page div#navigation {
       top: 72px;
       display: inline-table;
-      margin: 18px 0px;
-      padding: 0px;
       width: 100%;
     }
 
     body.pct #page div#navigation {
       top: 72px;
       display: inline-table;
-      margin: 18px -0.3%;
-      padding: 0px;
       width: 100%;
     }
 
@@ -999,42 +1025,45 @@ tr:nth-child(even) {
   }
 
   body.px #page {
-    width: 1378px; /*Total with works out to 1408*/
-    padding: 0px 15px;
+    width: 1408px; /*Total with works out to 1408*/
+    padding: 0px 0px;
   }
 
   body.pxg #page {
-    width: 1378px; /*Total with works out to 1408*/
-    padding: 0px 15px;
+    width: 1408px; /*Total with works out to 1408*/
+    padding: 0px 0px;
     background-image: url('img/1378-grid.png');
   }
 
   body.pct #page {
     width: 90%; /*Total with works out to 1408*/
-    max-width: 1378px;
-    padding: 0px 2%;
+    max-width: 1408px;
+    padding: 0px 0%;
   }
 
-  body.px #page div#header, body.px #page div#content, body.px #page div#footer {
+  body.px #page div#header, body.px #page div#navigation, body.px #page div#content, body.px #page div#footer {
     padding: 18px 15px;
-    margin: 0px -15px;
+    margin: 0px 0px;
   }
 
-  body.pct #page div#header, body.px #page div#content, body.px #page div#footer {
-    padding: 18px 2%;
-    margin: 0px -2.3%;
+  body.pct #page div#header, body.pct #page div#navigation, body.px #page div#content, body.px #page div#footer {
+    padding: 18px 1.0653%;
+    margin: 0px 0%;
   }
 
   #page div#header {
     height: 108px;
   }
+
   body div#header h1 {
     line-height: 48px;
     font-size: 42px;
   }
+
   #page div#header p {
     font-size: 15px;
   }
+
   body.px #page div#header p.tagline {
     position: absolute;
     top: 72px;
@@ -1065,12 +1094,15 @@ tr:nth-child(even) {
 
   /* BEGIN - Navigation Bar at the Top of the Page below the header - BEGIN */
 
-    #page div#navigation {
-      position: absolute;
-      top: 108px;
-      clear: both;
-      display: table;
-      margin: 0px 0px;
+    body.px #page div#navigation {
+      top: 90px;
+      display: inline-table;
+      width: 100%;
+    }
+
+    body.pct #page div#navigation {
+      top: 90px;
+      display: inline-table;
       width: 100%;
     }
 
@@ -1081,13 +1113,13 @@ tr:nth-child(even) {
     body.px #page div#navigation ul li, body.px #page div#navigation ul li a {
       height: 36px;
       width: 146px;
-      font-size: 12px;
+      font-size: 18px;
     }
 
     body.pct #page div#navigation ul li, body.pct #page div#navigation ul li a {
       height: 36px;
       width: 10.5950653%;
-      font-size: 12px;
+      font-size: 18px;
     }
 
     body.px #page div#navigation ul li {
