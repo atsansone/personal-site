@@ -17,14 +17,23 @@ html {
 
 body {
   font-family: museo-sans, sans-serif;
+  padding: 0px;
 }
+    
+/* BEGIN - Clear Margins and Padding at appropriate points - BEGIN */
 
+  #page > div {
+    margin: 0px;
+  }
+
+/* END - Clear Margins and Padding at appropriate points - END */
+    
 /* Major Divisions */
 
 /* Page (Containing Div) */
 
 div#page {
-  background: #fff;
+  background-color: #eee;
   position: relative;
   margin: 0px auto;
 }
@@ -33,15 +42,14 @@ div#page {
 
 div#header {
   background-color: #500;
-  padding: 0px 12px;
+  padding: 0px;
 }
 
 div#header h1 {
-  font-family: museo-slab, sans-serif;
+  font-family: museo-slab, serif;
 }
 
 div#header h1 a {
-  font-family: museo-slab, sans-serif;
   text-decoration: none;
   color: #fff;
 }
@@ -60,11 +68,13 @@ div#header p.contact {
   color: #fff;
 }
 
+div#content, div#footer {
+  font-family: museo-sans, sans-serif;
+}
 
 /* Content */
 div#content {
   border-top: 3px solid #aaa;
-  font-family: museo-sans, sans-serif;
   background-color: #eee;
 }
 
@@ -78,82 +88,137 @@ div#supporting {
 div#footer {
   border-top: 1px solid #600;
   background-color: #fff;
-  font-family: museo-sans, sans-serif;
 }
-div#footer p.credits {
-}
-div#footer ul.validators {
-}
-div#footer ul.validators li {
-}
+div#footer p.credits { }
+div#footer ul.validators { }
+div#footer ul.validators li { }
 
 /*Navigation*/
 
-ul#navigation {
-  background-color: #500;
+div#navigation ul li {
 }
 
-ul#navigation li {
+div#navigation ul li a {
 }
 
-ul#navigation li a {
+div#navigation ul li a:visited {
 }
 
-ul#navigation li a:visited {
+div#navigation ul li a:hover,
+div#navigation ul li a:focus {
 }
 
-ul#navigation li a:hover,
-ul#navigation li a:focus {
-}
+/* Navigation Bar */
+
+/* Limiting this section to font, color and decoration */
+
+  div#navigation {
+    display: table;
+    margin: 0px;
+    width: 100%
+  }
+
+  div#navigation ul {
+    display: table-row;
+  }
+
+  div#navigation ul li a {
+    padding: 0px;
+    display: table-cell;
+    text-align: center;
+    text-decoration:none;
+    color: #fff;
+    background: #595855;
+    vertical-align: middle;
+  }
+
+  div#navigation ul li {
+    float: left;
+  }
+
+  div#navigation ul li a.selected {
+    border: 1px solid #aaa;
+    text-decoration:none;
+    color: #595855;
+    background: #fff;
+  }
+
+  div#navigation li {
+    font-family: museo-sans, sans-serif;
+  }
+
+  div#navigation ul li a:hover {
+    color: #CAE6E8;
+    background: #313F54;
+  }
+
+  div#navigation ul li a.selected:hover {
+    color: #595855;
+    background: #fff;
+  }
+
+  div#navigation ul li {
+    float: left;
+  }
 
 /*Content Typography: Headings*/
-div#content h1 {
-  font-family: museo-slab, sans-serif;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 36px;
-  margin-bottom: 18px;
-}
-div#content h2 {
-  font-family: museo-slab, sans-serif;
-  font-weight: 700;
-  font-size: 1.1em;
-}
-div#content h3 {
-  font-family: museo-slab, sans-serif;
-}
-div#content h4 {
-  font-family: museo-slab, sans-serif;
-}
-div#content h5 {
-  font-family: museo-slab, sans-serif;
-}
-div#content h6 {
-  font-family: museo-slab, sans-serif;
-}
-div#content h2 a {
-  text-decoration: none;
-}
+  div#content h1, 
+  div#content h2, 
+  div#content h3, 
+  div#content h4, 
+  div#content h5, 
+  div#content h6 {
+    font-family: museo-slab, serif;
+  }
+  div#content h1  {
+    font-size: 2em;
+    line-height: 36px;
+    margin-bottom: 18px;
+  }
+  div#content h2 {
+    font-size: 1.1em;
+  }
+  div#content h3 {
+  }
+  div#content h4 {
+  }
+  div#content h5 {
+  }
+  div#content h6 {
+  }
+  div#content * a {
+    text-decoration: none;
+  }
 
 /*Content Typography: Paragraphs*/
 div#content p {
   font-family: museo-sans, sans-serif;
 }
 
+div#content div:last-child p:last-child {
+  margin-bottom: 0px;
+}
+
 /*Content Typography: Unordered Lists*/
 div#content ul {
 }
+
 div#content ul li {
   list-style-type: square;
   list-style-position:inside;
-  margin-left: 12px;
-  text-indent: -12px;
+  margin-left: 1em;
+  text-indent: -1em;
 }
+
 /*Nested*/
 div#content * li ul {
 }
+
 div#content * li ul li {
   list-style-type: square;
+  list-style-position:inside;
+  margin-left: 2em;
+  text-indent: -1em;
 }
 
 /*Content Typography: Ordered Lists*/
@@ -161,6 +226,7 @@ div#content ol {
 }
 div#content ol li {
 }
+
 /*Nested*/
 div#content * li ol {
 }
@@ -190,52 +256,6 @@ div#footer a:visited {
 div#footer a:hover,
 div#footer a:focus {
 }
-
-/* Navigation Bar */
-
-/* Limiting this section to font, color and decoration */
-
-  #navigation ul {
-  }
-  #navigation li {
-    font-family: museo-sans;
-  }
-  #navigation ul li a {
-    text-decoration:none;
-    color: #fff;
-    background: #595855;
-  }
-  #navigation ul li a:hover {
-    color: #CAE6E8;
-    background: #313F54;
-  }
-  #navigation ul li a.selected {
-    border: 1px solid #aaa;
-    text-decoration:none;
-    color: #595855;
-    background: #fff;
-  }
-
-  #navigation div.navblock {
-  }
-  #navigation p {
-    font-family: museo-sans;
-  }
-  #navigation p a {
-    text-decoration:none;
-    color: #fff;
-    background: #595855;
-  }
-  #navigation p a:hover {
-    color: #CAE6E8;
-    background: #313F54;
-  }
-  #navigation p a.selected {
-    text-decoration:none;
-    color: #595855;
-    background: #fff;
-  }
-
 
 /* Job Tools Block */
 
@@ -283,41 +303,8 @@ body#resume div#content .job {
   margin-bottom: 0px;
 }
 
-/* Skills Tables */
-
-table.skills {
-  margin: 10px 0px;
-  border: 1px solid #ccc;
-  width: 100%;
-}
-table.skills tr > td {
-  width: 60%;
-  padding-left: 10px;
-  line-height: 10px;
-}
-table.skills tr > td + td {
-  text-align: center;
-  width: 15%;
-  padding-left: 0px;
-  line-height: 10px;
-}
-tr > td {
-  padding: 7px;
-  font-size: 10px;
-}
-table.skills tr.skilldiv {
-  background-color: #ddd;
-}
-table.skills tr.skilldiv > td {
-  font-weight: 700;
-  padding-left: 7px;
-}
-
 /* General Table Formats */
 
-td.altrow {
-  background-color: #eee;
-}
 tr > th {
   background-color: #ccc;
   padding: 7px;
@@ -329,215 +316,206 @@ tr > th {
 tr:nth-child(odd) {
   background-color:#eee;
 }
+
 tr:nth-child(even) {
   background-color:#fff;
 }
 
-/* Visual Aids for Positioning */
+table.general {
+  margin: 18px 0px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
 
-/*
-  div#page {
-    border: 1px #000 solid;
-  }
+table.general:last-child {
+  margin: 0px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
 
-  div#header {
-    border: 1px #090 solid;
-  }
+tr > td {
+  padding: 7px;
+  font-size: 10px;
+}
 
-  div#navigation {
-    border: 1px solid #aaa;
-  }
+/* Skills Tables */
 
-  div#content {
-    border: 1px #900 solid;
-  }
+table.skills tr > td {
+  width: 60%;
+  padding-left: 10px;
+  line-height: 10px;
+}
 
-  div#footer {
-    border: 1px #009 solid;
-  }
-*/
+table.skills tr > td + td {
+  text-align: center;
+  width: 15%;
+  padding-left: 0px;
+  line-height: 10px;
+}
+
+table.skills tr.skilldiv {
+  background-color: #ddd;
+}
+
+table.skills tr.skilldiv > td {
+  font-weight: 700;
+  padding-left: 7px;
+}
+
+/* Resume Writing Tables */
+
+table.resumewriting tr th {
+  text-align: center;
+  width: 5%;
+  padding-left: 0px;
+  line-height: 10px;
+}
+
+table.resumewriting tr th.wide {
+  text-align: center;
+  width: 15%;
+  padding-left: 0px;
+  line-height: 10px;
+}
 
 /* Grids */
 
 /* Basic / 300px Grid */
 
 @media screen {
-  /* See http://978.gs/ */
 
-  html {
-    line-height: 18px;
-    font-size: 12px;
-  }
+  /* BEGIN - General HTML - BEGIN */
 
-  html.grid {
-    background-image: url('img/18px-baseline.png');
-  }
+    html { /* Set font / line height / background */
+      line-height: 18px;
+      font-size: 12px;
+    }
 
-  body.px #page {
-    width: 320px; /*Total with works out to 320*/
-    padding: 0px 0px;
-  }
-  body.pxg #page {
-    width: 320px; /*Total with works out to 320*/
-    padding: 0px 0px;
-    background-image: url('img/300-grid.png');
-  }
-  body.pct #page {
-    width: 90%; /*Total with works out to 320*/
-    min-width: 320px; /*Total with works out to 320*/
-    padding: 0px 0%;
-  }
+    html.grid { /* Set Visible Baseline Grid */
+      background-image: url('img/18px-baseline.png');
+    }
 
-  body.px #page div#header, body.px #page div#content, body.px #page div#footer {
-    padding: 18px 10px;
-    margin: 0px 0px;
-  }
+  /* END - General HTML - END */
 
-  body.pct #page div#header, body.pct #page div#content, body.pct #page div#footer {
-    padding: 18px 3.1250%;
-    margin: 0px 0%;
-  }
+  /* BEGIN - Body Widths - BEGIN */
 
-  div#header {
-    height: 90px;
-  }
-  
-  body div#header h1 {
-    text-align: center;
-    line-height: 36px;
-    font-size: 24px;
-  }
-  
-  div#header p {
-    text-align: center;
-  }
+    body.px #page, body.pxg #page {
+      width: 320px;
+    }
+
+    body.pxg #page {
+      background-image: url('img/300-grid.png');
+    }
+
+    body.pct #page {
+      width: 90%;
+      min-width: 320px; /* Minimum set to width of mobile device */
+    }
+
+    body.px #page > div {
+      padding: 18px 10px;
+    }
+
+    body.pct #page > div {
+      padding: 18px 3.1250%;
+    }
+
+    body #page div#content {
+      padding-bottom: 0px;
+    }
+    
+  /* END - Body Widths - END */
+
+  /* BEGIN - Header Styles - BEGIN */
+
+    div#header {
+      height: 90px;
+    }
+
+    div#header h1 {
+      text-align: center;
+      line-height: 36px;
+      font-size: 24px;
+    }
+
+    div#header p {
+      text-align: center;
+    }
+
+  /* END - Header Styles - END */
 
   /* BEGIN - Navigation Bar at the Top of the Page below the header - BEGIN */
 
     /* Using display:table to set up a flexible set of navigation buttons */
 
-   body.px #page div#navigation {
-      display: table;
-      padding: 0px 10px 18px 10px;
-      margin: 0px 0px;
-      width: 100%
-    }
-
-   body.pct #page div#navigation {
-      display: table;
-      padding: 18px 3.1250%;
-      margin: 0px 0%;
-      width: 100%
-    }
-
-    div#navigation ul {
-      display: table-row;
+    div#navigation ul li, div#navigation ul li a {
+      height: 54px;
     }
 
     body.px div#navigation ul li, body.px div#navigation ul li a {
-      height: 54px;
       width: 66px;
     }
 
     body.pct div#navigation ul li, body.pct div#navigation ul li a {
-      height: 54px;
       width: 22%;
     }
 
     body.px div#navigation ul li {
-      float: left;
       margin-left: 12px;
     }
 
     body.pct div#navigation ul li {
-      float: left;
       margin-left: 4%;
     }
 
-    div#navigation ul li a {
-      display: table-cell;
-      text-align: center;
-      vertical-align: middle;
-    }
-
-    body.px div#navigation ul li:first-child {
+    body.px div#navigation ul li:first-child, body.pct div#navigation ul li:first-child {
       margin-left: 0px;
     }
 
-    body.pct div#navigation ul li:first-child {
-      margin-left: 0%;
-    }
-
     body.px div#navigation ul li a.selected {
-      border: 1px solid #aaa;
-      text-decoration:none;
-      color: #595855;
-      background: #fff;
-      height: 52px;
       width: 64px;
     }
 
     body.pct div#navigation ul li a.selected {
-      border: 1px solid #aaa;
-      text-decoration:none;
-      color: #595855;
-      background: #fff;
-      height: 52px;
       width: 21.3333%;
     }
 
   /* END - Navigation Bar at the Top of the Page below the header - END */
 
-  body.px div#content {
-    clear: both;
-    padding: 18px 10px;
-    margin: 0px -10px;
-  }
+  /* BEGIN - Main Content Block - BEGIN */
 
-  body.pct div#content {
-    clear: both;
-    padding: 18px 1.5%;
-    margin: 0px -1.7%;
-  }
+    div#content div.main h2, div#content p {
+      clear: both;
+      margin-bottom: 18px;
+    }
 
-  div#content div.main h2 {
-    clear: both;
-    margin-bottom: 18px;
-  }
+    body#resume.* div#content div.main h2, body#resume.* div#content div.main h3 {
+      padding-top: 18px;
+    }
 
-  body#resume div#content div.main h2, body#resume div#content div.main h3 {
-    margin-top: 18px;
-  }
+    div#content #block1 h2 {
+      padding: 0px;
+    }
 
-  div#content p {
-    clear: both;
-    margin-bottom: 18px;
-  }
+    /* BEGIN - Main Content Block EndCaps - BEGIN */
 
-  div#content p:last-child {
-    margin-bottom: 18px;
-  }
+      body#about div#content div p:last-child {
+        margin-bottom: 0px;
+      }
 
-  div#content #block1 h2 {
-    padding: 0px;
-  }
+      body#home div#content div:last-child p:last-child {
+        margin-bottom: 0px;
+      }
 
-  div#content h2 {
-    padding-top: 0px;
-  }
+    /* END - Main Content Block EndCaps - END */
+
+  /* END - Main Content Block - END */
 
   /* BEGIN - Footer - BEGIN */
 
     #page div#footer {
       font-size: 9px;
       line-height: 18px;
-    }
-    div#footer p.credits {
-    }
-    div#footer ul.validators {
-    }
-    div#footer ul.validators li {
-      display: inline;
     }
 
   /* END - Footer - END */
@@ -554,44 +532,41 @@ tr:nth-child(even) {
 /* 748 Grid */
 
 @media screen and (min-width: 768px) {
-  /* See http://978.gs/ */
 
-  html { /* Set font / line height / background */
-    line-height: 18px;
-    font-size: 12px;
-  }
+  /* BEGIN - General HTML - BEGIN */
 
-  html.grid { /* Set Visible Baseline Grid */
-    background-image: url('img/18px-baseline.png');
-  }
+    html { /* Set font / line height / background */
+      line-height: 18px;
+      font-size: 12px;
+    }
+
+    html.grid { /* Set Visible Baseline Grid */
+      background-image: url('img/18px-baseline.png');
+    }
+
+  /* END - General HTML - END */
 
   /* BEGIN - Body Widths - BEGIN */
 
-    body.px #page { /* Set #page to 748 plus 10 margin for 768 */
-      width: 768px; 
-      padding: 0px 0px;
+    body.px #page, body.pxg #page { /* Set #page to 748 plus 10 margin for 768 */
+      width: 768px;
     }
 
-    body.pxg #page { /* Set #page to 748 plus 10 margin for 768 */
-      width: 768px; 
-      padding: 0px 0px;
+    body.pxg #page { 
       background-image: url('img/748-grid.png');
     }
 
-    body.pct #page { /* Set #page to 748 plus 10 margin for 768 */
+    body.pct #page { 
       width: 90%; 
       min-width: 748px; /* Set Minimum Width of 748 px */
-      padding: 0px 0%;
     }
 
-    body.px #page div#header, body.px #page div#navigation, body.px #page div#content, body.px #page div#footer {
+    body.px #page > div {
       padding: 18px 10px;
-      margin: 0px 0px;
     }
 
-    body.pct #page div#header, body.pct #page div#navigation, body.pct #page div#content, body.pct #page div#footer {
+    body.pct #page > div {
       padding: 18px 1.3021%;
-      margin: 0px 0%;
     }
 
   /* END - Body Widths - END */
@@ -602,7 +577,7 @@ tr:nth-child(even) {
       height: 102px;
     }
 
-    body div#header h1 {
+    div#header h1 {
       text-align: left;
     }
 
@@ -614,47 +589,29 @@ tr:nth-child(even) {
 
   /* BEGIN - Navigation Bar at the Top of the Page below the header - BEGIN */
 
-    body.px #page div#navigation {
+    #page div#navigation {
       position: absolute;
       top: 84px;
       clear: both;
       display: inline-table;
     }
 
-    body.pct #page div#navigation {
-      position: absolute;
-      top: 84px;
-      clear: both;
-      display: inline-table;
-    }
-
-    #page div#navigation ul {
-      display: table-row;
+    body #page div#navigation ul li, body #page div#navigation ul li a {
+      height: 36px;
     }
 
     body.px #page div#navigation ul li, body.px #page div#navigation ul li a {
-      height: 36px;
       width: 108px;
+      margin-left: 20px;
     }
 
     body.pct #page div#navigation ul li, body.pct #page div#navigation ul li a {
-      height: 36px;
       width: 14.4385027%;
+      margin-left: 2.6737968%;
     }
 
-    body.px #page div#navigation ul li a {
-      display: table-cell;
-      padding: 0px 0px;
-      text-align: center;
-      vertical-align: middle;
-    }
-
-    body.px #page div#navigation ul li:first-child {
+    body #page div#navigation ul li:first-child {
       margin-left: 0px;
-    }
-
-    body.pct #page div#navigation ul li:first-child {
-      margin-left: 0%;
     }
 
   /* END - Navigation Bar at the Top of the Page below the header - END */
@@ -665,15 +622,17 @@ tr:nth-child(even) {
       overflow: auto;
     }
 
+    div#content div.block {
+      float: left;
+    }
+
     body.px #page div#content div.block {
       width: 364px;
-      float: left;
       margin-left: 20px;
     }
 
     body.pct #page div#content div.block {
       width: 48.6631016%;
-      float: left;
       margin-left: 2.6737968%;
     }
 
@@ -681,11 +640,123 @@ tr:nth-child(even) {
       padding-top: 0px;
     }
 
-    body.px #page div#content div.block:first-child, body.px #page div#content div#block3 {
+    body #page div#content div.block:first-child, body #page div#content div#block3 {
       margin-left: 0px;
     }
 
-    body.pct #page div#content div.block:first-child, body.pct #page div#content div#block3 {
+  /* END - Main Content Block - END */
+
+  /* BEGIN - Footer - BEGIN */
+
+    #page div#footer {
+      font-size: 12px;
+      line-height: 18px;
+    }
+    div#footer p.credits { }
+
+  /* END - Footer - END */
+}
+
+/* 978 Grid */
+
+@media screen and (min-width: 1002px) {
+
+  /* BEGIN - General HTML - BEGIN */
+
+    html { /* Set font / line height / background */
+      line-height: 18px;
+      font-size: 14px;
+    }
+
+    html.grid { 
+      background-image: url('img/18px-baseline.png');
+    }
+
+  /* BEGIN - General HTML - BEGIN */
+
+  /* BEGIN - Body Widths - BEGIN */
+
+    body.px #page, body.pxg #page {
+      width: 1002px;
+    }
+
+    body.pxg #page {
+      background-image: url('img/978-grid.png');
+    }
+
+    body.pct #page {
+      width: 90%;
+    }
+
+    body.px #page > div {
+      padding: 18px 12px;
+    }
+
+    body.pct #page > div {
+      padding: 18px 1.1976%;
+    }
+
+  /* END - Body Widths - END */
+
+  /* BEGIN - Header Styles - BEGIN */
+
+    div#header {
+      height: 108px;
+    }
+
+    div#header h1 {
+      text-align: left;
+    }
+
+  /* END - Header Styles - END */
+
+  /* BEGIN - Navigation Bar at the Top of the Page below the header - BEGIN */
+
+    body #page div#navigation {
+      top: 90px;
+    }
+
+    body #page div#navigation ul li, body #page div#navigation ul li a {
+      height: 36px;
+      margin-bottom: 0px;
+    }
+
+    body.px #page div#navigation ul li, body.px #page div#navigation ul li a {
+      width: 138px;
+      margin-left: 30px;
+    }
+
+    body.pct #page div#navigation ul li, body.pct #page div#navigation ul li a {
+      width: 14.1104294%;
+      margin-left: 3.0674847%;
+    }
+
+    body #page div#navigation ul li:first-child {
+      margin-left: 0px;
+    }
+
+  /* END - Navigation Bar at the Top of the Page below the header - END */
+
+  /* BEGIN - Main Content Block - BEGIN */
+
+    div#content {
+    }
+
+    body #page div#content div.block, body #page div#content div#block3 {
+      float: left;
+    }
+
+    body.px #page div#content div.block, body.px #page div#content div#block3 {
+      width: 306px;
+      margin-left: 30px;
+    }
+
+    body.pct #page div#content div.block, body.pct #page div#content div#block3 {
+      width: 31.2883436%;
+      margin-left: 3.0674847%;
+    }
+
+    body #page div#content div.block:first-child {
       margin-left: 0%;
     }
 
@@ -697,111 +768,120 @@ tr:nth-child(even) {
       font-size: 12px;
       line-height: 18px;
     }
-    div#footer p.credits {
-    }
-    div#footer ul.validators {
-    }
-    div#footer ul.validators li {
-      display: inline;
-    }
 
   /* END - Footer - END */
 }
 
-/* 978 Grid */
+/* 1248 Grid */
 
-@media screen and (min-width: 1002px) {
-  /* See http://978.gs/ */
+@media screen and (min-width: 1248px) {
 
-  html { /* Set font / line height / background */
-    line-height: 18px;
-    font-size: 14px;
-  }
+  /* BEGIN - General HTML - BEGIN */
 
-  html.grid { 
-    background-image: url('img/18px-baseline.png');
-  }
+    html { /* Set font / line height / background */
+      line-height: 18px;
+      font-size: 14px;
+    }
 
-  body.px #page {
-    width: 1002px; /*Total with works out to 1008*/
-    padding: 0px 0px;
-  }
+    html.grid { /* Set font / line height / background */
+      background-image: url('img/18px-baseline.png');
+    }
 
-  body.pxg #page {
-    width: 1002px; /*Total with works out to 1008*/
-    padding: 0px 0px;
-    background-image: url('img/978-grid.png');
-  }
+  /* BEGIN - General HTML - BEGIN */
 
-  body.pct #page {
-    width: 90%; /*Total with works out to 1008*/
-    padding: 0px 0%;
-  }
+  /* BEGIN - Body Widths - BEGIN */
 
-  body.px #page div#header, body.px #page div#navigation, body.px #page div#content, body.px #page div#footer {
-    padding: 18px 12px;
-    margin: 0px 0px;
-  }
+    body.px #page, body.pxg #page {
+      width: 1218px;
+    }
 
-  body.pct #page div#header, body.pct #page div#navigation, body.pct #page div#content, body.pct #page div#footer {
-    padding: 18px 1.1976%;
-    margin: 0px 0%;
-  }
+    body.pxg #page {
+      background-image: url('img/1248-grid.png');
+    }
 
-  div#header {
-    height: 108px;
-  }
-  body div#header h1 {
-    text-align: left;
-  }
+    body.pct #page {
+      width: 90%; /*Total with works out to 1248*/
+    }
+
+    body.px #page > div {
+      padding: 18px 15px;
+    }
+
+    body.pct #page > div {
+      padding: 18px 1.2019%;
+    }
+
+  /* END - Body Widths - END */
+
+  /* BEGIN - Header Styles - BEGIN */
+
+    body div#header h1 {
+      text-align: left;
+      line-height: 36px;
+      font-size: 28px;
+    }
+
+    #page p.contact, #page p.tagline {
+      position: absolute;
+      top: 54px;
+    }
+
+    body.px #page p.tagline {
+      width: 828px;
+    }
+
+    body.pct #page p.tagline {
+      width: 67.9802956%;
+    }
+
+    #page div#header {
+      height: 90px;
+    }
+
+    body div#header p.contact {
+      text-align: right;
+    }
+
+    body.px div#header p.contact {
+      left: 858px;
+      width: 350px;
+    }
+
+    body.pct div#header p.contact {
+      left: 69.6546871%;
+      width: 29.5566502%;
+    }
+
+  /* END - Header Styles - END */
 
   /* BEGIN - Navigation Bar at the Top of the Page below the header - BEGIN */
 
-    body.px #page div#navigation {
-      position: absolute;
-      top: 90px;
-      clear: both;
+    body #page div#navigation {
+      top: 72px;
       display: inline-table;
+      width: 100%;
     }
 
-    body.pct #page div#navigation {
-      position: absolute;
-      top: 90px;
-      clear: both;
-      display: inline-table;
-    }
-
-    #page div#navigation ul {
-      display: table-row;
+    body #page div#navigation ul li, body.px #page div#navigation ul li a {
+      height: 36px;
     }
 
     body.px #page div#navigation ul li, body.px #page div#navigation ul li a {
-      height: 36px;
-      width: 138px;
-      margin-bottom: 0px;
+      width: 178px;
       margin-left: 30px;
     }
 
     body.pct #page div#navigation ul li, body.pct #page div#navigation ul li a {
-      height: 36px;
-      width: 14.1104294%;
+      width: 14.6141215%;
+      margin-left: 2.4630542%;
+    }
+
+    body #page div#navigation ul li {
       margin-bottom: 0px;
-      margin-left: 30px;
     }
 
-    #page div#navigation ul li a {
-      display: table-cell;
-      padding: 0px 0px;
-      text-align: center;
-      vertical-align: middle;
-    }
-
-    body.px #page div#navigation ul li:first-child {
+    body #page div#navigation ul li:first-child {
       margin-left: 0px;
-    }
-
-    body.pct #page div#navigation ul li:first-child {
-      margin-left: 0%;
     }
 
   /* END - Navigation Bar at the Top of the Page below the header - END */
@@ -812,184 +892,12 @@ tr:nth-child(even) {
     }
 
     body.px #page div#content div.block, body.px #page div#content div#block3 {
-      width: 306px;
-      float: left;
-      margin-left: 30px;
-    }
-
-    body.pct #page div#content div.block, body.pct #page div#content div#block3 {
-      width: 31.2883436%;
-      float: left;
-      margin-left: 3.0674847%;
-    }
-
-    body.px #page div#content div.block:first-child {
-      margin-left: 0px;
-    }
-
-    body.pct #page div#content div.block:first-child {
-      margin-left: 0%;
-    }
-
-  /* END - Main Content Block - END */
-
-  /* BEGIN - Footer - BEGIN */
-
-    #page div#footer {
-      font-size: 12px;
-      line-height: 18px;
-    }
-    div#footer p.credits {
-    }
-    div#footer ul.validators {
-    }
-    div#footer ul.validators li {
-      display: inline;
-    }
-
-  /* END - Footer - END */
-}
-
-/* 1248 Grid */
-
-@media screen and (min-width: 1248px) {
-  /* See http://978.gs/ */
-
-  html { /* Set font / line height / background */
-    line-height: 18px;
-    font-size: 14px;
-  }
-
-  html.grid { /* Set font / line height / background */
-    background-image: url('img/18px-baseline.png');
-  }
-
-  body.px #page {
-    width: 1218px; /*Total with works out to 1248*/
-    padding: 0px 0px;
-  }
-
-  body.pxg #page {
-    width: 1218px; /*Total with works out to 1248*/
-    padding: 0px 0px;
-    background-image: url('img/1248-grid.png');
-  }
-
-  body.pct #page {
-    width: 90%; /*Total with works out to 1248*/
-    padding: 0px 0%;
-  }
-
-  body.px #page div#header, body.px #page div#navigation. body.px #page div#content, body.px #page div#footer {
-    padding: 18px 15px;
-    margin: 0px 0px;
-  }
-
-  body.pct #page div#header, body.pct #page div#navigation, body.pct #page div#content, body.pct #page div#footer {
-    padding: 18px 1.2019%;
-    margin: 0px 0%;
-  }
-
-  body div#header h1 {
-    text-align: left;
-    line-height: 36px;
-    font-size: 28px;
-  }
-
-  #page p.contact, #page p.tagline {
-    position: absolute;
-    top: 54px;
-  }
-
-  body.px #page p.tagline {
-    width: 828px;
-  }
-
-  body.pct #page p.tagline {
-    width: 67.9802956%;
-  }
-
-  #page div#header {
-    height: 90px;
-  }
-
-  body.px div#header p.contact {
-    text-align: right;
-    left: 858px;
-    width: 350px;
-  }
-
-  body.pct div#header p.contact {
-    text-align: right;
-    left: 69.6546871%;
-    width: 29.5566502%;
-  }
-
-  /* BEGIN - Navigation Bar at the Top of the Page below the header - BEGIN */
-
-    body.px #page div#navigation {
-      top: 72px;
-      display: inline-table;
-      width: 100%;
-    }
-
-    body.pct #page div#navigation {
-      top: 72px;
-      display: inline-table;
-      width: 100%;
-    }
-
-    #page div#navigation ul {
-      display: table-row;
-    }
-
-    body.px #page div#navigation ul li, body.px #page div#navigation ul li a {
-      height: 36px;
-      width: 126px;
-    }
-
-    body.pct #page div#navigation ul li, body.pct #page div#navigation ul li a {
-      height: 36px;
-      width: 10.3448276%;
-    }
-
-    body.px #page div#navigation ul li {
-      margin-bottom: 0px;
-      margin-left: 30px;
-    }
-
-    body.pct #page div#navigation ul li {
-      margin-bottom: 0px;
-      margin-left: 2.4630542%;
-    }
-
-    #page div#navigation ul li a {
-      display: table-cell;
-      padding: 0px 0px;
-      text-align: center;
-      vertical-align: middle;
-    }
-
-    body.px #page div#navigation ul li:first-child {
-      margin-left: 0px;
-    }
-
-  /* END - Navigation Bar at the Top of the Page below the header - END */
-
-
-  /* BEGIN - Main Content Block - BEGIN */
-
-    div#content {
-
-    }
-
-    body.px #page div#content div.block, #page div#content div#block3 {
       width: 386px;
       float: left;
       margin-left: 30px;
     }
 
-    body.px #page div#content div.block:first-child {
+    body #page div#content div.block:first-child {
       margin-left: 0px;
     }
 
@@ -1000,13 +908,6 @@ tr:nth-child(even) {
     #page div#footer {
       font-size: 12px;
       line-height: 18px;
-    }
-    div#footer p.credits {
-    }
-    div#footer ul.validators {
-    }
-    div#footer ul.validators li {
-      display: inline;
     }
 
   /* END - Footer - END */
@@ -1016,130 +917,112 @@ tr:nth-child(even) {
 /* 1378 Grid */
 
 @media screen and (min-width: 1408px) {
-  html { /* Set font / line height / background */
-    line-height: 24px;
-    font-size: 18px;
-/*
-    background-image: url('img/24px-baseline.png');
-*/
-  }
 
-  body.px #page {
-    width: 1408px; /*Total with works out to 1408*/
-    padding: 0px 0px;
-  }
+  /* BEGIN - General HTML - BEGIN */
 
-  body.pxg #page {
-    width: 1408px; /*Total with works out to 1408*/
-    padding: 0px 0px;
-    background-image: url('img/1378-grid.png');
-  }
+    html { /* Set font / line height / background */
+      line-height: 24px;
+      font-size: 18px;
+    }
 
-  body.pct #page {
-    width: 90%; /*Total with works out to 1408*/
-    max-width: 1408px;
-    padding: 0px 0%;
-  }
+    html.grid { /* Set font / line height / background */
+      background-image: url('img/24px-baseline.png');
+    }
 
-  body.px #page div#header, body.px #page div#navigation, body.px #page div#content, body.px #page div#footer {
-    padding: 18px 15px;
-    margin: 0px 0px;
-  }
+  /* BEGIN - General HTML - BEGIN */
 
-  body.pct #page div#header, body.pct #page div#navigation, body.px #page div#content, body.px #page div#footer {
-    padding: 18px 1.0653%;
-    margin: 0px 0%;
-  }
+  /* BEGIN - Body Widths - BEGIN */
 
-  #page div#header {
-    height: 108px;
-  }
+    body.px #page, body.pxg #page {
+      width: 1408px;
+    }
 
-  body div#header h1 {
-    line-height: 48px;
-    font-size: 42px;
-  }
+    body.pxg #page {
+      background-image: url('img/1378-grid.png');
+    }
 
-  #page div#header p {
-    font-size: 15px;
-  }
+    body.pct #page {
+      width: 90%;
+      max-width: 1408px;
+    }
 
-  body.px #page div#header p.tagline {
-    position: absolute;
-    top: 72px;
-    width: 938px;
-  }
+    body.px #page > div {
+      padding: 18px 15px;
+    }
 
-  body.pct #page div#header p.tagline {
-    position: absolute;
-    top: 72px;
-    width: 68.0696662%;
-  }
+    body.pct #page > div {
+      padding: 18px 1.0653%;
+    }
 
-  body.px #page div#header p.contact {
-    text-align: right;
-    position: absolute;
-    top: 72px;
-    left: 968px;
-    width: 400px;
-  }
+  /* END - Body Widths - END */
 
-  body.pct #page div#header p.contact {
-    text-align: right;
-    position: absolute;
-    top: 72px;
-    left: 69.5515893%;
-    width: 29.7532656%;
-  }
+  /* BEGIN - Header Styles - BEGIN */
+
+    #page div#header {
+      height: 108px;
+    }
+
+    div#header h1 {
+      line-height: 48px;
+      font-size: 42px;
+    }
+
+    div#header p {
+      font-size: 15px;
+    }
+
+    div#header > p {
+      position: absolute;
+      top: 72px;
+    }
+
+    body.px #page div#header p.tagline {
+      width: 938px;
+    }
+
+    body.pct #page div#header p.tagline {
+      width: 68.0696662%;
+    }
+
+    body #page div#header p.contact {
+      text-align: right;
+    }
+
+    body.px #page div#header p.contact {
+      left: 968px;
+      width: 400px;
+    }
+
+    body.pct #page div#header p.contact {
+      left: 69.5515893%;
+      width: 29.7532656%;
+    }
+
+  /* END - Header Styles - END */
 
   /* BEGIN - Navigation Bar at the Top of the Page below the header - BEGIN */
 
-    body.px #page div#navigation {
+    body #page div#navigation {
       top: 90px;
-      display: inline-table;
-      width: 100%;
     }
 
-    body.pct #page div#navigation {
-      top: 90px;
-      display: inline-table;
-      width: 100%;
-    }
-
-    #page div#navigation ul {
-      display: table-row;
+    body #page div#navigation ul li, body #page div#navigation ul li a {
+      height: 36px;
+      font-size: 18px;
+      margin-bottom: 0px;
     }
 
     body.px #page div#navigation ul li, body.px #page div#navigation ul li a {
-      height: 36px;
-      width: 146px;
-      font-size: 18px;
-    }
-
-    body.pct #page div#navigation ul li, body.pct #page div#navigation ul li a {
-      height: 36px;
-      width: 10.5950653%;
-      font-size: 18px;
-    }
-
-    body.px #page div#navigation ul li {
-      margin-bottom: 0px;
+      width: 204.66px;
       margin-left: 30px;
     }
 
-    body.pct #page div#navigation ul li {
-      margin-bottom: 0px;
+    body.pct #page div#navigation ul li, body.pct #page div#navigation ul li a {
+      width: 14.8523905%;
       margin-left: 2.1770682%;
     }
 
-    #page div#navigation ul li a {
-      display: table-cell;
-      padding: 0px 0px;
-      text-align: center;
-      vertical-align: middle;
-    }
-
-    body.px #page div#navigation ul li:first-child {
+    body #page div#navigation ul li:first-child {
       margin-left: 0px;
     }
 
@@ -1155,15 +1038,17 @@ tr:nth-child(even) {
       padding: 0px;
     }
 
-    body.px #content .block, #block2, #block3 {
-      width: 438px;
+    body #content .block, #block2, #block3 {
       float: left;
-      margin-left: 30px;
     }
 
     body.px #content .block, #block2, #block3 {
+      width: 438px;
+      margin-left: 30px;
+    }
+
+    body.pct #content .block, #block2, #block3 {
       width: 31.8819545%;
-      float: left;
       margin-left: 2.1770682%;
     }
 
@@ -1173,18 +1058,13 @@ tr:nth-child(even) {
 
   /* END - Main Content Block - END */
 
-  /* Footer */
-  #page div#footer p.credits, #page div#footer ul.validators li {
-    font-size: 12px;
-    line-height: 24px;
-  }
-  div#footer p.credits {
-  }
-  div#footer ul.validators {
-  }
-  div#footer ul.validators li {
-    display: inline;
-  }
+  /* BEGIN - Footer - BEGIN */
+
+    #page div#footer p.credits, #page div#footer ul.validators li {
+      font-size: 12px;
+      line-height: 24px;
+    }
+
+  /* END - Footer - END */
 
 }
-
