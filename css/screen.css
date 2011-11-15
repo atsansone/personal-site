@@ -11,7 +11,7 @@ The main fonts are from TypeKit: Museo Sans and Museo Slab Serif.
 /* Base Styles */
 
 /* Bold on headings, b, and strong */
-h1,h2,h3,h4,h5,h6,b,strong { font-weight: bold; }
+h1,h2,h3,h4,h5,h6,b,strong { font-weight: 700; }
 /* Italic on i, em, and cite: */
 i,em,cite { font-style: italic; }
 /* Dotted border and help cursor to abbr and acronym: */
@@ -55,6 +55,7 @@ div#header {
 
 div#header h1 {
   font-family: museo-slab, serif;
+  font-weight: 700;
 }
 
 div#header h1 a {
@@ -120,10 +121,20 @@ div#content, div#footer {
 
 /* Limiting this section to font, color and decoration */
 
+/*
+  div#navcontainer {
+    display: block;
+    width:100%;
+    min-width:400px;
+    margin: 0px;
+    padding: 0px;
+  }
+*/
+
   div#navigation {
     display: table;
     margin: 0px;
-    width: 100%
+    padding: 0px;
   }
 
   div#navigation ul {
@@ -444,6 +455,12 @@ h2 {
       padding: 18px 3.1250%;
     }
 
+    body.pct #page div#navigation { /* OK, this corrects the display:table issue between browsers */
+      margin: auto;
+      width: 93.75%;
+      padding: 18px 0px;
+    }
+
   /* END - Body Widths - END */
 
   /* BEGIN - Header Styles - BEGIN */
@@ -473,6 +490,10 @@ h2 {
 
     /* Using display:table to set up a flexible set of navigation buttons */
 
+    body.pct #page div#navigation, body.px #page div#navigation {
+      padding-top: 0px;
+    }
+
     div#navigation ul li, div#navigation ul li a {
       height: 54px;
     }
@@ -483,6 +504,7 @@ h2 {
 
     body.pct div#navigation ul li, body.pct div#navigation ul li a {
       width: 22%;
+      min-width: 66px;
     }
 
     body.px div#navigation ul li {
@@ -570,6 +592,7 @@ h2 {
   /* END - Footer - END */
 }
 
+
 /* 748 Grid */
 
 @media screen and (max-width: 767px) {
@@ -617,6 +640,11 @@ h2 {
     body.pct #page > div {
       padding: 18px 1.3021%;
     }
+
+    body.pct #page > div {
+      width: 100%;
+    }
+
 
   /* END - Body Widths - END */
 
@@ -666,6 +694,10 @@ h2 {
   /* END - Navigation Bar at the Top of the Page below the header - END */
 
   /* BEGIN - Main Content Block - BEGIN */
+
+    body.pct #page div#navigation, body.px #page div#navigation {
+      padding-top: 18px;
+    }
 
     #page div#content {
       overflow: auto;
@@ -1056,7 +1088,7 @@ h2 {
   /* BEGIN - Header Styles - BEGIN */
 
     #page div#header {
-      height: 84px;
+      height: 78px;
     }
 
     div#header h1 {
