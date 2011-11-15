@@ -81,40 +81,40 @@ div#content, div#footer {
 }
 
 /* Content */
-div#content {
-  border-top: 3px solid #aaa;
-  background-color: #eee;
-}
+  div#content {
+    border-top: 3px solid #aaa;
+    background-color: #eee;
+  }
 
-div#main {
-}
+  div#main {
+  }
 
-div#supporting {
-}
+  div#supporting {
+  }
 
 /* Footer */
-div#footer {
-  border-top: 1px solid #600;
-  background-color: #fff;
-}
-div#footer p.credits { }
-div#footer ul.validators { }
-div#footer ul.validators li { }
+  div#footer {
+    border-top: 1px solid #600;
+    background-color: #fff;
+  }
+  div#footer p.credits { }
+  div#footer ul.validators { }
+  div#footer ul.validators li { }
 
-/*Navigation*/
+  /*Navigation*/
 
-div#navigation ul li {
-}
+  div#navigation ul li {
+  }
 
-div#navigation ul li a {
-}
+  div#navigation ul li a {
+  }
 
-div#navigation ul li a:visited {
-}
+  div#navigation ul li a:visited {
+  }
 
-div#navigation ul li a:hover,
-div#navigation ul li a:focus {
-}
+  div#navigation ul li a:hover,
+  div#navigation ul li a:focus {
+  }
 
 /* Navigation Bar */
 
@@ -197,7 +197,7 @@ div#navigation ul li a:focus {
   div#content * a {
     text-decoration: none;
   }
-  ul + h2, ul + h3, ul + h4 {
+  div.row + h2, ul + h2, ul + h3, ul + h4 {
     margin-top: 18px;
   }
   div#content p.company {
@@ -398,6 +398,10 @@ img {
   max-width: 100%;
 }
 
+h2 {
+  border-bottom: 1px #444 solid;
+}
+
 /* Grids */
 
 /* Basic / 300px Grid */
@@ -527,6 +531,7 @@ img {
       display: inline-block;
       clear: both;
       margin-top: 18px;
+      width: 100%
     }
 
 
@@ -660,7 +665,7 @@ img {
       margin-left: 20px;
     }
 
-    body.pct #page div#content div.block {
+    body.pct #page div#content div.block { /* 748px / 2 */
       width: 48.6631016%;
       margin-left: 2.6737968%;
     }
@@ -673,11 +678,13 @@ img {
       margin-left: 0px;
     }
 
+    body#printdesign div#row div.block:first-child {
+      margin-left: 0px;
+    }
 
     div#row div.block:first-child {
       margin-left: 0px;
     }
-
 
     div#content p:last-child {
       margin-bottom: 0px;
@@ -790,13 +797,27 @@ img {
       margin-left: 30px;
     }
 
-    body.pct #page div#content div.block, body.pct #page div#content div#block3 {
+    body.pct #page div#content div.block, body.pct #page div#content div#block3 { /* 978px / 3 */
       width: 31.2883436%;
       margin-left: 3.0674847%;
     }
 
-    body #page div#content div.block:first-child {
+    body#printdesign.px #page div#content div.block {
+      width: 474px;
+      margin-left: 30px;
+    }
+
+    body#printdesign.pct #page div#content div.block { /* 978px / 2 */
+      width: 48.4662577%;
+      margin-left: 3.0674847%;
+    }
+
+    body #page div#content div.block:first-child, body#printdesign #page div#content div.block:first-child { /* Need to declare both body and body#printdesign or this will not work */
       margin-left: 0%;
+    }
+
+    div#content p:last-child {
+      margin-bottom: 0px;
     }
 
   /* END - Main Content Block - END */
@@ -811,7 +832,7 @@ img {
   /* END - Footer - END */
 }
 
-/* 1248 Grid */
+/* 1218 Grid */
 
 @media screen and (min-width: 1248px) {
 
@@ -930,14 +951,36 @@ img {
     div#content {
     }
 
+    body #page div#content div.block {
+      float: left;
+    }
+
     body.px #page div#content div.block, body.px #page div#content div#block3 {
       width: 386px;
-      float: left;
       margin-left: 30px;
     }
 
-    body #page div#content div.block:first-child {
-      margin-left: 0px;
+    body.pct #page div#content div.block, body.pct #page div#content div#block3 { /* 1218px / 3 */
+      width: 31.6912972%;
+      margin-left: 2.4630542%;
+    }
+
+    body#printdesign.px #page div#content div.block {
+      width: 594px;
+      margin-left: 30px;
+    }
+
+    body#printdesign.pct #page div#content div.block { /* 1218px / 2 */
+      width: 48.7684729%;
+      margin-left: 2.4630542%;
+    }
+
+    body #page div#content div.block:first-child, body#printdesign #page div#content div.block:first-child { /* Need to declare both body and body#printdesign or this will not work */
+      margin-left: 0%;
+    }
+
+    div#content p:last-child {
+      margin-bottom: 0px;
     }
 
   /* END - Main Content Block - END */
@@ -1061,37 +1104,38 @@ img {
       margin-left: 2.1770682%;
     }
 
-    body #page div#navigation ul li:first-child {
-      margin-left: 0px;
-    }
-
   /* END - Navigation Bar at the Top of the Page below the header - END */
 
   /* BEGIN - Main Content Block - BEGIN */
 
     div#content {
-      clear: both;
     }
 
-    div#content h2 {
-      padding: 0px;
-    }
-
-    body #content .block, #block2, #block3 {
+    body #page div#content div.block {
       float: left;
     }
 
-    body.px #content .block, #block2, #block3 {
-      width: 438px;
+    body.px #page div#content div.block, body.px #page div#content div#block3 {
+      width: 439px;
       margin-left: 30px;
     }
 
-    body.pct #content .block, #block2, #block3 {
+    body.pct #page div#content div.block, body.pct #page div#content div#block3 { /* 1378px / 3 */
       width: 31.8819545%;
       margin-left: 2.1770682%;
     }
 
-    body.px #page .block:first-child {
+    body#printdesign.px #page div#content div.block {
+      width: 674px;
+      margin-left: 30px;
+    }
+
+    body#printdesign.pct #page div#content div.block { /* 1378px / 2 */
+      width: 48.9114659%;
+      margin-left: 2.1770682%;
+    }
+
+    body #page div#content div.block:first-child, body#printdesign #page div#content div.block:first-child { /* Need to declare both body and body#printdesign or this will not work */
       margin-left: 0px;
     }
 
@@ -1113,6 +1157,10 @@ img {
       tr > td, tr > th {
         padding: 7px;
         font-size: 15px;
+      }
+
+      div.row + h2, ul + h2, ul + h3, ul + h4 {
+        margin-top: 24px;
       }
 
     /* End enlargement */
