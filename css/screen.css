@@ -1,5 +1,13 @@
 ﻿/* screen.css: Screen Styles */
 
+/* 
+
+This is set up to go from a 1 column (320px) to 2 column (768px) to 3 column (978px+) home page layout.
+
+The main fonts are from TypeKit: Museo Sans and Museo Slab Serif.
+
+*/
+
 /* Base Styles */
 
 /* Bold on headings, b, and strong */
@@ -189,6 +197,12 @@ div#navigation ul li a:focus {
   div#content * a {
     text-decoration: none;
   }
+  ul + h2, ul + h3, ul + h4 {
+    margin-top: 18px;
+  }
+  div#content p.company {
+    margin-bottom: 0px;
+  }
 
 /*Content Typography: Paragraphs*/
 div#content p {
@@ -260,21 +274,24 @@ div#footer a:focus {
 /* Job Tools Block */
 
 body#resume div#content ul.tools {
-  font-size: 10px;
-  line-height: 12px;
   background-color: #fff;
   margin: 12px 0px;
   border: 1px #888 solid;
 }
+
+/* This formatting is for the special tools listing per job. It applies to everything except the largest size */
+
 body#resume div#content ul.tools li {
+  font-size: 10px;
+  line-height: 12px;
   list-style-type: none;
   padding: 12px;
 }
 
 body#resume div#content ul.tools > li {
   list-style-type: none;
-  margin-left: 40px;
-  text-indent: -40px;
+  margin-left: 3.5em;
+  text-indent: -3.5em;
 }
 
 body#resume div#content p.company {
@@ -343,14 +360,12 @@ tr > td {
 table.skills tr > td {
   width: 60%;
   padding-left: 10px;
-  line-height: 10px;
 }
 
 table.skills tr > td + td {
   text-align: center;
   width: 15%;
   padding-left: 0px;
-  line-height: 10px;
 }
 
 table.skills tr.skilldiv {
@@ -358,6 +373,7 @@ table.skills tr.skilldiv {
 }
 
 table.skills tr.skilldiv > td {
+  padding-left: 20px;
   font-weight: 700;
   padding-left: 7px;
 }
@@ -368,14 +384,18 @@ table.resumewriting tr th {
   text-align: center;
   width: 5%;
   padding-left: 0px;
-  line-height: 10px;
 }
 
 table.resumewriting tr th.wide {
   text-align: center;
   width: 15%;
   padding-left: 0px;
-  line-height: 10px;
+}
+
+/* Images */
+
+img {
+  max-width: 100%;
 }
 
 /* Grids */
@@ -420,10 +440,6 @@ table.resumewriting tr th.wide {
       padding: 18px 3.1250%;
     }
 
-    body #page div#content {
-      padding-bottom: 0px;
-    }
-    
   /* END - Body Widths - END */
 
   /* BEGIN - Header Styles - BEGIN */
@@ -440,6 +456,11 @@ table.resumewriting tr th.wide {
 
     div#header p {
       text-align: center;
+    }
+    
+    caption {
+      display: inline-block;
+      margin-bottom: 18px;
     }
 
   /* END - Header Styles - END */
@@ -484,12 +505,12 @@ table.resumewriting tr th.wide {
 
   /* BEGIN - Main Content Block - BEGIN */
 
-    div#content div.main h2, div#content p {
+    div#content div#main h2, div#content p {
       clear: both;
       margin-bottom: 18px;
     }
 
-    body#resume.* div#content div.main h2, body#resume.* div#content div.main h3 {
+    body#resume.* div#content div#main h2, body#resume.* div#content div#main h3 {
       padding-top: 18px;
     }
 
@@ -497,11 +518,19 @@ table.resumewriting tr th.wide {
       padding: 0px;
     }
 
-    /* BEGIN - Main Content Block EndCaps - BEGIN */
+    div.row h2 {
+      clear: both;
+      margin-top: 18px;
+    }
 
-      body#about div#content div p:last-child {
-        margin-bottom: 0px;
-      }
+    div.row {
+      display: inline-block;
+      clear: both;
+      margin-top: 18px;
+    }
+
+
+    /* BEGIN - Main Content Block EndCaps - BEGIN */
 
       body#home div#content div:last-child p:last-child {
         margin-bottom: 0px;
@@ -640,8 +669,18 @@ table.resumewriting tr th.wide {
       padding-top: 0px;
     }
 
-    body #page div#content div.block:first-child, body #page div#content div#block3 {
+    body #page div#content div.main div.block:first-child, body #page div#content div#block3 {
       margin-left: 0px;
+    }
+
+
+    div#row div.block:first-child {
+      margin-left: 0px;
+    }
+
+
+    div#content p:last-child {
+      margin-bottom: 0px;
     }
 
   /* END - Main Content Block - END */
@@ -947,11 +986,11 @@ table.resumewriting tr th.wide {
     }
 
     body.px #page > div {
-      padding: 18px 15px;
+      padding: 24px 15px;
     }
 
     body.pct #page > div {
-      padding: 18px 1.0653%;
+      padding: 24px 1.0653%;
     }
 
   /* END - Body Widths - END */
@@ -959,7 +998,7 @@ table.resumewriting tr th.wide {
   /* BEGIN - Header Styles - BEGIN */
 
     #page div#header {
-      height: 108px;
+      height: 102px;
     }
 
     div#header h1 {
@@ -1055,6 +1094,28 @@ table.resumewriting tr th.wide {
     body.px #page .block:first-child {
       margin-left: 0px;
     }
+
+    /* Enlarging the fonts for the maximum browser size */
+
+      body#resume div#content ul.tools li {
+        font-size: 15px;
+        line-height: 24px;
+        list-style-type: none;
+        padding: 12px;
+      }
+
+      body#resume div#content ul.tools > li {
+        list-style-type: none;
+        margin-left: 3.5em;
+        text-indent: -3.5em;
+      }
+
+      tr > td, tr > th {
+        padding: 7px;
+        font-size: 15px;
+      }
+
+    /* End enlargement */
 
   /* END - Main Content Block - END */
 
