@@ -514,7 +514,7 @@ h2 {
       margin-bottom: 18px;
     }
 
-    body#resume.* div#content div#main h2, body#resume.* div#content div#main h3 {
+    body#resume div#content div#main h2, body#resume.* div#content div#main h3 {
       padding-top: 18px;
     }
 
