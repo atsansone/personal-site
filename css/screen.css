@@ -1,6 +1,6 @@
 ﻿/* screen.css: Screen Styles */
 
-/* 
+/*
 
 This is set up to go from a 1 column (320px) to 2 column (768px) to 3 column (978px+) home page layout.
 
@@ -27,7 +27,7 @@ body {
   font-family: museo-sans, sans-serif;
   padding: 0px;
 }
-    
+
 /* BEGIN - Clear Margins and Padding at appropriate points - BEGIN */
 
   #page > div {
@@ -35,7 +35,7 @@ body {
   }
 
 /* END - Clear Margins and Padding at appropriate points - END */
-    
+
 /* Major Divisions */
 
 /* Page (Containing Div) */
@@ -181,11 +181,11 @@ div#content, div#footer {
   }
 
 /*Content Typography: Headings*/
-  div#content h1, 
-  div#content h2, 
-  div#content h3, 
-  div#content h4, 
-  div#content h5, 
+  div#content h1,
+  div#content h2,
+  div#content h3,
+  div#content h4,
+  div#content h5,
   div#content h6 {
     font-family: museo-slab, serif;
   }
@@ -493,7 +493,7 @@ h2 {
     div#header p {
       text-align: center;
     }
-    
+
     caption {
       display: inline-block;
       margin-bottom: 18px;
@@ -631,12 +631,12 @@ h2 {
       width: 768px;
     }
 
-    body.pxg #page { 
+    body.pxg #page {
       background-image: url('img/748-grid.png');
     }
 
-    body.pct #page { 
-      width: 90%; 
+    body.pct #page {
+      width: 90%;
       min-width: 748px; /* Set Minimum Width of 748 px */
     }
 
@@ -672,6 +672,10 @@ h2 {
   /* END - Header - END */
 
   /* BEGIN - Navigation Bar at the Top of the Page below the header - BEGIN */
+
+    body.pct #page div#content, body.px #page div#content {
+      padding-bottom: 18px;
+    }
 
     #page div#navigation {
       position: absolute;
@@ -772,7 +776,7 @@ h2 {
       font-size: 14px;
     }
 
-    html.grid { 
+    html.grid {
       background-image: url('img/18px-baseline.png');
     }
 
@@ -1253,3 +1257,4 @@ h2 {
   /* END - Footer - END */
 
 }
+
