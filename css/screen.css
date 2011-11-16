@@ -673,6 +673,12 @@ h2 {
 
   /* BEGIN - Navigation Bar at the Top of the Page below the header - BEGIN */
 
+    body.pct #page div#navigation { /* OK, this corrects the display:table issue between browsers */
+      margin: 0px;
+      width: 100%;
+      padding: 18px 1.3021%;
+    }
+
     body.pct #page div#content, body.px #page div#content {
       padding-bottom: 18px;
     }
