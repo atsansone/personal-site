@@ -4,7 +4,7 @@
 
 This is set up to go from a 1 column (320px) to 2 column (768px) to 3 column (978px+) home page layout.
 
-The main fonts are from TypeKit: Museo Sans and Museo Slab Serif.
+The#main fonts are from TypeKit: Museo Sans and Museo Slab Serif.
 
 */
 
@@ -30,7 +30,7 @@ body {
     
 /* BEGIN - Clear Margins and Padding at appropriate points - BEGIN */
 
-  #page > div {
+  #page > section {
     margin: 0px;
   }
 
@@ -40,7 +40,7 @@ body {
 
 /* Page (Containing Div) */
 
-div#page {
+#page {
   background-color: #eee;
   position: relative;
   margin: 0px auto;
@@ -48,73 +48,79 @@ div#page {
 
 /* Header */
 
-div#header {
+header {
   background-color: #500;
   padding: 0px;
 }
 
-div#header h1 {
+header h1 {
   font-family: museo-slab, serif;
   font-weight: 700;
 }
 
-div#header h1 a {
+header h1 a {
   text-decoration: none;
   color: #fff;
 }
 
-div#header p.tagline {
+header p.tagline {
   color: #fff;
 }
 
-div#header ul.accessibility {
+header ul.accessibility {
   display: none;
 }
 
 /* Contact Details */
-div#header p.contact {
+header p.contact {
   background-color: #500;
   color: #fff;
 }
 
-div#content, div#footer {
+#content, footer {
   font-family: museo-sans, sans-serif;
 }
 
 /* Content */
-  div#content {
+  #content {
     border-top: 3px solid #aaa;
     background-color: #eee;
   }
 
-  div#main {
+  #main {
+    overflow: auto;
   }
 
-  div#supporting {
+  #supporting {
+    overflow: auto;
+  }
+
+  .trace {
+    border: 0px solid #000;
   }
 
 /* Footer */
-  div#footer {
+  footer {
     border-top: 1px solid #600;
     background-color: #fff;
   }
-  div#footer p.credits { }
-  div#footer ul.validators { }
-  div#footer ul.validators li { }
+  footer p.credits { }
+  footer ul.validators { }
+  footer ul.validators li { }
 
   /*Navigation*/
 
-  div#navigation ul li {
+  nav ul li {
   }
 
-  div#navigation ul li a {
+  nav ul li a {
   }
 
-  div#navigation ul li a:visited {
+  nav ul li a:visited {
   }
 
-  div#navigation ul li a:hover,
-  div#navigation ul li a:focus {
+  nav ul li a:hover,
+  nav ul li a:focus {
   }
 
 /* Navigation Bar */
@@ -131,17 +137,17 @@ div#content, div#footer {
   }
 */
 
-  div#navigation {
+  nav {
     display: table;
     margin: 0px;
     padding: 0px;
   }
 
-  div#navigation ul {
+  nav ul {
     display: table-row;
   }
 
-  div#navigation ul li a {
+  nav ul li a {
     padding: 0px;
     display: table-cell;
     text-align: center;
@@ -151,84 +157,84 @@ div#content, div#footer {
     vertical-align: middle;
   }
 
-  div#navigation ul li {
+  nav ul li {
     float: left;
   }
 
-  div#navigation ul li a.selected {
+  nav ul li a.selected {
     border: 1px solid #aaa;
     text-decoration:none;
     color: #595855;
     background: #fff;
   }
 
-  div#navigation li {
+  nav li {
     font-family: museo-sans, sans-serif;
   }
 
-  div#navigation ul li a:hover {
+  nav ul li a:hover {
     color: #CAE6E8;
     background: #313F54;
   }
 
-  div#navigation ul li a.selected:hover {
+  nav ul li a.selected:hover {
     color: #595855;
     background: #fff;
   }
 
-  div#navigation ul li {
+  nav ul li {
     float: left;
   }
 
 /*Content Typography: Headings*/
-  div#content h1, 
-  div#content h2, 
-  div#content h3, 
-  div#content h4, 
-  div#content h5, 
-  div#content h6 {
+  #content h1, 
+  #content h2, 
+  #content h3, 
+  #content h4, 
+  #content h5, 
+  #content h6 {
     font-family: museo-slab, serif;
   }
-  div#content h1  {
+  #content h1  {
     font-size: 2em;
     line-height: 36px;
     margin-bottom: 18px;
   }
-  div#content h2 {
+  #content h2 {
     font-size: 1.1em;
   }
-  div#content h3 {
+  #content h3 {
   }
-  div#content h4 {
+  #content h4 {
   }
-  div#content h5 {
+  #content h5 {
   }
-  div#content h6 {
+  #content h6 {
   }
-  div#content * a {
+  #content * a {
     text-decoration: none;
   }
   div.row + h2, ul + h2, ul + h3, ul + h4 {
     margin-top: 18px;
   }
-  div#content p.company {
+  #content p.company {
     margin-bottom: 0px;
   }
 
 /*Content Typography: Paragraphs*/
-div#content p {
+#content p {
   font-family: museo-sans, sans-serif;
 }
 
-div#content div:last-child p:last-child {
+#content div:last-child p:last-child {
   margin-bottom: 0px;
 }
 
 /*Content Typography: Unordered Lists*/
-div#content ul {
+#content ul {
 }
 
-div#content ul li {
+#content ul li {
   list-style-type: square;
   list-style-position:inside;
   margin-left: 1em;
@@ -236,10 +242,10 @@ div#content ul li {
 }
 
 /*Nested*/
-div#content * li ul {
+#content * li ul {
 }
 
-div#content * li ul li {
+#content * li ul li {
   list-style-type: square;
   list-style-position:inside;
   margin-left: 2em;
@@ -247,44 +253,44 @@ div#content * li ul li {
 }
 
 /*Content Typography: Ordered Lists*/
-div#content ol {
+#content ol {
 }
-div#content ol li {
+#content ol li {
 }
 
 /*Nested*/
-div#content * li ol {
+#content * li ol {
 }
-div#content * li ol li {
-}
-
-/*Content Typography: Links*/
-div#content a {
-  color: #313F54;
-  text-decoration: none;
-}
-div#content a:visited {
-  color: #444;
-}
-div#content a:hover,
-div#content a:focus {
+#content * li ol li {
 }
 
 /*Content Typography: Links*/
-div#footer a {
+#content a {
   color: #313F54;
   text-decoration: none;
 }
-div#footer a:visited {
+#content a:visited {
   color: #444;
 }
-div#footer a:hover,
-div#footer a:focus {
+#content a:hover,
+#content a:focus {
+}
+
+/*Content Typography: Links*/
+footer a {
+  color: #313F54;
+  text-decoration: none;
+}
+footer a:visited {
+  color: #444;
+}
+footer a:hover,
+footer a:focus {
 }
 
 /* Job Tools Block */
 
-body#resume div#content ul.tools {
+body#resume #content ul.tools {
   background-color: #fff;
   margin: 12px 0px;
   border: 1px #888 solid;
@@ -292,42 +298,42 @@ body#resume div#content ul.tools {
 
 /* This formatting is for the special tools listing per job. It applies to everything except the largest size */
 
-body#resume div#content ul.tools li {
+body#resume #content ul.tools li {
   font-size: 10px;
   line-height: 12px;
   list-style-type: none;
   padding: 12px;
 }
 
-body#resume div#content ul.tools > li {
+body#resume #content ul.tools > li {
   list-style-type: none;
   margin-left: 3.5em;
   text-indent: -3.5em;
 }
 
-body#resume div#content p.company {
+body#resume #content p.company {
   border-top: 1px #888 solid;
 }
 
-body#resume div#content ul.job, body#resume h3 {
+body#resume #content ul.job, body#resume h3 {
   overflow: auto;
 }
-body#resume div#content ul.job {
+body#resume #content ul.job {
   display: table;
 }
-body#resume div#content ul.job > li {
+body#resume #content ul.job > li {
   display: table-cell;
   margin-left: 0px;
   text-indent: 0px;
   list-style-type: none;
   float: left;
 }
-body#resume div#content ul.job > li + li {
+body#resume #content ul.job > li + li {
   display: table-cell;
   margin-left: 10px;
   list-style-type: square;
 }
-body#resume div#content .job {
+body#resume #content .job {
   margin-bottom: 0px;
 }
 
@@ -462,35 +468,34 @@ h2 {
       min-width: 320px; /* Minimum set to width of mobile device */
     }
 
-    body.px #page > div {
+    body.px #page #content, body.px #page nav, body.px #page header, body.px #page footer {
       padding: 18px 10px;
     }
 
-    body.pct #page > div {
+    body.pct #page #content, body.pct #page nav, body.pct #page header, body.pct #page footer {
       padding: 18px 3.1250%;
     }
 
-    body.pct #page div#navigation { /* OK, this corrects the display:table issue between browsers */
-      margin: auto;
-      width: 93.75%;
-      padding: 18px 0px;
+    body.px #page nav, body.pct #page nav {
+      padding-top: 0px;
     }
+
 
   /* END - Body Widths - END */
 
   /* BEGIN - Header Styles - BEGIN */
 
-    div#header {
+    header {
       height: 90px;
     }
 
-    div#header h1 {
+    header h1 {
       text-align: center;
       line-height: 36px;
       font-size: 24px;
     }
 
-    div#header p {
+    header p {
       text-align: center;
     }
     
@@ -505,40 +510,36 @@ h2 {
 
     /* Using display:table to set up a flexible set of navigation buttons */
 
-    body.pct #page div#content, body.px #page div#content {
-      padding-bottom: 0px;
-    }
-
-    div#navigation ul li, div#navigation ul li a {
+    nav ul li, nav ul li a {
       height: 54px;
     }
 
-    body.px div#navigation ul li, body.px div#navigation ul li a {
+    body.px nav ul li, body.px nav ul li a {
       width: 66px;
     }
 
-    body.pct div#navigation ul li, body.pct div#navigation ul li a {
+    body.pct nav ul li, body.pct nav ul li a {
       width: 22%;
       min-width: 66px;
     }
 
-    body.px div#navigation ul li {
+    body.px nav ul li {
       margin-left: 12px;
     }
 
-    body.pct div#navigation ul li {
+    body.pct nav ul li {
       margin-left: 4%;
     }
 
-    body.px div#navigation ul li:first-child, body.pct div#navigation ul li:first-child {
+    body.px nav ul li:first-child, body.pct nav ul li:first-child {
       margin-left: 0px;
     }
 
-    body.px div#navigation ul li a.selected {
+    body.px nav ul li a.selected {
       width: 64px;
     }
 
-    body.pct div#navigation ul li a.selected {
+    body.pct nav ul li a.selected {
       width: 21.3333%;
     }
 
@@ -546,25 +547,36 @@ h2 {
 
   /* BEGIN - Main Content Block - BEGIN */
 
-    div#content div#main h2, div#content p {
+    #content #main h2, #content p {
       clear: both;
-      margin-bottom: 18px;
     }
 
-    body#resume div#content div#main h2, body#resume div#content div#main h3 {
+    #content #main h2 {
+      break-before: column;
+    }
+
+    #main {
+      margin-bottom: 0px;
+    }
+
+    #resume #content #main h2, #resume #content #main h3 {
       padding-top: 18px;
     }
 
-    div#content #block1 h2 {
+    #content #block1 h2 {
       padding: 0px;
     }
 
-    div.row h2 {
+    #content p {
+      padding-bottom: 18px;
+    }
+
+    .row h2 {
       clear: both;
       margin-top: 18px;
     }
 
-    div.row {
+    .row {
       display: inline-block;
       clear: both;
       margin-top: 18px;
@@ -573,13 +585,13 @@ h2 {
 
     /* Print Design Portfolio */
 
-      body#printdesign h2 {
+      #printdesign h2 {
         margin-top: 18px;
         font-size: 20px;
         line-height: 36px;
       }
 
-      body#printdesign h3 {
+      #printdesign h3 {
         font-family: museo-sans, sans-serif;
         font-weight: 500;
         margin-bottom: 18px;
@@ -591,7 +603,7 @@ h2 {
 
   /* BEGIN - Footer - BEGIN */
 
-    #page div#footer {
+    footer {
       font-size: 9px;
       line-height: 18px;
     }
@@ -603,7 +615,7 @@ h2 {
 /* 748 Grid */
 
 @media screen and (max-width: 767px) {
-    #page div#navigation {
+    nav {
       background: #eee;
     }
 }
@@ -640,15 +652,12 @@ h2 {
       min-width: 748px; /* Set Minimum Width of 748 px */
     }
 
-    body.px #page > div {
+    body.px #page #content, body.px #page nav, body.px #page header, body.px #page footer {
       padding: 18px 10px;
     }
 
-    body.pct #page > div {
+    body.pct #page #content, body.pct #page nav, body.pct #page header, body.pct #page footer {
       padding: 18px 1.3021%;
-    }
-
-    body.pct #page > div {
       width: 100%;
     }
 
@@ -657,15 +666,15 @@ h2 {
 
   /* BEGIN - Header - BEGIN */
 
-    div#header {
+    header {
       height: 102px;
     }
 
-    div#header h1 {
+    header h1 {
       text-align: left;
     }
 
-    div#header p {
+    header p {
       text-align: left;
     }
 
@@ -673,28 +682,28 @@ h2 {
 
   /* BEGIN - Navigation Bar at the Top of the Page below the header - BEGIN */
 
-    #page div#navigation {
+    #page nav {
       position: absolute;
       top: 84px;
       clear: both;
-      display: inline-table;
+      display: table;
     }
 
-    body #page div#navigation ul li, body #page div#navigation ul li a {
+    body #page nav ul li, body #page nav ul li a {
       height: 36px;
     }
 
-    body.px #page div#navigation ul li, body.px #page div#navigation ul li a {
+    body.px #page nav ul li, body.px #page nav ul li a {
       width: 108px;
       margin-left: 20px;
     }
 
-    body.pct #page div#navigation ul li, body.pct #page div#navigation ul li a {
+    body.pct #page nav ul li, body.pct #page nav ul li a {
       width: 14.4385027%;
       margin-left: 2.6737968%;
     }
 
-    body #page div#navigation ul li:first-child {
+    body #page nav ul li:first-child {
       margin-left: 0px;
     }
 
@@ -702,61 +711,83 @@ h2 {
 
   /* BEGIN - Main Content Block - BEGIN */
 
-    body.pct #page div#navigation, body.px #page div#navigation {
+    body.pct #page nav, body.px #page nav {
       padding-top: 18px;
     }
 
-    #page div#content {
+    #page #content {
       overflow: auto;
     }
 
-    div#content div.block {
+    #content .block {
       float: left;
     }
 
-    body.px #page div#content div.block {
+    body.px #page #content .block {
       width: 364px;
       margin-left: 20px;
     }
 
-    body.pct #page div#content div.block { /* 748px / 2 */
+    body.pct #page #content .block { /* 748px / 2 */
       width: 48.6631016%;
       margin-left: 2.6737968%;
     }
 
-    div#content h2 {
+    #content h2 {
       padding-top: 0px;
     }
 
-    body #page div#content div.main div.block:first-child, body #page div#content div#block3 {
+    body #page #content #main .block:first-child, body #page #content #block3 {
       margin-left: 0px;
     }
 
-    body#printdesign div#row div.block:first-child {
+    body#printdesign div#row .block:first-child {
       margin-left: 0px;
     }
 
-    div#row div.block:first-child {
+    div#row .block:first-child {
       margin-left: 0px;
     }
 
-    div#content p:last-child {
+    #content p:last-child {
       margin-bottom: 0px;
     }
 
     table .hide {
       display: table-cell;
     }
+    
+    body.px#home #page #content #main, body.pct#home #page #content #main {
+      -moz-column-count: 2;
+      -moz-column-rule: 1px solid #313F54;
+      -webkit-column-count: 2;
+      -webkit-column-rule: 1px solid #313F54;
+      column-count: 2;
+      column-rule: 1px solid #313F54;
+    }
+
+    body.px#home #page #content #main {
+      -moz-column-gap: 20px;
+      -webkit-column-gap: 20px;
+      column-gap: 20px;
+    }
+
+    body.pct#home #page #content #main {
+      -moz-column-gap: 2.6737968%;
+      -webkit-column-gap: 2.6737968%;
+      column-gap: 2.6737968%;
+    }
+
 
   /* END - Main Content Block - END */
 
   /* BEGIN - Footer - BEGIN */
 
-    #page div#footer {
+    #page footer {
       font-size: 12px;
       line-height: 18px;
     }
-    div#footer p.credits { }
+    footer p.credits { }
 
   /* END - Footer - END */
 }
@@ -792,11 +823,11 @@ h2 {
       width: 90%;
     }
 
-    body.px #page > div {
+    body.px #page > section, body.px #page nav, body.px #page header, body.px #page footer {
       padding: 18px 12px;
     }
 
-    body.pct #page > div {
+    body.pct #page #content, body.pct #page nav, body.pct #page header, body.pct #page footer {
       padding: 18px 1.1976%;
     }
 
@@ -804,11 +835,11 @@ h2 {
 
   /* BEGIN - Header Styles - BEGIN */
 
-    div#header {
+    header {
       height: 108px;
     }
 
-    div#header h1 {
+    header h1 {
       text-align: left;
     }
 
@@ -816,26 +847,26 @@ h2 {
 
   /* BEGIN - Navigation Bar at the Top of the Page below the header - BEGIN */
 
-    body #page div#navigation {
+    body #page nav {
       top: 90px;
     }
 
-    body #page div#navigation ul li, body #page div#navigation ul li a {
+    body #page nav ul li, body #page nav ul li a {
       height: 36px;
       margin-bottom: 0px;
     }
 
-    body.px #page div#navigation ul li, body.px #page div#navigation ul li a {
+    body.px #page nav ul li, body.px #page nav ul li a {
       width: 138px;
       margin-left: 30px;
     }
 
-    body.pct #page div#navigation ul li, body.pct #page div#navigation ul li a {
+    body.pct #page nav ul li, body.pct #page nav ul li a {
       width: 14.1104294%;
       margin-left: 3.0674847%;
     }
 
-    body #page div#navigation ul li:first-child {
+    body #page nav ul li:first-child {
       margin-left: 0px;
     }
 
@@ -843,46 +874,65 @@ h2 {
 
   /* BEGIN - Main Content Block - BEGIN */
 
-    div#content {
+    #content {
     }
 
-    body #page div#content div.block, body #page div#content div#block3 {
+    body #page #content .block, body #page #content #block3 {
       float: left;
     }
 
-    body.px #page div#content div.block, body.px #page div#content div#block3 {
+    body.px #page #content .block, body.px #page #content .block3 {
       width: 306px;
       margin-left: 30px;
     }
 
-    body.pct #page div#content div.block, body.pct #page div#content div#block3 { /* 978px / 3 */
+    body.pct #page #content .block, body.pct #page #content .block3 { /* 978px / 3 */
       width: 31.2883436%;
       margin-left: 3.0674847%;
     }
 
-    body#printdesign.px #page div#content div.block {
+    body#printdesign.px #page #content .block {
       width: 474px;
       margin-left: 30px;
     }
 
-    body#printdesign.pct #page div#content div.block { /* 978px / 2 */
+    body#printdesign.pct #page #content .block { /* 978px / 2 */
       width: 48.4662577%;
       margin-left: 3.0674847%;
     }
 
-    body #page div#content div.block:first-child, body#printdesign #page div#content div.block:first-child { /* Need to declare both body and body#printdesign or this will not work */
+    body #page #content .block:first-child, body#printdesign #page #content .block:first-child { /* Need to declare both body and body#printdesign or this will not work */
       margin-left: 0%;
     }
 
-    div#content p:last-child {
+    #content p:last-child {
       margin-bottom: 0px;
     }
+    
+    body.px#home #page #content #main, body.pct#home #page #content #main {
+      -moz-column-count: 3;
+      -webkit-column-count: 3;
+      column-count: 3;
+    }
+
+    body.px#home #page #content #main {
+      -moz-column-gap: 30px;
+      -webkit-column-gap: 30px;
+      column-gap: 30px;
+    }
+
+    body.pct#home #page #content #main {
+      -moz-column-gap: 3.0674847%;
+      -webkit-column-gap: 3.0674847%;
+      column-gap: 3.0674847%;
+    }
+
 
   /* END - Main Content Block - END */
 
   /* BEGIN - Footer - BEGIN */
 
-    #page div#footer {
+    #page footer {
       font-size: 12px;
       line-height: 18px;
     }
@@ -921,11 +971,11 @@ h2 {
       width: 90%; /*Total with works out to 1248*/
     }
 
-    body.px #page > div {
+    body.px #page > section, body.px #page nav, body.px #page header, body.px #page footer {
       padding: 18px 15px;
     }
 
-    body.pct #page > div {
+    body.pct #page #content, body.pct #page nav, body.pct #page header, body.pct #page footer {
       padding: 18px 1.2019%;
     }
 
@@ -933,7 +983,7 @@ h2 {
 
   /* BEGIN - Header Styles - BEGIN */
 
-    body div#header h1 {
+    body header h1 {
       text-align: left;
       line-height: 36px;
       font-size: 28px;
@@ -952,20 +1002,20 @@ h2 {
       width: 67.9802956%;
     }
 
-    #page div#header {
+    #page header {
       height: 90px;
     }
 
-    body div#header p.contact {
+    body header p.contact {
       text-align: right;
     }
 
-    body.px div#header p.contact {
+    body.px header p.contact {
       left: 858px;
       width: 350px;
     }
 
-    body.pct div#header p.contact {
+    body.pct header p.contact {
       left: 69.6546871%;
       width: 29.5566502%;
     }
@@ -974,31 +1024,31 @@ h2 {
 
   /* BEGIN - Navigation Bar at the Top of the Page below the header - BEGIN */
 
-    body #page div#navigation {
+    body #page nav {
       top: 72px;
       display: inline-table;
       width: 100%;
     }
 
-    body #page div#navigation ul li, body.px #page div#navigation ul li a {
+    body #page nav ul li, body.px #page nav ul li a {
       height: 36px;
     }
 
-    body.px #page div#navigation ul li, body.px #page div#navigation ul li a {
+    body.px #page nav ul li, body.px #page nav ul li a {
       width: 178px;
       margin-left: 30px;
     }
 
-    body.pct #page div#navigation ul li, body.pct #page div#navigation ul li a {
+    body.pct #page nav ul li, body.pct #page nav ul li a {
       width: 14.6141215%;
       margin-left: 2.4630542%;
     }
 
-    body #page div#navigation ul li {
+    body #page nav ul li {
       margin-bottom: 0px;
     }
 
-    body #page div#navigation ul li:first-child {
+    body #page nav ul li:first-child {
       margin-left: 0px;
     }
 
@@ -1006,38 +1056,38 @@ h2 {
 
   /* BEGIN - Main Content Block - BEGIN */
 
-    div#content {
+    #content {
     }
 
-    body #page div#content div.block {
+    body #page #content .block {
       float: left;
     }
 
-    body.px #page div#content div.block, body.px #page div#content div#block3 {
+    body.px #page #content .block, body.px #page #content .block3 {
       width: 386px;
       margin-left: 30px;
     }
 
-    body.pct #page div#content div.block, body.pct #page div#content div#block3 { /* 1218px / 3 */
+    body.pct #page #content .block, body.pct #page #content .block3 { /* 1218px / 3 */
       width: 31.6912972%;
       margin-left: 2.4630542%;
     }
 
-    body#printdesign.px #page div#content div.block {
+    body#printdesign.px #page #content .block {
       width: 594px;
       margin-left: 30px;
     }
 
-    body#printdesign.pct #page div#content div.block { /* 1218px / 2 */
+    body#printdesign.pct #page #content .block { /* 1218px / 2 */
       width: 48.7684729%;
       margin-left: 2.4630542%;
     }
 
-    body #page div#content div.block:first-child, body#printdesign #page div#content div.block:first-child { /* Need to declare both body and body#printdesign or this will not work */
+    body #page #content .block:first-child, body#printdesign #page #content .block:first-child { /* Need to declare both body and body#printdesign or this will not work */
       margin-left: 0%;
     }
 
-    div#content p:last-child {
+    #content p:last-child {
       margin-bottom: 0px;
     }
 
@@ -1045,7 +1095,7 @@ h2 {
 
   /* BEGIN - Footer - BEGIN */
 
-    #page div#footer {
+    #page footer {
       font-size: 12px;
       line-height: 18px;
     }
@@ -1086,11 +1136,11 @@ h2 {
       max-width: 1408px;
     }
 
-    body.px #page > div {
+    body.px #page #content, body.px #page nav, body.px #page header, body.px #page footer {
       padding: 24px 15px;
     }
 
-    body.pct #page > div {
+    body.pct #page #content, body.pct #page nav, body.pct #page header, body.pct #page footer {
       padding: 24px 1.0653%;
     }
 
@@ -1098,42 +1148,42 @@ h2 {
 
   /* BEGIN - Header Styles - BEGIN */
 
-    #page div#header {
-      height: 78px;
+    #page header {
+      height: 72px;
     }
 
-    div#header h1 {
+    header h1 {
       line-height: 48px;
       font-size: 42px;
     }
 
-    div#header p {
+    header p {
       font-size: 15px;
     }
 
-    div#header > p {
+    header > p {
       position: absolute;
       top: 72px;
     }
 
-    body.px #page div#header p.tagline {
+    body.px #page header p.tagline {
       width: 938px;
     }
 
-    body.pct #page div#header p.tagline {
+    body.pct #page header p.tagline {
       width: 68.0696662%;
     }
 
-    body #page div#header p.contact {
+    body #page header p.contact {
       text-align: right;
     }
 
-    body.px #page div#header p.contact {
+    body.px #page header p.contact {
       left: 968px;
       width: 400px;
     }
 
-    body.pct #page div#header p.contact {
+    body.pct #page header p.contact {
       left: 69.5515893%;
       width: 29.7532656%;
     }
@@ -1142,27 +1192,27 @@ h2 {
 
   /* BEGIN - Navigation Bar at the Top of the Page below the header - BEGIN */
 
-    body #page div#navigation {
-      top: 72px;
+    body #page nav {
+      top: 60px;
     }
 
-    body #page div#navigation ul li, body #page div#navigation ul li a {
+    body #page nav ul li, body #page nav ul li a {
       height: 36px;
       font-size: 18px;
       margin-bottom: 0px;
     }
 
-    body.px #page div#navigation ul li, body.px #page div#navigation ul li a {
+    body.px #page nav ul li, body.px #page nav ul li a {
       width: 204.66px;
       margin-left: 30px;
     }
 
-    body.pct #page div#navigation ul li, body.pct #page div#navigation ul li a {
+    body.pct #page nav ul li, body.pct #page nav ul li a {
       width: 14.8523905%;
       margin-left: 2.1770682%;
     }
 
-    body #page div#navigation ul li:first-child {
+    body #page nav ul li:first-child {
       margin-left: 0px;
     }
 
@@ -1170,47 +1220,51 @@ h2 {
 
   /* BEGIN - Main Content Block - BEGIN */
 
-    div#content {
+    #content {
     }
 
-    body #page div#content div.block {
+    #main {
+
+    }
+
+    body #page #content .block {
       float: left;
     }
 
-    body.px #page div#content div.block, body.px #page div#content div#block3 {
+    body.px #page #content .block, body.px #page #content #block3 {
       width: 439px;
       margin-left: 30px;
     }
 
-    body.pct #page div#content div.block, body.pct #page div#content div#block3 { /* 1378px / 3 */
+    body.pct #page #content .block, body.pct #page #content #block3 { /* 1378px / 3 */
       width: 31.8819545%;
       margin-left: 2.1770682%;
     }
 
-    body#printdesign.px #page div#content div.block {
+    body#printdesign.px #page #content .block {
       width: 674px;
       margin-left: 30px;
     }
 
-    body#printdesign.pct #page div#content div.block { /* 1378px / 2 */
+    body#printdesign.pct #page #content .block { /* 1378px / 2 */
       width: 48.9114659%;
       margin-left: 2.1770682%;
     }
 
-    body #page div#content div.block:first-child, body#printdesign #page div#content div.block:first-child { /* Need to declare both body and body#printdesign or this will not work */
+    body #page #content .block:first-child, body#printdesign #page #content .block:first-child { /* Need to declare both body and body#printdesign or this will not work */
       margin-left: 0px;
     }
 
     /* Enlarging the fonts for the maximum browser size */
 
-      body#resume div#content ul.tools li {
+      body#resume #content ul.tools li {
         font-size: 15px;
         line-height: 24px;
         list-style-type: none;
         padding: 12px;
       }
 
-      body#resume div#content ul.tools > li {
+      body#resume #content ul.tools > li {
         list-style-type: none;
         margin-left: 3.5em;
         text-indent: -3.5em;
@@ -1245,7 +1299,7 @@ h2 {
 
   /* BEGIN - Footer - BEGIN */
 
-    #page div#footer p.credits, #page div#footer ul.validators li {
+    #page footer p.credits, #page footer ul.validators li {
       font-size: 12px;
       line-height: 24px;
     }
