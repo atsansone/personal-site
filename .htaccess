@@ -25,7 +25,7 @@
 ## index.html, or even index.php on URLs that end with a / (e.g., http://example.com/).
 ## But if yours is not, you can removing the hash (#) from the following line:
 ##
-# DirectoryIndex index.htm index.html index.php
+# DirectoryIndex index.php index.htm index.html
 ##
 ##
 ## Some Apache Web servers are configured to list the files in a directory that does not
