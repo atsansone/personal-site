@@ -11,33 +11,15 @@
 
   <title>Anthony Sansone</title>
 
-  <script type="text/javascript" src="http://use.typekit.com/zqz3gvl.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <? require_once($_SERVER['DOCUMENT_ROOT'].'/includes/styles.php'); ?>
 
-  <link rel="stylesheet" type="text/css" media="screen, print" href="/css/reset.css" />
+  <!--REMOVE COMMENT TAGS TO USE FACEBOOK SHARE METADATA:-->
 
-  <link rel="stylesheet" type="text/css" media="screen" href="/css/screen.css" />
-
-  <!--[if lte IE 7>
-  <link rel="stylesheet" type="text/css" media="screen" href="/css/screen-ie.css" />
-  <![endif]-->
-  <link rel="stylesheet" type="text/css" media="print" href="/css/print.css" />
-
-
-<!--REMOVE COMMENT TAGS TO USE FACEBOOK SHARE METADATA:-->
-
-<!--
-  <meta name="title" content="Match this with the content of the title tag above." />
-  <meta name="description" content="A short description of this page." />
-  <link rel="image_src" href="http://example.com/media/img/thumbnail.jpg" />
--->
-
-<!--REMOVE COMMENT TAGS TO USE FAVICON LINKS:-->
-
-  <!--For most browsers:-->
-  <link rel="icon" href="/media/img/favicon.png" type="image/png" />
-  <!--For Internet Explorer:-->
-  <link rel="shortcut icon" href="/media/img/favicon.ico" />
+  <!--
+    <meta name="title" content="Match this with the content of the title tag above." />
+    <meta name="description" content="A short description of this page." />
+    <link rel="image_src" href="http://example.com/media/img/thumbnail.jpg" />
+  -->
 
 </head>
 
@@ -45,7 +27,7 @@
 
 <div id="page">
 
-  <?php include('/includes/header.php'); ?>
+  <? require_once($_SERVER['DOCUMENT_ROOT'].'/includes/header.php'); ?>
 
   <section id="content">
 
@@ -1371,9 +1353,9 @@
 
   </section>
 
-  <?php include('/includes/nav.php'); ?>
+  <? require_once($_SERVER['DOCUMENT_ROOT'].'/includes/nav.php'); ?>
 
-  <?php include('/includes/footer.php'); ?>
+  <? require_once($_SERVER['DOCUMENT_ROOT'].'/includes/footer.php'); ?>
 
 </div>
 
