@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en" id="anthony-sansone-com">
+
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+  <!--Change the path to respond.min.js to reflect its location in your site-->
+  <script type="text/javascript" src="/js/respond.min.js"></script>
+
+  <title>Anthony Sansone</title>
+
+  <script type="text/javascript" src="http://use.typekit.com/zqz3gvl.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+  <link rel="stylesheet" type="text/css" media="screen, print" href="/css/reset.css" />
+
+  <link rel="stylesheet" type="text/css" media="screen" href="/css/screen.css" />
+
+  <!--[if lte IE 7>
+  <link rel="stylesheet" type="text/css" media="screen" href="/css/screen-ie.css" />
+  <![endif]-->
+  <link rel="stylesheet" type="text/css" media="print" href="/css/print.css" />
+
+
+<!--REMOVE COMMENT TAGS TO USE FACEBOOK SHARE METADATA:-->
+
+<!--
+  <meta name="title" content="Match this with the content of the title tag above." />
+  <meta name="description" content="A short description of this page." />
+  <link rel="image_src" href="http://example.com/media/img/thumbnail.jpg" />
+-->
+
+<!--REMOVE COMMENT TAGS TO USE FAVICON LINKS:-->
+
+  <!--For most browsers:-->
+  <link rel="icon" href="/media/img/favicon.png" type="image/png" />
+  <!--For Internet Explorer:-->
+  <link rel="shortcut icon" href="/media/img/favicon.ico" />
+
+</head>
+
+<body id="about" class="pct">
+
+<section id="page">
+
+  <?php include('/includes/header.php'); ?>
+
+  <section id="content">
+
+    <section class="main">
+
+      <h1>Resume Help</h1>
+
+      <h2>What are you selling? What story are you telling?</h2>
+      <ul>
+        <li>The resume is the movie trailer.
+        <ul>
+          <li>Include enough to grab attention, but keep really interesting stories vague, so you have something on which you can build in the cover letter and interview.</li>
+        </ul>
+        </li>
+        <li>What do you have to offer that is sufficiently unique to set you apart from someone else?</li>
+        <li>Feature the components which highlight you: such as listing job title above the company.</li>
+        <li>Try to put one or more points in the resume that will spur a question from the interviewer.</li>
+      </ul>
+
+      <h2>Consider the Reader</h2>
+
+      <h3>Machines</h3>
+      <p>A resume will be read by a computer more often than by a person, whether it is a job site or a corporate human resources program. This means that you will need to treat your resume like a web site; try to optimize the content for certain keywords used in job descriptions. These keywords will need to occur with a reasonable amount of frequency.</p>
+
+      <h3>People</h3>
+      <p>The reader will not know everything about the companies in and projects on which you worked. Be sure to provide quantifiable details about the companies which reflect well upon you. Be neither too vague nor too specific in activities in your resume. Write it as a tease; something that makes the interviewer will want to know more about you.</p>
+
+      <h3>Versions</h3>
+      <p>You will need more than one version of your resume. Yes, that sucks. Start by creating a version that has everything you would ever include about yourself and your capabilities. Then, when applying for a particular position, remove the positions and skills that are not as relevant to the position you wish to acquire. It’s creative editing, plain and simple.</p>
+
+      <h2>Mechanicals</h2>
+
+      <h3>File Format</h3>
+      <ul>
+        <li>It will be necessary to prepare your resume in three file formats: HTML, Microsoft Word and plain ASCII text.</li>
+        <li>No PDF (usually). No Photoshop (yes, I’ve seen it done). No InDesign.</li>
+        <li>Most all corporate resume programs and job web sites can import or utilize Word or Text files.</li>
+        <li>Text files will need to have hard line breaks at 70 characters if you want them to look as you intended on job sites.</li>
+        <li>Many major job sites have WYSIWYG editors that let you format the resume in a form field; some will even let you paste in HTML source code to format it exactly the way you want.</li>
+        <li>This will mean that you will need to have and get comfortable with a straight text editor like TextWrangler (Mac), TextPad (Win) or gEdit (Linux) to make your text copy as clean as possible.</li>
+        <li>Even with all of this work, you will still need to enter parts of your resume into a form that job sites use to make your resume searchable by employers.</li>
+      </ul>
+
+      <h3>Headline</h3>
+      <ul>
+        <li>For a job web site, you will need to create a one-line summary of what you are and what you offer in 8 to 10 words.</li>
+        <li>This may mean re-entering the same resume under multiple headlines or variations under different headlines.</li>
+      </ul>
+
+      <h3>Design</h3>
+      <ul>
+        <li>Design for the screen first, then for print.</li>
+        <li>Your resume should be attractive (choose color and font carefully) and readable (use sufficient white space and emphasis).</li>
+      </ul>
+
+      <h3>Length</h3>
+      <ul>
+        <li>Length is immaterial, really. If you have the experience and skills to support the length, use it.</li>
+        <li>Again, the resume is on screen first, so length is less recognized.</li>
+      </ul>
+
+      <h3>Language</h3>
+      <ul>
+        <li>Use industry-relevant language to describe your experience and skills.
+        <ul>
+          <li><b>For Example:</b> Saying you covered "higher education" in a position tells the reader that you understand universities and colleges and how they function. Saying you covered "transportation" tells the reader you know about road construction, mass transit and traffic patterns.</li>
+        </ul>
+        </li>
+        <li>Getting the jargon right sets your resume apart because it shows you actually know the employer’s business.</li>
+      </ul>
+
+      <h3>Fonts</h3>
+      <ul>
+        <li>Stay with no more than two typefaces: One sans-serif and one serif or two sans-serif.</li>
+        <li>Choose typefaces that are common across computers with Microsoft Office 2007/2010 (PC) and 2008/2011 (Mac).</li>
+      </ul>
+
+      <table class="general resumewriting small">
+        <tr>
+          <th class="wide">Font name</th>
+          <th class="wide hide">Font name</th>
+          <th class="wide">Variants</th>
+          <th class="wide">Type</th>
+          <th class="hide">Mac</th>
+          <th class="hide">PC</th>
+          <th class="wide hide">PC Source</th>
+          <th class="wide hide">Mac Source</th>
+        </tr>
+        <tr>
+          <td>Arial</td>
+          <td class="hide">Arial</td>
+          <td>Black, <b>Bold</b>, <b><i>Bold Italic</i></b>, <i>Italic</i>, Regular</td>
+          <td>Sans Serif</td>
+          <td class="hide">Y</td>
+          <td class="hide">Y</td>
+          <td class="hide">XP</td>
+          <td class="hide">OS X</td>
+        </tr>
+        <tr>
+          <td>Arial Narrow</td>
+          <td class="hide">Arial Narrow</td>
+          <td><b>Bold</b>, <b><i>Bold Italic</i></b>, <i>Italic</i>, Regular</td>
+          <td>Sans Serif</td>
+          <td class="hide">Y</td>
+          <td class="hide">Y</td>
+          <td class="hide">Office 2007</td>
+          <td class="hide">OS X</td>
+        </tr>
+        <tr>
+          <td>Calibri</td>
+          <td class="hide">Calibri</td>
+          <td><b>Bold</b>, <b><i>Bold Italic</i></b>, <i>Italic</i>, Regular</td>
+          <td>Sans Serif</td>
+          <td class="hide">Y</td>
+          <td class="hide">Y</td>
+          <td class="hide">Office 2007</td>
+          <td class="hide">Office 2008</td>
+        </tr>
+        <tr>
+          <td>Candara</td>
+          <td class="hide">Candara</td>
+          <td><b>Bold</b>, <b><i>Bold Italic</i></b>, <i>Italic</i>, Regular</td>
+          <td>Sans Serif</td>
+          <td class="hide">Y</td>
+          <td class="hide">Y</td>
+          <td class="hide">Office 2007</td>
+          <td class="hide">Office 2008</td>
+        </tr>
+        <tr>
+          <td>Corbel</td>
+          <td class="hide">Corbel</td>
+          <td><b>Bold</b>, <b><i>Bold Italic</i></b>, <i>Italic</i>, Regular</td>
+          <td>Sans Serif</td>
+          <td class="hide">Y</td>
+          <td class="hide">Y</td>
+          <td class="hide">Office 2007</td>
+          <td class="hide">Office 2008</td>
+        </tr>
+        <tr>
+          <td>Franklin Gothic</td>
+          <td class="hide">Franklin Gothic</td>
+          <td>Book, Book Italic</td>
+          <td>Sans Serif</td>
+          <td class="hide">Y</td>
+          <td class="hide">Y</td>
+          <td class="hide">Office 2007</td>
+          <td class="hide">Office 2008</td>
+        </tr>
+        <tr>
+          <td>Franklin Gothic</td>
+          <td class="hide">Franklin Gothic</td>
+          <td>Medium, Medium Italic</td>
+          <td>Sans Serif</td>
+          <td class="hide">Y</td>
+          <td class="hide">Y</td>
+          <td class="hide">XP</td>
+          <td class="hide">Office 2008</td>
+        </tr>
+        <tr>
+          <td>Gill Sans MT</td>
+          <td class="hide">Gill Sans MT</td>
+          <td><b>Bold</b>, <b><i>Bold Italic</i></b>, <i>Italic</i>, Regular</td>
+          <td>Sans Serif</td>
+          <td class="hide">Y</td>
+          <td class="hide">Y</td>
+          <td class="hide">Office 2007</td>
+          <td class="hide">Office 2008</td>
+        </tr>
+        <tr>
+          <td>Trebuchet MS</td>
+          <td class="hide">Trebuchet MS</td>
+          <td><b>Bold</b>, <b><i>Bold Italic</i></b>, <i>Italic</i>, Regular</td>
+          <td>Sans Serif</td>
+          <td class="hide">Y</td>
+          <td class="hide">Y</td>
+          <td class="hide">XP</td>
+          <td class="hide">OS X</td>
+        </tr>
+        <tr>
+          <td>Tw Cen MT</td>
+          <td class="hide">Tw Cen MT</td>
+          <td><b>Bold</b>, <b><i>Bold Italic</i></b>, <i>Italic</i>, Regular</td>
+          <td>Sans Serif</td>
+          <td class="hide">Y</td>
+          <td class="hide">Y</td>
+          <td class="hide">Office 2007</td>
+          <td class="hide">Office 2008</td>
+        </tr>
+        <tr>
+          <td>Verdana</td>
+          <td class="hide">Verdana</td>
+          <td><b>Bold</b>, <b><i>Bold Italic</i></b>, <i>Italic</i>, Regular</td>
+          <td>Sans Serif</td>
+          <td class="hide">Y</td>
+          <td class="hide">Y</td>
+          <td class="hide">XP</td>
+          <td class="hide">OS X</td>
+        </tr>
+        <tr>
+          <td>Cambria</td>
+          <td class="hide">Cambria</td>
+          <td><b>Bold</b>, <b><i>Bold Italic</i></b>, <i>Italic</i>, Regular</td>
+          <td>Serif</td>
+          <td class="hide">Y</td>
+          <td class="hide">Y</td>
+          <td class="hide">Office 2007</td>
+          <td class="hide">Office 2008</td>
+        </tr>
+        <tr>
+          <td>Contantia</td>
+          <td class="hide">Contantia</td>
+          <td><b>Bold</b>, <b><i>Bold Italic</i></b>, <i>Italic</i>, Regular</td>
+          <td>Serif</td>
+          <td class="hide">Y</td>
+          <td class="hide">Y</td>
+          <td class="hide">Office 2007</td>
+          <td class="hide">Office 2008</td>
+        </tr>
+        <tr>
+          <td>Georgia</td>
+          <td class="hide">Georgia</td>
+          <td><b>Bold</b>, <b><i>Bold Italic</i></b>, <i>Italic</i>, Regular</td>
+          <td>Serif</td>
+          <td class="hide">Y</td>
+          <td class="hide">Y</td>
+          <td class="hide">XP</td>
+          <td class="hide">OS X</td>
+        </tr>
+        <tr>
+          <td>Perpetua</td>
+          <td class="hide">Perpetua</td>
+          <td><b>Bold</b>, <b><i>Bold Italic</i></b>, <i>Italic</i>, Regular</td>
+          <td>Serif</td>
+          <td class="hide">Y</td>
+          <td class="hide">Y</td>
+          <td class="hide">Office 2007</td>
+          <td class="hide">Office 2008</td>
+        </tr>
+        <tr>
+          <td>Segoe UI</td>
+          <td class="hide">Segoe UI</td>
+          <td><b>Bold</b>, <b><i>Bold Italic</i></b>, <i>Italic</i>, Regular</td>
+          <td>Serif</td>
+          <td class="hide">Y</td>
+          <td class="hide">Y</td>
+          <td class="hide">Office 2007</td>
+          <td class="hide">OS X</td>
+        </tr>
+        <tr>
+          <td>Times New Roman</td>
+          <td class="hide">Times New Roman</td>
+          <td><b>Bold</b>, <b><i>Bold Italic</i></b>, <i>Italic</i>, Regular</td>
+          <td>Serif</td>
+          <td class="hide">Y</td>
+          <td class="hide">Y</td>
+          <td class="hide">XP</td>
+          <td class="hide">OS X</td>
+        </tr>
+        <tr>
+          <td>Webdings</td>
+          <td class="hide">?????????</td>
+          <td>Regular</td>
+          <td>Symbol</td>
+          <td class="hide">Y</td>
+          <td class="hide"></td>
+          <td class="hide">XP</td>
+          <td class="hide"></td>
+        </tr>
+        <tr>
+          <td>Wingdings</td>
+          <td class="hide">?????????</td>
+          <td>Regular</td>
+          <td>Symbol</td>
+          <td class="hide">Y</td>
+          <td class="hide"></td>
+          <td class="hide">XP</td>
+          <td class="hide"></td>
+        </tr>
+        <tr>
+          <td>Wingdings 2</td>
+          <td class="hide">?????????</td>
+          <td>Regular</td>
+          <td>Symbol</td>
+          <td class="hide">Y</td>
+          <td class="hide"></td>
+          <td class="hide">Office 2007</td>
+          <td class="hide"></td>
+        </tr>
+        <tr>
+          <td>Wingdings 3</td>
+          <td class="hide">?????????</td>
+          <td>Regular</td>
+          <td>Symbol</td>
+          <td class="hide">Y</td>
+          <td class="hide"></td>
+          <td class="hide">Office 2007</td>
+          <td class="hide"></td>
+        </tr>
+        <tr>
+          <td>Zapf Dingbats</td>
+          <td class="hide">Zapf Dingbats</td>
+          <td>Regular</td>
+          <td>Symbol</td>
+          <td class="hide"></td>
+          <td class="hide">Y</td>
+          <td class="hide"></td>
+          <td class="hide">OS X</td>
+        </tr>
+      </table>
+
+      <h3>Color</h3>
+      <ul>
+        <li>Use basic color highlights to provide some visual appeal for the reader.</li>
+        <li>Your resume will be seen on the screen first; use of color or grayscale rules and/or text to break up and highlight the space is helpful.</li>
+      </ul>
+
+      <h2>Organization</h2>
+
+      <h3>Contact Details</h3>
+      <table>
+        <tr>
+          <td>Name</td>
+          <td>Use your formal name, the one with which you would sign a check.</td>
+        </tr>
+        <tr>
+          <td>Mailing Address</td>
+          <td>
+            The mailing address is not strictly required any more. Not that many items will be mailed to you before an offer letter.
+            <ul>
+              <li>Use the address at which you can be reliably reached.</li>
+              <li>It is not necessary to provide a permanent and temporary address.</li>
+              <li>Keep your address consistent: use all abbreviations or none. All abbreviations work better.</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>Email Address</td>
+          <td>Always use a non-UW and non-cryptic or strange email address.</td>
+        </tr>
+        <tr>
+          <td>Telephone</td>
+          <td>Use a number at which you can be reliably reached, usually a mobile phone.</td>
+        </tr>
+        <tr>
+          <td>Web Site</td>
+          <td>
+          <ul>
+            <li>Use a personal web site—not a blog, unless it is directly relevant to your professional qualifications—with your resume and/or a portfolio or link to a portfolio.</li>
+            <li>Use a portfolio site or a Flickr / Vimeo / YouTube site for your work examples.</li>
+            <li>If you do not have these but do have a site on which you can search for your work, go to that site, do the search, copy that URL and run it through a URL shortener (bit.ly, Tiny URL, goo.gl, etc.) and use that as a URL.</li>
+            <li>Use a custom LinkedIn URL such as <a href="http://www.linkedin.com/yourname">http://www.linkedin.com/yourname</a>. This can be created at <a href="http://www.linkedin.com/myprofile?editwp=">http://www.linkedin.com/myprofile?editwp=</a> then clicking on the Edit link on Your Public Profile URL.</li>
+          </ul>
+          </td>
+        </tr>
+      </table>
+
+      <h3>Objective</h3>
+      <p>Do not bother. Again, consider the reader. They will not care. Consider a Personal Summary.</p>
+
+      <h3>Personal Summary</h3>
+      <p>This can be written in two ways: a sidebar with a list of skills and experience or an introductory paragraph explaining your unique qualifications.</p>
+
+      <h3>Education</h3>
+      <ul>
+        <li>List your degree, year and relevant courses if they will highlight exceptional knowledge on your part.</li>
+        <li>Do not list your GPA. No one outside of a graduate school cares. Really. If you are on the Dean’s List, list that.</li>
+        <li>Education should come before Experience only if you do not have the demonstrative experience.</li>
+      </ul>
+
+      <h3>Experience</h3>
+      <ul>
+        <li>List the position above the company always. The resume is about you, not the company.
+        <ul>
+          <li>In cases where you post your resume on a personal web site, you may even want to remove the specific company name so people do not try to find or find out about you by calling these companies directly.</li>
+          <li>For Example: "<i>Daily Cardinal</i>" may become "College Newspaper at Major Public University".</li>
+        </ul>
+        </li>
+        <li>Keep all entries to bullet points starting with active verbs.
+        <ul>
+          <li>No one is interested that you just exist.</li>
+          <li>Jobs are about doing something. People want to hire you to do.</li>
+          <li>Avoid verbs like "assist," "help," "attend," "participate". They tell the reader little if anything. Think about the actual work you performed. Work is about doing.</li>
+        </ul>
+        </li>
+        <li>Optimize word choice.
+        <ul>
+          <li>Verbs like "emphasize" or "evaluate" tell very little.</li>
+          <li>These words force a "how" or "why" to be asked. Pick a word or phrase that would clarify what you did.</li>
+        </ul>
+        </li>
+        <li>Explain the company at which you worked and the projects in which you worked within the description of the work. Not everyone will know what these companies or projects are or were.
+        <ul>
+          <li>If it is a newspaper, list the circulation, market and print schedule.</li>
+          <li>If it is a company, list annual revenue, industry and client base.</li>
+        </ul>
+        </li>
+        <li>Use quantities with few colorful qualifiers.
+        <ul>
+          <li>Adjectives need to be explanatory or clarifying.</li>
+          <li>Adverbs may be more helpful.</li>
+        </ul>
+        </li>
+        <li>Include skills or tools sections with each position if it will clarify what you learned or first knew how to do something or how long ago you learned.</li>
+        <li>Include a special section highlighting projects or certain activities if it will show what you are capable of doing.</li>
+      </ul>
+
+      <h3>Skills</h3>
+      <ul>
+        <li>Skills are the most important part.</li>
+        <li>Skills are usually technical and language, but can include soft skills if they are written as a short phrase.
+        <ul>
+          <li><i><b>For Example:</b> Knowing AP style could be listed as "Working Knowledge of Associated Press Style".</i></li>
+        </ul>
+        </li>
+        <li>These skills should be listed as skill, level, years used and year last used.</li>
+        <li>The level of proficiency should be listed using the guides in the following guides.</li>
+      </ul>
+
+      <h3>Proficiency Levels</h3>
+
+      <h4>Language Proficiency</h4>
+      <table class="general small">
+        <tr>
+          <th>Level</th>
+          <th>Title / Understanding</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Beginning / Novice</td>
+          <td>A novice has extremely limited vocabulary and grammar, understands very little of the language when spoken normally, has difficulty making self understood by native speakers, and thus has serious problems in an immersion situation. A novice may be able to order food in a restaurant, buy a train ticket, and find lodging for the night, but only with great difficulty.</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Intermediate / Survivor</td>
+          <td>A survivor converses using basic vocabulary (time, date, weather, family, clothes); uses the present, past, and future tenses more or less correctly; and is aware of difficult grammar topics (e.g., subjunctive, relative pronouns), but either uses them incorrectly or awkwardly rearranges sentences in order to avoid them. Still needs to tote a dictionary and/or phrase book around, but can survive in an immersion situation: order food, give and receive directions, take a taxi, etc.</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Advanced / Conversationalist</td>
+          <td>A conversationalist has the ability to converse about fairly abstract ideas, state opinions, read newspapers, understand the language when spoken normally (on TV, radio, film, etc.) with slight-to-moderate difficulty. Still has some trouble with specialized vocabulary and complicated grammar, but can reorganize sentences in order to communicate and figure out the majority of new vocabulary within the context.</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Fluent / Debater</td>
+          <td>A fluent speaker can participate in extended conversations, understand the language when spoken normally (on TV, radio, film, etc.), figure out meaning of words within context, debate, and use/understand complicated grammatical structures with little or no difficulty. Has good accent and understands dialects with slight-to-moderate difficulty.</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Mother Tongue / Native Speaker</td>
+          <td>Someone who has spoken the language from at least the age of 5 (this age limit is subject to some debate: I've heard theories that a native speaker can have started learning the language as late as any time up to puberty). In theory, understands essentially everything in the language: all vocabulary, complicated grammatical structures, cultural references, and dialects. Has a native (i.e., invisible, "normal" in his/her region) accent.</td>
+        </tr>
+      </table>
+      <p><a href="http://french.about.com/library/weekly/aa072701b.htm" title="Pulled from About.com's French language information.">Source</a></p>
+
+      <h4>Technical Proficiency</h4>
+      <table class="general small">
+        <tr>
+          <th>Level</th>
+          <th>Title</th>
+          <th>Knowledge</th>
+          <th class="hide">Tool Usage</th>
+          <th class="hide">Sharing</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Basic</td>
+          <td>Has and uses the required functional and technical knowledge and skills necessary to do his or her job</td>
+          <td class="hide">Chooses appropriate tools or technology for the task</td>
+          <td class="hide">Has the capability and knowledge base to share technical skills with others</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Intermediate</td>
+          <td>Has and uses the required functional and technical knowledge and skills to do his or her job at a high level of accomplishment</td>
+          <td class="hide">
+            <ul>
+              <li>Chooses appropriate tools or technology for tasks</li>
+              <li>Experiments with new processes, tools, or technologies to determine applicability</li>
+            </ul>
+          </td>
+          <td class="hide">Provides opportunities for others to learn technical skills and concepts</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Advanced</td>
+          <td>
+            <ul>
+              <li>Demonstrates an active interest in enhancing current skills and learning new ones</li>
+              <li>Applies advanced functional or technical knowledge to do his or her job at a high level of accomplishment</li>
+            </ul>
+          </td>
+          <td class="hide">
+            <ul>
+              <li>Chooses appropriate tools or technology for tasks</li>
+              <li>Improves or redesigns processes, tools, or technologies to determine applicability</li>
+            </ul>
+          </td>
+          <td class="hide">
+              Consistently shares expertise with others, teaching skills and explaining concepts
+          </td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Expert</td>
+          <td>
+            <ul>
+              <li>Demonstrates an avid interest in continuously enhancing current skills and learning new ones</li>
+              <li>Applies advanced functional or technical knowledge to process innovation and complex problem solving</li>
+              <li>Demonstrates an exemplary level of accomplishment in job performance</li>
+            </ul>
+          </td>
+          <td class="hide">
+            <ul>
+              <li>Insightfully selects, combines, or invents appropriate tools or technology for tasks</li>
+              <li>Improves or redesigns processes, tools, or technologies</li>
+            </ul>
+          </td>
+          <td class="hide">
+            Is sought out by others for technical expertise and knowledge and for troubleshooting of complex technical issues
+          </td>
+        </tr>
+      </table>
+      <p><a href="http://www.microsoft.com/education/competencies/comp_functional_technicalskills.mspx" title="Pulled from Microsoft's Education Site.">Source</a></p>
+      <p>Never be afraid to put your proficiency level as "Learning" when you are actually learning the skill. It adds to your keyword listing and demonstrates that you are not a dead end regarding your desire to improve in your career.</p>
+
+      <h2>References</h2>
+      <p>Do not include the clich&eacute;d "References available upon request." They know. Most do not check references anyway.</p>
+
+
+      <h2>Revisions</h2>
+      <p>It is recommended that you revisit and repost your resume at least once every three months. Employee hunters key in on new and updated resumes. If you have had no bites in a while, make an update and repost.</p>
+
+
+    </section>
+
+    <section id="supporting">
+    </section>
+
+  </section>
+
+  <?php include('/includes/nav.php'); ?>
+
+  <?php include('/includes/footer.php'); ?>
+
+</section>
+
+</body>
+
+</html>
+
