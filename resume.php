@@ -9,7 +9,7 @@
   <!--Change the path to respond.min.js to reflect its location in your site-->
   <script type="text/javascript" src="/js/respond.min.js"></script>
 
-  <title>Anthony Sansone</title>
+  <title>Anthony Sansone: My Resume</title>
 
   <? require_once($_SERVER['DOCUMENT_ROOT'].'/includes/styles.php'); ?>
 
