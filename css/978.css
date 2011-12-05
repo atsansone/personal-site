@@ -1,0 +1,155 @@
+/* 978 Grid */
+
+@media screen and (min-width: 1002px) {
+  /* See http://978.gs/ */
+
+  /* BEGIN - General HTML - BEGIN */
+
+    html { /* Set font / line height / background */
+      line-height: 18px;
+      font-size: 14px;
+    }
+
+    html.grid { /* Set Visible Baseline Grid */
+      background-image: url('img/18px-baseline.png');
+    }
+
+  /* END - General HTML - END */
+
+  /* BEGIN - Body Widths - BEGIN */
+
+    body.px #page, body.pxg #page { /* Set #page to 748 plus 10 margin for 768 */
+      width: 1002px; 
+      padding: 0px;
+    }
+
+    body.pxg #page { /* Show Columnar Grid */
+      background-image: url('img/978-grid.png');
+    }
+
+    body.pct #page {
+      width: 90%; 
+      min-width: 748px; /* Set Minimum Width of 748 px */
+      padding: 0px;
+    }
+
+    #page div#header, #page div#navigation, #page div#content, #page div#footer {
+      margin: 0px;
+    }
+
+    body.px #page div#header, body.px #page div#navigation, body.px #page div#content, body.px #page div#footer {
+      padding: 18px 12px;
+    }
+
+    body.pct #page div#header, body.pct #page div#navigation, body.pct #page div#content, body.pct #page div#footer {
+      padding: 18px 1.1976%;
+    }
+
+  /* END - Body Widths - END */
+
+  /* BEGIN - Header - BEGIN */
+
+    div#header {
+      height: 108px;
+    }
+
+    body div#header h1, div#header p {
+      text-align: left;
+    }
+
+  /* END - Header - END */  div#header {
+
+  /* BEGIN - Navigation Bar at the Top of the Page below the header - BEGIN */
+
+    body.px #page div#navigation {
+      position: absolute;
+      top: 90px;
+      clear: both;
+      display: inline-table;
+    }
+
+    body.pct #page div#navigation {
+      position: absolute;
+      top: 90px;
+      clear: both;
+      display: inline-table;
+    }
+
+    #page div#navigation ul {
+      display: table-row;
+    }
+
+    body.px #page div#navigation ul li, body.px #page div#navigation ul li a {
+      height: 36px;
+      width: 138px;
+      margin-bottom: 0px;
+      margin-left: 30px;
+    }
+
+    body.pct #page div#navigation ul li, body.pct #page div#navigation ul li a {
+      height: 36px;
+      width: 14.1104294%;
+      margin-bottom: 0px;
+      margin-left: 30px;
+    }
+
+    #page div#navigation ul li a {
+      display: table-cell;
+      padding: 0px 0px;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    body.px #page div#navigation ul li:first-child {
+      margin-left: 0px;
+    }
+
+    body.pct #page div#navigation ul li:first-child {
+      margin-left: 0%;
+    }
+
+  /* END - Navigation Bar at the Top of the Page below the header - END */
+
+  /* BEGIN - Main Content Block - BEGIN */
+
+    div#content {
+    }
+
+    body.px #page div#content div.block, body.px #page div#content div#block3 {
+      width: 306px;
+      float: left;
+      margin-left: 30px;
+    }
+
+    body.pct #page div#content div.block, body.pct #page div#content div#block3 {
+      width: 31.2883436%;
+      float: left;
+      margin-left: 3.0674847%;
+    }
+
+    body.px #page div#content div.block:first-child {
+      margin-left: 0px;
+    }
+
+    body.pct #page div#content div.block:first-child {
+      margin-left: 0%;
+    }
+
+  /* END - Main Content Block - END */
+
+  /* BEGIN - Footer - BEGIN */
+
+    #page div#footer {
+      font-size: 12px;
+      line-height: 18px;
+    }
+    div#footer p.credits {
+    }
+    div#footer ul.validators {
+    }
+    div#footer ul.validators li {
+    }
+
+  /* END - Footer - END */
+}
+

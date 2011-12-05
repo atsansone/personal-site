@@ -1,0 +1,135 @@
+﻿/* Grids */
+
+/* Basic / 300px Grid */
+
+@media screen {
+  /* See http://978.gs/ */
+
+  /* BEGIN - General HTML - BEGIN */
+
+    html { /* Set font / line height / background */
+      line-height: 18px;
+      font-size: 12px;
+    }
+
+    html.grid { /* Set Visible Baseline Grid */
+      background-image: url('img/18px-baseline.png');
+    }
+
+  /* END - General HTML - END */
+
+  /* BEGIN - Body Widths - BEGIN */
+
+    body.px #page, body.pxg #page {
+      width: 320px;
+    }
+
+    body.pxg #page {
+      background-image: url('img/300-grid.png');
+    }
+
+    body.pct #page {
+      width: 90%;
+      min-width: 320px; /* Minimum set to width of mobile device */
+    }
+
+    body.px #page > div {
+      padding: 18px 10px;
+    }
+
+    body.pct #page > div {
+      padding: 18px 3.1250%;
+    }
+
+  /* END - Body Widths - END */
+
+  /* BEGIN - Header - BEGIN */
+
+    div#header {
+      height: 90px;
+    }
+
+    body div#header h1, div#header p {
+      text-align: center;
+    }
+
+    body div#header h1 {
+      line-height: 36px;
+      font-size: 24px;
+    }
+
+  /* END - Header - END */
+
+  /* BEGIN - Navigation Bar at the Top of the Page below the header - BEGIN */
+
+    /* Using display:table to set up a flexible set of navigation buttons */
+
+    div#navigation ul li, div#navigation ul li a {
+      height: 54px;
+    }
+
+    body.px div#navigation ul li, body.px div#navigation ul li a {
+      width: 66px;
+    }
+
+    body.pct div#navigation ul li, body.pct div#navigation ul li a {
+      width: 22%;
+    }
+
+    body.px div#navigation ul li {
+      margin-left: 12px;
+    }
+
+    body.pct div#navigation ul li {
+      margin-left: 4%;
+    }
+
+    body.px div#navigation ul li a.selected {
+      width: 64px;
+    }
+
+    body.pct div#navigation ul li a.selected {
+      width: 21.3333%;
+    }
+
+  /* END - Navigation Bar at the Top of the Page below the header - END */
+  
+  /* BEGIN - Main Content Block - BEGIN */
+
+    body.px div#content, body.pct div#content {
+      clear: both;
+      padding: 18px 0px;
+      margin: 0px;
+    }
+
+    div#content div.main h2, div#content p {
+      clear: both;
+      margin-bottom: 18px;
+    }
+
+    body#resume div#content div.main h2, body#resume div#content div.main h3 {
+      margin-top: 18px;
+    }
+
+    div#content #block1 h2 {
+      padding: 0px;
+    }
+
+    div#content h2 {
+      padding-top: 0px;
+    }
+  
+  /* END - Main Content Block - END */
+
+  /* BEGIN - Footer - BEGIN */
+
+    #page div#footer {
+      font-size: 9px;
+      line-height: 18px;
+    }
+    div#footer p.credits { }
+    div#footer ul.validators { }
+    div#footer ul.validators li { }
+
+  /* END - Footer - END */
+}

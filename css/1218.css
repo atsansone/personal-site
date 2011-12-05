@@ -1,0 +1,163 @@
+﻿/* 1218 Grid */
+
+@media screen and (min-width: 1248px) {
+  /* See http://978.gs/ */
+
+  /* BEGIN - General HTML - BEGIN */
+
+    html { /* Set font / line height / background */
+      line-height: 18px;
+      font-size: 14px;
+    }
+
+    html.grid { /* Set Visible Baseline Grid */
+      background-image: url('img/18px-baseline.png');
+    }
+
+  /* END - General HTML - END */
+  
+  body.px #page {
+    width: 1218px; /*Total with works out to 1248*/
+    padding: 0px 0px;
+  }
+
+  body.pxg #page {
+    width: 1218px; /*Total with works out to 1248*/
+    padding: 0px 0px;
+    background-image: url('img/1248-grid.png');
+  }
+
+  body.pct #page {
+    width: 90%; /*Total with works out to 1248*/
+    padding: 0px 0%;
+  }
+
+  body.px #page div#header, body.px #page div#navigation. body.px #page div#content, body.px #page div#footer {
+    padding: 18px 15px;
+    margin: 0px 0px;
+  }
+
+  body.pct #page div#header, body.pct #page div#navigation, body.pct #page div#content, body.pct #page div#footer {
+    padding: 18px 1.2019%;
+    margin: 0px 0%;
+  }
+
+  body div#header h1 {
+    text-align: left;
+    line-height: 36px;
+    font-size: 28px;
+  }
+
+  #page p.contact, #page p.tagline {
+    position: absolute;
+    top: 54px;
+  }
+
+  body.px #page p.tagline {
+    width: 828px;
+  }
+
+  body.pct #page p.tagline {
+    width: 67.9802956%;
+  }
+
+  #page div#header {
+    height: 90px;
+  }
+
+  body.px div#header p.contact {
+    text-align: right;
+    left: 858px;
+    width: 350px;
+  }
+
+  body.pct div#header p.contact {
+    text-align: right;
+    left: 69.6546871%;
+    width: 29.5566502%;
+  }
+
+  /* BEGIN - Navigation Bar at the Top of the Page below the header - BEGIN */
+
+    body.px #page div#navigation {
+      top: 72px;
+      display: inline-table;
+      width: 100%;
+    }
+
+    body.pct #page div#navigation {
+      top: 72px;
+      display: inline-table;
+      width: 100%;
+    }
+
+    #page div#navigation ul {
+      display: table-row;
+    }
+
+    body.px #page div#navigation ul li, body.px #page div#navigation ul li a {
+      height: 36px;
+      width: 126px;
+    }
+
+    body.pct #page div#navigation ul li, body.pct #page div#navigation ul li a {
+      height: 36px;
+      width: 10.3448276%;
+    }
+
+    body.px #page div#navigation ul li {
+      margin-bottom: 0px;
+      margin-left: 30px;
+    }
+
+    body.pct #page div#navigation ul li {
+      margin-bottom: 0px;
+      margin-left: 2.4630542%;
+    }
+
+    #page div#navigation ul li a {
+      display: table-cell;
+      padding: 0px 0px;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    body.px #page div#navigation ul li:first-child {
+      margin-left: 0px;
+    }
+
+  /* END - Navigation Bar at the Top of the Page below the header - END */
+
+
+  /* BEGIN - Main Content Block - BEGIN */
+
+    div#content {
+
+    }
+
+    body.px #page div#content div.block, #page div#content div#block3 {
+      width: 386px;
+      float: left;
+      margin-left: 30px;
+    }
+
+    body.px #page div#content div.block:first-child {
+      margin-left: 0px;
+    }
+
+  /* END - Main Content Block - END */
+
+  /* BEGIN - Footer - BEGIN */
+
+    #page div#footer {
+      font-size: 12px;
+      line-height: 18px;
+    }
+    div#footer p.credits { }
+    div#footer ul.validators { }
+    div#footer ul.validators li { }
+
+  /* END - Footer - END */
+
+}
+

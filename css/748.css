@@ -1,0 +1,210 @@
+﻿/* 748 Grid */
+
+@media screen and (max-width: 767px) {
+    #page div#navigation {
+      background: #eee;
+    }
+}
+
+/* 748 Grid */
+
+@media screen and (min-width: 768px) {
+  /* See http://978.gs/ */
+
+  /* BEGIN - General HTML - BEGIN */
+
+    html { /* Set font / line height / background */
+      line-height: 18px;
+      font-size: 12px;
+    }
+
+    html.grid { /* Set Visible Baseline Grid */
+      background-image: url('img/18px-baseline.png');
+    }
+
+  /* END - General HTML - END */
+
+  /* BEGIN - Body Widths - BEGIN */
+
+    body.px #page, body.pxg #page { /* Set #page to 748 plus 10 margin for 768 */
+      width: 768px; 
+      padding: 0px;
+    }
+
+    body.pxg #page { /* Show Columnar Grid */
+      background-image: url('img/748-grid.png');
+    }
+
+    body.pct #page {
+      width: 90%; 
+      min-width: 748px; /* Set Minimum Width of 748 px */
+      padding: 0px;
+    }
+
+    #page div#header, #page div#navigation, #page div#content, #page div#footer {
+      margin: 0px;
+    }
+
+    body.px #page div#header, body.px #page div#navigation, body.px #page div#content, body.px #page div#footer {
+      padding: 18px 10px;
+    }
+
+    body.pct #page div#header, body.pct #page div#navigation, body.pct #page div#content, body.pct #page div#footer {
+      padding: 18px 1.3021%;
+    }
+
+  /* END - Body Widths - END */
+
+  /* BEGIN - Header - BEGIN */
+
+    div#header {
+      height: 102px;
+    }
+
+    body div#header h1, div#header p {
+      text-align: left;
+    }
+
+  /* END - Header - END */
+
+  /* BEGIN - COPY Navigation Bar at the Top of the Page below the header - BEGIN */
+
+    /* Using display:table to set up a flexible set of navigation buttons */
+
+   div#navigation {
+      display: table;
+      margin: 0px;
+      width: 100%
+    }
+    
+    div#navigation ul {
+      display: table-row;
+    }
+
+    div#navigation ul li, div#navigation ul li a {
+      height: 54px;
+    }
+
+    body.px div#navigation ul li, body.px div#navigation ul li a {
+      width: 66px;
+    }
+
+    body.pct div#navigation ul li, body.pct div#navigation ul li a {
+      width: 22%;
+    }
+
+    div#navigation ul li {
+      float: left;
+    }
+
+    body.px div#navigation ul li {
+      margin-left: 12px;
+    }
+
+    body.pct div#navigation ul li {
+      margin-left: 4%;
+    }
+
+    div#navigation ul li a {
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    body.px div#navigation ul li:first-child, body.pct div#navigation ul li:first-child {
+      margin-left: 0px;
+    }
+
+    div#navigation ul li a.selected {
+      border: 1px solid #aaa;
+      text-decoration:none;
+      color: #595855;
+      background: #fff;
+    }
+
+    body.px div#navigation ul li a.selected {
+      width: 64px;
+    }
+
+    body.pct div#navigation ul li a.selected {
+      width: 21.3333%;
+    }
+
+  /* END - COPY Navigation Bar at the Top of the Page below the header - END */
+
+  /* BEGIN - Navigation Bar at the Top of the Page below the header - BEGIN */
+
+    div#navigation {
+      position: absolute;
+      top: 84px;
+      clear: both;
+      display: inline-table;
+    }
+
+    div#navigation ul {
+      display: table-row;
+    }
+
+    div#navigation ul li, div#navigation ul li a {
+      height: 36px;
+    }
+
+    body.px #page div#navigation ul li, body.px #page div#navigation ul li a {
+      width: 108px;
+    }
+
+    body.pct #page div#navigation ul li, body.pct #page div#navigation ul li a {
+      width: 14.4385027%;
+    }
+
+  /* END - Navigation Bar at the Top of the Page below the header - END */
+
+  /* BEGIN - Main Content Block - BEGIN */
+
+    #page div#content {
+      overflow: auto;
+    }
+
+    div#content div.block {
+      float: left;
+    }
+
+    body.px #page div#content div.block {
+      width: 364px;
+      margin-left: 20px;
+    }
+
+    body.pct #page div#content div.block {
+      width: 48.6631016%;
+      margin-left: 2.6737968%;
+    }
+
+    div#content h2 {
+      padding-top: 0px;
+    }
+
+    body #page div#content div.block:first-child, body #page div#content div#block3 {
+      margin-left: 0px;
+    }
+
+  /* END - Main Content Block - END */
+
+  /* BEGIN - Footer - BEGIN */
+
+    #page div#footer {
+      font-size: 12px;
+      line-height: 18px;
+    }
+
+    div#footer p.credits {
+    }
+
+    div#footer ul.validators {
+    }
+
+    div#footer ul.validators li {
+    }
+
+  /* END - Footer - END */
+}
+

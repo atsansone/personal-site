@@ -1,0 +1,179 @@
+﻿/* 1378 Grid */
+
+@media screen and (min-width: 1408px) {
+
+  /* BEGIN - General HTML - BEGIN */
+
+    html { /* Set font / line height / background */
+      line-height: 24px;
+      font-size: 18px;
+    }
+
+    html.grid { /* Display Baseline Grid */
+      background-image: url('img/24px-baseline.png');
+    }
+
+  /* END - General HTML - END */
+  
+
+  body.px #page {
+    width: 1408px; /*Total with works out to 1408*/
+    padding: 0px 0px;
+  }
+
+  body.pxg #page {
+    width: 1408px; /*Total with works out to 1408*/
+    padding: 0px 0px;
+    background-image: url('img/1378-grid.png');
+  }
+
+  body.pct #page {
+    width: 90%; /*Total with works out to 1408*/
+    max-width: 1408px;
+    padding: 0px 0%;
+  }
+
+  body.px #page div#header, body.px #page div#navigation, body.px #page div#content, body.px #page div#footer {
+    padding: 18px 15px;
+    margin: 0px 0px;
+  }
+
+  body.pct #page div#header, body.pct #page div#navigation, body.px #page div#content, body.px #page div#footer {
+    padding: 18px 1.0653%;
+    margin: 0px 0%;
+  }
+
+  #page div#header {
+    height: 108px;
+  }
+
+  body div#header h1 {
+    line-height: 48px;
+    font-size: 42px;
+  }
+
+  #page div#header p {
+    font-size: 15px;
+  }
+
+  body.px #page div#header p.tagline {
+    position: absolute;
+    top: 72px;
+    width: 938px;
+  }
+
+  body.pct #page div#header p.tagline {
+    position: absolute;
+    top: 72px;
+    width: 68.0696662%;
+  }
+
+  body.px #page div#header p.contact {
+    text-align: right;
+    position: absolute;
+    top: 72px;
+    left: 968px;
+    width: 400px;
+  }
+
+  body.pct #page div#header p.contact {
+    text-align: right;
+    position: absolute;
+    top: 72px;
+    left: 69.5515893%;
+    width: 29.7532656%;
+  }
+
+  /* BEGIN - Navigation Bar at the Top of the Page below the header - BEGIN */
+
+    body.px #page div#navigation {
+      top: 90px;
+      display: inline-table;
+      width: 100%;
+    }
+
+    body.pct #page div#navigation {
+      top: 90px;
+      display: inline-table;
+      width: 100%;
+    }
+
+    #page div#navigation ul {
+      display: table-row;
+    }
+
+    body.px #page div#navigation ul li, body.px #page div#navigation ul li a {
+      height: 36px;
+      width: 146px;
+      font-size: 18px;
+    }
+
+    body.pct #page div#navigation ul li, body.pct #page div#navigation ul li a {
+      height: 36px;
+      width: 10.5950653%;
+      font-size: 18px;
+    }
+
+    body.px #page div#navigation ul li {
+      margin-bottom: 0px;
+      margin-left: 30px;
+    }
+
+    body.pct #page div#navigation ul li {
+      margin-bottom: 0px;
+      margin-left: 2.1770682%;
+    }
+
+    #page div#navigation ul li a {
+      display: table-cell;
+      padding: 0px 0px;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    body.px #page div#navigation ul li:first-child {
+      margin-left: 0px;
+    }
+
+  /* END - Navigation Bar at the Top of the Page below the header - END */
+
+  /* BEGIN - Main Content Block - BEGIN */
+
+    div#content {
+      clear: both;
+    }
+
+    div#content h2 {
+      padding: 0px;
+    }
+
+    body.px #content .block, #block2, #block3 {
+      width: 438px;
+      float: left;
+      margin-left: 30px;
+    }
+
+    body.px #content .block, #block2, #block3 {
+      width: 31.8819545%;
+      float: left;
+      margin-left: 2.1770682%;
+    }
+
+    body.px #page .block:first-child {
+      margin-left: 0px;
+    }
+
+  /* END - Main Content Block - END */
+
+  /* Footer */
+  #page div#footer p.credits, #page div#footer ul.validators li {
+    font-size: 12px;
+    line-height: 24px;
+  }
+  div#footer p.credits { }
+  div#footer ul.validators { }
+  div#footer ul.validators li { }
+
+  /* END - Footer - END */
+
+}
