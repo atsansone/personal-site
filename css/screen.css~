@@ -138,7 +138,6 @@ header p.contact {
 */
 
   nav {
-    width:100%;
     display: table;
     margin: 0px;
     padding: 0px;
