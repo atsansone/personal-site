@@ -75,7 +75,7 @@ header p.contact {
     padding: 1rem;
   }
 
-  body.home section {
+  body.home * section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
