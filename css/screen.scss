@@ -1,4 +1,4 @@
-﻿/* screen.css: Screen Styles */
+/* screen.css: Screen Styles */
 
 /*
 
@@ -7,6 +7,10 @@ This is set up to go from a 1 column (320px) to 2 column (768px) to 3 column (97
 The section fonts are from TypeKit: Museo Sans and Museo Slab Serif.
 
 */
+
+/* Variables */
+$base-font-size: 1rem;
+
 
 /* Base Styles */
 
@@ -36,7 +40,7 @@ body {
 div#page {
   background-color: #EAF2EF;
   position: relative;
-  margin: 0px auto;
+  margin: 0rem auto;
 }
 
 /* Header */
@@ -73,9 +77,6 @@ header p.contact {
     border-top: 3px solid #521945;
     background-color: #EAF2EF;
     padding: 1rem;
-  }
-
-  body.home section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
