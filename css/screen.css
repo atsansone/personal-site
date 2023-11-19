@@ -21,12 +21,15 @@ html {
   background: #361F27;
   font-size: 14px;
   font-family: 'Roboto', sans-serif;
+  line-height: 1.5rem;
   color: #0D090A;
 }
 
 /* Body */
 
 body {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Major Divisions */
@@ -62,15 +65,34 @@ header ul.accessibility {
 }
 
 /* Contact Details */
+
 header p.contact {
   color: #EAF2EF;
 }
 
 /* Content */
+
   section {
     border-top: 3px solid #521945;
     background-color: #EAF2EF;
     padding: 1rem;
+  }
+
+  section.foto-right {
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  
+  section.foto-right div img {
+    object-fit: contain;
+    object-position: center;
+  }
+
+  section.foto-right figure figcaption {
+    font-size: 0.8rem;
+    text-align: center;
   }
 
   body#home main section {
@@ -80,73 +102,41 @@ header p.contact {
   }
 
 /* Footer */
+
   footer {
     border-top: 1px solid #600;
     background-color: #EAF2EF;
     padding: 1rem;
     font-size: 0.8rem;
   }
-  footer p.credits { }
-  footer ul.validators { }
-  footer ul.validators li { }
-
-  /*Navigation*/
+  
+/* Navigation */
 
   nav div {
-    text-align: center;
-    vertical-align: middle;
-  }
-
-  nav div a {
-  }
-
-  nav div a:visited {
-  }
-
-  nav div a:hover,
-  nav div a:focus {
-  }
-
-/* Navigation Bar */
-
-/* Limiting this section to font, color and decoration */
-
-  nav {
-    margin: 1rem;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-  }
-
-  nav div a {
-    text-decoration:none;
-    color: #fff;
-  }
-
-  nav div.selected {
-    border: 1px solid #aaa;
-    background: #fff;
-  }
-  nav div.selected a {
-    text-decoration:none;
-    color: #595855;
-  }
-
-  nav div {
-    padding: 1rem;
     font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 0.5rem;
   }
 
-  nav div:hover {
-    color: #CAE6E8;
+  nav div.selected, nav div:hover {
+    background-color: #CAE6E8;
+    color: #912F56;
+  }
+
+  nav div, nav div.selected:hover {
     background: #912F56;
   }
 
-  nav div.selected:hover {
-    background: #912F56;
+  nav div a {
+    text-decoration:none;
   }
-  nav div.selected:hover a {
+
+  nav div.selected:hover a, nav div a {
     color: #fff;
+  }
+
+  nav div.selected a, nav div:hover a {
+    color: #595855;
   }
 
 /*Content Typography: Headings*/
@@ -164,9 +154,12 @@ header p.contact {
     margin-bottom: 1rem;
   }
   section h2 {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
   }
   section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
   }
   section h4 {
   }
@@ -177,16 +170,26 @@ header p.contact {
   section * a {
     text-decoration: none;
   }
-  div.row + h2, ul + h2, ul + h3, ul + h4 {
-    margin-top: 1.5rem;
+  div.row + h2, ul + h2, ul + h3, ul + h4, ul + ul {
+    margin-top: 1rem;
   }
+
   section p.company {
-    margin-bottom: 0px;
+    margin-bottom: .5rem;
   }
 
 /*Content Typography: Paragraphs*/
 section p {
   font-family: 'Roboto', sans-serif;
+  margin-bottom: 1rem;
+}
+
+section p:last-child {
+  margin-bottom: 0rem;
+}
+
+section p + table {
+  margin-bottom: 0rem;
 }
 
 section div:last-child p:last-child {
@@ -261,6 +264,11 @@ body#resume section ul.tools {
 
 /* This formatting is for the special tools listing per job. It applies to everything except the largest size */
 
+body#resume section {
+  display: flex;
+  flex-direction: column;
+}
+
 body#resume section ul.tools li {
   font-size: 0.9rem;
   line-height: 1.1rem;
@@ -279,44 +287,56 @@ body#resume section p.company {
   font-size: 0.8rem;
 }
 
-body#resume section ul.job, body#resume h3 {
-  font-size: 1.1rem;
-  overflow: auto;
-}
-body#resume section ul.job {
-  display: inline-block;
-  width: 100%;
-}
-body#resume section ul.job > li {
-  display: inline;
-  margin-left: 0;
-  text-indent: 0;
-  float: left;
+section h3.job, section ul.job {
+  margin-bottom: 0rem;
 }
 
-body#resume section ul.job > li:first {
+section ul.job {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 1rem;
+  flex-wrap: nowrap;
+}
+
+section ul.job > li {
+  margin-left: 0;
+  text-indent: 0;
   list-style-type: none;
 }
 
-body#resume section ul.job > li + li::before {
+section ul.job > li h3 {
+  display: flex;
+}
+
+section ul.job > li:last {
+  width: 50%;
+}
+
+section ul.job > li + li::before {
   font-family: "Material Symbols Outlined";
   content: "star";
   float: left;
+  text-indent: -1rem;
   font-size: 2rem;
   line-height: 1rem;
-  vertical-align: text-bottom;
-  padding-top: 0.5rem;
+  padding-top: 0.1rem;
 }
 
-body#resume section .job {
-  margin-bottom: 0rem;
+main.cv p {
+  text-indent: -3rem;
+  padding-left: 3rem;
 }
 
 /* General Table Formats */
 
+th, td {
+  font-size: 0.8rem;
+}
+
 tr > th {
   background-color: #ccc;
-  padding: 7px;
+  padding: 0.3rem;
   font-weight: 800;
   text-align: center;
 }
@@ -330,7 +350,7 @@ tr:nth-child(even) {
 }
 
 table.general {
-  margin: 18px 0px;
+  margin-bottom: 1rem;
   border: 1px solid #ccc;
   width: 100%;
 }
@@ -342,12 +362,12 @@ table.general:last-child {
 }
 
 tr > td {
-  padding: 7px;
+  padding: 0.3rem;
   vertical-align: top;
 }
 
 table.tiny, table.tiny {
-  font-size: 8px;
+  font-size: 0.6rem;
 }
 
 table.small > tr > td, table.small > th {
@@ -413,7 +433,7 @@ h2 {
 
 /* Basic / 300px Grid */
 
-@media screen {
+@media screen and (max-width: 767px) {
 
   /* BEGIN - General HTML - BEGIN */
 
@@ -424,9 +444,29 @@ h2 {
 
   /* END - General HTML - END */
 
+  /* BEGIN - Page order - BEGIN */
+
+    header {
+      order: 1;
+    }
+
+    nav {
+      order: 3;
+    }
+
+    main {
+      order: 2;
+    }
+
+    footer {
+      order: 4;
+    }
+
+  /* END - Page order - END */
+
   /* BEGIN - Body Widths - BEGIN */
 
-    body.pct main {
+    main {
       min-width: 320px; /* Minimum set to width of mobile device */
     }
 
@@ -451,7 +491,6 @@ h2 {
     }
 
     caption {
-      display: inline-block;
       margin-bottom: 1rem;
     }
 
@@ -461,7 +500,7 @@ h2 {
 
     /* Using display:table to set up a flexible set of navigation buttons */
 
-    body.pct nav div {
+    nav div {
       min-width: 66px;
     }
 
@@ -475,6 +514,7 @@ h2 {
 
     body#resume main section h2, body#resume main section h3 {
       padding-top: 0.5rem;
+      padding-bottom: 0rem;
     }
 
     div.row h2 {
@@ -509,47 +549,53 @@ h2 {
     }
 
   /* END - Footer - END */
-}
 
+  nav {
+    height: 2.5rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
 
-/* 748 Grid */
-
-@media screen and (max-width: 767px) {
-    main nav {
-      background: #eee;
-      height: 2rem;
-    }
 }
 
 /* 748 Grid */
 
 @media screen and (min-width: 768px) {
 
-  /* BEGIN - General HTML - BEGIN */
-
-    html { /* Set font / line height / background */
-      line-height: 1.5rem;
-      font-size: 1rem;
-    }
-
-    html.grid { /* Set Visible Baseline Grid */
-      background-image: url('img/18px-baseline.png');
-    }
-
-  /* END - General HTML - END */
-
   /* BEGIN - Body Widths - BEGIN */
 
-    body.pct main {
+    body main {
       min-width: 748px; /* Set Minimum Width of 748 px */
     }
 
   /* END - Body Widths - END */
 
+  /* BEGIN - Page order - BEGIN */
+
+    header {
+      order: 1;
+    }
+
+    nav {
+      order: 2;
+    }
+
+    main {
+      order: 3;
+    }
+
+    footer {
+      order: 4;
+    }
+
+  /* END - Page order - END */
+
   /* BEGIN - Header - BEGIN */
 
     header {
-      height: 6rem;
+      height: 4.5rem;
       padding: 1rem;
     }
 
@@ -571,11 +617,18 @@ h2 {
 
   /* BEGIN - Navigation Bar at the Top of the Page below the header - BEGIN */
 
+    nav {
+      padding: 1rem;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+    }
+
   /* END - Navigation Bar at the Top of the Page below the header - END */
 
   /* BEGIN - section Content Block - BEGIN */
 
-    body main section h1 {
+    section h1 {
       text-align: left;
       line-height: 2rem;
       font-size: 1.25rem;
@@ -606,6 +659,26 @@ h2 {
 
   /* BEGIN - General HTML - BEGIN */
 
+  /* BEGIN - Page order - BEGIN */
+
+    header {
+      order: 1;
+    }
+
+    nav {
+      order: 2;
+    }
+
+    main {
+      order: 3;
+    }
+
+    footer {
+      order: 4;
+    }
+
+  /* END - Page order - END */
+
   /* BEGIN - Body Widths - BEGIN */
 
   /* END - Body Widths - END */
@@ -613,7 +686,7 @@ h2 {
   /* BEGIN - Header Styles - BEGIN */
 
     header {
-      height: 9rem;
+      height: 4.5rem;
       padding: 1rem;
     }
 
@@ -635,15 +708,19 @@ h2 {
 
   /* BEGIN - Navigation Bar at the Top of the Page below the header - BEGIN */
 
-    body main nav {
-      top: 8rem;
+    nav {
+      padding: 1rem;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
     }
+
 
   /* END - Navigation Bar at the Top of the Page below the header - END */
 
   /* BEGIN - section Content Block - BEGIN */
 
-    body#home main section {
+  body#home main section {
       padding: 1rem;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -679,17 +756,38 @@ h2 {
       font-size: 1rem;
     }
 
-    html.grid { /* Set font / line height / background */
-      background-image: url('img/18px-baseline.png');
+  /* BEGIN - General HTML - BEGIN */
+
+  /* BEGIN - Page order - BEGIN */
+
+    header {
+      order: 1;
     }
 
-  /* BEGIN - General HTML - BEGIN */
+    nav {
+      order: 2;
+    }
+
+    main {
+      order: 3;
+    }
+
+    footer {
+      order: 4;
+    }
+
+  /* END - Page order - END */
 
   /* BEGIN - Body Widths - BEGIN */
 
   /* END - Body Widths - END */
 
   /* BEGIN - Header Styles - BEGIN */
+
+    header {
+      height: 6rem;
+      padding: 1rem;
+    }
 
     body header h1 {
       text-align: left;
@@ -758,6 +856,27 @@ h2 {
 
   /* BEGIN - General HTML - BEGIN */
 
+  /* BEGIN - Page order - BEGIN */
+
+    header {
+      order: 1;
+    }
+
+    nav {
+      order: 2;
+    }
+
+    main {
+      align-self: center;
+      order: 3;
+    }
+
+    footer {
+      order: 4;
+    }
+
+  /* END - Page order - END */
+  
   /* BEGIN - Body Widths - BEGIN */
 
     body.pct main {
@@ -768,7 +887,7 @@ h2 {
 
   /* BEGIN - Header Styles - BEGIN */
 
-    header {
+    body header {
       height: 6rem;
       padding: 1rem;
     }
@@ -782,8 +901,11 @@ h2 {
 
   /* BEGIN - Navigation Bar at the Top of the Page below the header - BEGIN */
 
-    body main nav {
-      top: 3rem;
+    nav {
+      padding: 1rem;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
     }
 
   /* END - Navigation Bar at the Top of the Page below the header - END */
