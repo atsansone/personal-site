@@ -38,12 +38,13 @@ body {
 
 main {
   background-color: #EAF2EF;
+  margin-bottom: 1rem;
 }
 
 /* Header */
 
 header {
-  background-color: #912F56;
+  background-color: #AB3665;
 }
 
 header h1 {
@@ -83,8 +84,9 @@ header div.topline {
   }
   
   section.foto-right div img {
-    object-fit: contain;
+    object-fit: initial;
     object-position: center;
+    aspect-ratio: 3 / 4;
   }
 
   section.foto-right figure figcaption {
@@ -117,11 +119,11 @@ header div.topline {
 
   nav div.selected, nav div:hover {
     background-color: #CAE6E8;
-    color: #912F56;
+    color: #AB3665;
   }
 
   nav div, nav div.selected:hover {
-    background: #912F56;
+    background: #AB3665;
   }
 
   nav div a {
@@ -229,7 +231,7 @@ section * li ol li {
 
 /*Content Typography: Links*/
 section a {
-  color: #912F56;
+  color: #AB3665;
   text-decoration: none;
 }
 section a:visited {
@@ -256,7 +258,7 @@ footer a:focus {
 body#resume section ul.tools {
   background-color: #fff;
   margin: 12px 0px;
-  border: 1px #912F56 solid;
+  border: 1px #AB3665 solid;
 }
 
 /* This formatting is for the special tools listing per job. It applies to everything except the largest size */
@@ -280,7 +282,7 @@ body#resume section ul.tools > li {
 }
 
 body#resume section p.company {
-  border-top: 1px #912F56 solid;
+  border-top: 1px #AB3665 solid;
   font-size: 0.8rem;
 }
 
