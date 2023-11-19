@@ -76,6 +76,8 @@ header p.contact {
     border-top: 3px solid #521945;
     background-color: #EAF2EF;
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
   }
 
   section.foto-right {
