@@ -56,20 +56,15 @@ header h1 a {
   color: #EAF2EF;
 }
 
-header p.tagline {
-  color: #EAF2EF;
-}
-
 header ul.accessibility {
   display: none;
 }
 
-/* Contact Details */
-
-header p.contact {
+header div.topline {
   color: #EAF2EF;
+  text-align: center;
+  text-wrap: balance;
 }
-
 /* Content */
 
   section {
@@ -477,7 +472,7 @@ h2 {
   /* BEGIN - Header Styles - BEGIN */
 
     header {
-      height: 7rem;
+      height: 5rem;
       padding: 1rem;
       text-wrap: balance;
     }
@@ -597,7 +592,7 @@ h2 {
   /* BEGIN - Header - BEGIN */
 
     header {
-      height: 4.5rem;
+      height: 3.5rem;
       padding: 1rem;
     }
 
@@ -615,6 +610,30 @@ h2 {
       line-height: 1.3rem;
     }
 
+    header div.topline {
+      display: flex;
+      flex-direction: row;
+      color: #fff;
+      width: 100%;
+      gap: 1rem;
+    }
+    
+    header div.topline div.tagline {
+      text-align: left;
+      text-wrap: balance;
+    }
+    
+    header div.topline div.contact {
+      text-align: right;
+      text-wrap: balance;
+    }
+    
+    /* Contact Details */
+    
+    header p.contact {
+      color: #EAF2EF;
+    }
+    
   /* END - Header - END */
 
   /* BEGIN - Navigation Bar at the Top of the Page below the header - BEGIN */
@@ -688,7 +707,7 @@ h2 {
   /* BEGIN - Header Styles - BEGIN */
 
     header {
-      height: 4.5rem;
+      height: 3.5rem;
       padding: 1rem;
     }
 
@@ -787,7 +806,7 @@ h2 {
   /* BEGIN - Header Styles - BEGIN */
 
     header {
-      height: 6rem;
+      height: 4rem;
       padding: 1rem;
     }
 
@@ -890,7 +909,7 @@ h2 {
   /* BEGIN - Header Styles - BEGIN */
 
     body header {
-      height: 6rem;
+      height: 4rem;
       padding: 1rem;
     }
 
