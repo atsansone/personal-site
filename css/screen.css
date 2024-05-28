@@ -4,242 +4,213 @@
 
 This is set up to go from a 1 column (320px) to 2 column (768px) to 3 column (978px+) home page layout.
 
-The main fonts are from TypeKit: Museo Sans and Museo Slab Serif.
+The section fonts are from TypeKit: Museo Sans and Museo Slab Serif.
 
 */
 
 /* Base Styles */
 
 /* Bold on headings, b, and strong */
-h1,h2,h3,h4,h5,h6,b,strong { font-weight: 700; }
+h1,h2,h3,h4,h5,h6,b,strong { font-weight: 800; }
 /* Italic on i, em, and cite: */
 i,em,cite { font-style: italic; }
 /* Dotted border and help cursor to abbr and acronym: */
 abbr,acronym { border-bottom: 1px dotted; cursor: help; }
 
 html {
-  background: #313F54;
+  background: #361F27;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5rem;
+  color: #0D090A;
 }
 
 /* Body */
 
 body {
-  font-family: museo-sans, sans-serif;
-  padding: 0px;
+  display: flex;
+  flex-direction: column;
 }
-
-/* BEGIN - Clear Margins and Padding at appropriate points - BEGIN */
-
-  #page > div {
-    margin: 0px;
-  }
-
-/* END - Clear Margins and Padding at appropriate points - END */
 
 /* Major Divisions */
 
 /* Page (Containing Div) */
 
-div#page {
-  background-color: #eee;
-  position: relative;
-  margin: 0px auto;
+main {
+  background-color: #EAF2EF;
+  margin-bottom: 1rem;
 }
 
 /* Header */
 
-div#header {
-  background-color: #500;
-  padding: 0px;
+header {
+  background-color: #AB3665;
 }
 
-div#header h1 {
-  font-family: museo-slab, serif;
-  font-weight: 700;
+header h1 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 800;
 }
 
-div#header h1 a {
+header h1 a {
   text-decoration: none;
-  color: #fff;
+  color: #EAF2EF;
 }
 
-div#header p.tagline {
-  color: #fff;
-}
-
-div#header ul.accessibility {
+header ul.accessibility {
   display: none;
 }
 
-/* Contact Details */
-div#header p.contact {
-  background-color: #500;
-  color: #fff;
+header div.topline {
+  color: #EAF2EF;
+  text-align: center;
+  text-wrap: balance;
 }
-
-div#content, div#footer {
-  font-family: museo-sans, sans-serif;
-}
-
 /* Content */
-  div#content {
-    border-top: 3px solid #aaa;
-    background-color: #eee;
+
+  section {
+    border-top: 3px solid #521945;
+    background-color: #EAF2EF;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
   }
 
-  div#main {
+  section.foto-right {
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  
+  section.foto-right div img {
+    object-fit: initial;
+    object-position: center;
+    aspect-ratio: 3 / 4;
   }
 
-  div#supporting {
+  section.foto-right figure figcaption {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  body#home main section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
   }
 
 /* Footer */
-  div#footer {
+
+  footer {
     border-top: 1px solid #600;
-    background-color: #fff;
+    background-color: #EAF2EF;
+    padding: 1rem;
+    font-size: 0.8rem;
   }
-  div#footer p.credits { }
-  div#footer ul.validators { }
-  div#footer ul.validators li { }
+  
+/* Navigation */
 
-  /*Navigation*/
-
-  div#navigation ul li {
-  }
-
-  div#navigation ul li a {
-  }
-
-  div#navigation ul li a:visited {
-  }
-
-  div#navigation ul li a:hover,
-  div#navigation ul li a:focus {
-  }
-
-/* Navigation Bar */
-
-/* Limiting this section to font, color and decoration */
-
-/*
-  div#navcontainer {
-    display: block;
-    width:100%;
-    min-width:400px;
-    margin: 0px;
-    padding: 0px;
-  }
-*/
-
-  div#navigation {
-    display: table;
-    margin: 0px;
-    padding: 0px;
-  }
-
-  div#navigation ul {
-    display: table-row;
-  }
-
-  div#navigation ul li a {
-    padding: 0px;
-    display: table-cell;
+  nav div {
+    font-family: 'Roboto', sans-serif;
     text-align: center;
+    padding: 0.5rem;
+  }
+
+  nav div.selected, nav div:hover {
+    background-color: #CAE6E8;
+    color: #AB3665;
+  }
+
+  nav div, nav div.selected:hover {
+    background: #AB3665;
+  }
+
+  nav div a {
     text-decoration:none;
+  }
+
+  nav div.selected:hover a, nav div a {
     color: #fff;
-    background: #595855;
-    vertical-align: middle;
   }
 
-  div#navigation ul li {
-    float: left;
-  }
-
-  div#navigation ul li a.selected {
-    border: 1px solid #aaa;
-    text-decoration:none;
+  nav div.selected a, nav div:hover a {
     color: #595855;
-    background: #fff;
-  }
-
-  div#navigation li {
-    font-family: museo-sans, sans-serif;
-  }
-
-  div#navigation ul li a:hover {
-    color: #CAE6E8;
-    background: #313F54;
-  }
-
-  div#navigation ul li a.selected:hover {
-    color: #595855;
-    background: #fff;
-  }
-
-  div#navigation ul li {
-    float: left;
   }
 
 /*Content Typography: Headings*/
-  div#content h1,
-  div#content h2,
-  div#content h3,
-  div#content h4,
-  div#content h5,
-  div#content h6 {
-    font-family: museo-slab, serif;
+  section h1,
+  section h2,
+  section h3,
+  section h4,
+  section h5,
+  section h6 {
+    font-family: 'Roboto Slab', serif;
   }
-  div#content h1  {
+  section h1  {
     font-size: 2em;
-    line-height: 36px;
-    margin-bottom: 18px;
+    line-height: 2rem;
+    margin-bottom: 1rem;
   }
-  div#content h2 {
-    font-size: 1.1em;
+  section h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
   }
-  div#content h3 {
+  section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
   }
-  div#content h4 {
+  section h4 {
   }
-  div#content h5 {
+  section h5 {
   }
-  div#content h6 {
+  section h6 {
   }
-  div#content * a {
+  section * a {
     text-decoration: none;
   }
-  div.row + h2, ul + h2, ul + h3, ul + h4 {
-    margin-top: 18px;
+  div.row + h2, ul + h2, ul + h3, ul + h4, ul + ul {
+    margin-top: 1rem;
   }
-  div#content p.company {
-    margin-bottom: 0px;
+
+  section p.company {
+    margin-bottom: .5rem;
   }
 
 /*Content Typography: Paragraphs*/
-div#content p {
-  font-family: museo-sans, sans-serif;
+section p {
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 1rem;
 }
 
-div#content div:last-child p:last-child {
+section p:last-child {
+  margin-bottom: 0rem;
+}
+
+section p + table {
+  margin-bottom: 0rem;
+}
+
+section div:last-child p:last-child {
   margin-bottom: 0px;
 }
 
 /*Content Typography: Unordered Lists*/
-div#content ul {
+section ul {
 }
 
-div#content ul li {
+section ul li {
   list-style-type: square;
   list-style-position:inside;
-  margin-left: 1em;
-  text-indent: -1em;
+  margin-left: 2.2rem;
+  text-indent: -2.0rem;
 }
 
 /*Nested*/
-div#content * li ul {
+section * li ul {
 }
 
-div#content * li ul li {
+section * li ul li {
   list-style-type: square;
   list-style-position:inside;
   margin-left: 2em;
@@ -247,96 +218,125 @@ div#content * li ul li {
 }
 
 /*Content Typography: Ordered Lists*/
-div#content ol {
+section ol {
 }
-div#content ol li {
+section ol li {
 }
 
 /*Nested*/
-div#content * li ol {
+section * li ol {
 }
-div#content * li ol li {
-}
-
-/*Content Typography: Links*/
-div#content a {
-  color: #313F54;
-  text-decoration: none;
-}
-div#content a:visited {
-  color: #444;
-}
-div#content a:hover,
-div#content a:focus {
+section * li ol li {
 }
 
 /*Content Typography: Links*/
-div#footer a {
-  color: #313F54;
+section a {
+  color: #AB3665;
   text-decoration: none;
 }
-div#footer a:visited {
+section a:visited {
   color: #444;
 }
-div#footer a:hover,
-div#footer a:focus {
+section a:hover,
+section a:focus {
+}
+
+/*Content Typography: Links*/
+footer a {
+  color: #521945;
+  text-decoration: none;
+}
+footer a:visited {
+  color: #444;
+}
+footer a:hover,
+footer a:focus {
 }
 
 /* Job Tools Block */
 
-body#resume div#content ul.tools {
+body#resume section ul.tools {
   background-color: #fff;
   margin: 12px 0px;
-  border: 1px #888 solid;
+  border: 1px #AB3665 solid;
 }
 
 /* This formatting is for the special tools listing per job. It applies to everything except the largest size */
 
-body#resume div#content ul.tools li {
-  font-size: 10px;
-  line-height: 12px;
+body#resume section {
+  display: flex;
+  flex-direction: column;
+}
+
+body#resume section ul.tools li {
+  font-size: 0.9rem;
+  line-height: 1.1rem;
   list-style-type: none;
   padding: 12px;
 }
 
-body#resume div#content ul.tools > li {
+body#resume section ul.tools > li {
   list-style-type: none;
   margin-left: 3.5em;
   text-indent: -3.5em;
 }
 
-body#resume div#content p.company {
-  border-top: 1px #888 solid;
+body#resume section p.company {
+  border-top: 1px #AB3665 solid;
+  font-size: 0.8rem;
 }
 
-body#resume div#content ul.job, body#resume h3 {
-  overflow: auto;
+section h3.job, section ul.job {
+  margin-bottom: 0rem;
 }
-body#resume div#content ul.job {
-  display: table;
+
+section ul.job {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 1rem;
+  flex-wrap: nowrap;
 }
-body#resume div#content ul.job > li {
-  display: table-cell;
-  margin-left: 0px;
-  text-indent: 0px;
+
+section ul.job > li {
+  margin-left: 0;
+  text-indent: 0;
   list-style-type: none;
+}
+
+section ul.job > li h3 {
+  display: flex;
+}
+
+section ul.job > li:last {
+  width: 50%;
+}
+
+section ul.job > li + li::before {
+  font-family: "Material Symbols Outlined";
+  content: "star";
   float: left;
+  text-indent: -1rem;
+  font-size: 2rem;
+  line-height: 1rem;
+  padding-top: 0.1rem;
 }
-body#resume div#content ul.job > li + li {
-  display: table-cell;
-  margin-left: 10px;
-  list-style-type: square;
-}
-body#resume div#content .job {
-  margin-bottom: 0px;
+
+main.cv p {
+  text-indent: -3rem;
+  padding-left: 3rem;
 }
 
 /* General Table Formats */
 
+th, td {
+  font-size: 0.8rem;
+}
+
 tr > th {
   background-color: #ccc;
-  padding: 7px;
-  font-weight: 700;
+  padding: 0.3rem;
+  font-weight: 800;
   text-align: center;
 }
 
@@ -349,7 +349,7 @@ tr:nth-child(even) {
 }
 
 table.general {
-  margin: 18px 0px;
+  margin-bottom: 1rem;
   border: 1px solid #ccc;
   width: 100%;
 }
@@ -361,12 +361,12 @@ table.general:last-child {
 }
 
 tr > td {
-  padding: 7px;
+  padding: 0.3rem;
   vertical-align: top;
 }
 
 table.tiny, table.tiny {
-  font-size: 8px;
+  font-size: 0.6rem;
 }
 
 table.small > tr > td, table.small > th {
@@ -400,7 +400,7 @@ table.skills tr.skilldiv {
 
 table.skills tr.skilldiv > td {
   padding-left: 20px;
-  font-weight: 700;
+  font-weight: 800;
   padding-left: 7px;
 }
 
@@ -432,71 +432,65 @@ h2 {
 
 /* Basic / 300px Grid */
 
-@media screen {
+@media screen and (max-width: 767px) {
 
   /* BEGIN - General HTML - BEGIN */
 
     html { /* Set font / line height / background */
-      line-height: 18px;
-      font-size: 12px;
-    }
-
-    html.grid { /* Set Visible Baseline Grid */
-      background-image: url('img/18px-baseline.png');
+      line-height: 1.5rem;
+      font-size: 0.9rem;
     }
 
   /* END - General HTML - END */
 
+  /* BEGIN - Page order - BEGIN */
+
+    header {
+      order: 1;
+    }
+
+    nav {
+      order: 3;
+    }
+
+    main {
+      order: 2;
+    }
+
+    footer {
+      order: 4;
+    }
+
+  /* END - Page order - END */
+
   /* BEGIN - Body Widths - BEGIN */
 
-    body.px #page, body.pxg #page {
-      width: 320px;
-    }
-
-    body.pxg #page {
-      background-image: url('img/300-grid.png');
-    }
-
-    body.pct #page {
-      width: 90%;
+    main {
       min-width: 320px; /* Minimum set to width of mobile device */
-    }
-
-    body.px #page > div {
-      padding: 18px 10px;
-    }
-
-    body.pct #page > div {
-      padding: 18px 3.1250%;
-    }
-
-    body.pct #page div#navigation { /* OK, this corrects the display:table issue between browsers */
-      margin: auto;
-      width: 93.75%;
-      padding: 18px 0px;
     }
 
   /* END - Body Widths - END */
 
   /* BEGIN - Header Styles - BEGIN */
 
-    div#header {
-      height: 90px;
+    header {
+      height: 5rem;
+      padding: 1rem;
+      text-wrap: balance;
     }
 
-    div#header h1 {
+    header h1 {
       text-align: center;
-      line-height: 36px;
-      font-size: 24px;
+      line-height: 2.5rem;
+      font-size: 2rem;
     }
 
-    div#header p {
+    header p {
       text-align: center;
     }
 
     caption {
-      display: inline-block;
-      margin-bottom: 18px;
+      margin-bottom: 1rem;
     }
 
   /* END - Header Styles - END */
@@ -505,268 +499,172 @@ h2 {
 
     /* Using display:table to set up a flexible set of navigation buttons */
 
-    body.pct #page div#content, body.px #page div#content {
-      padding-bottom: 0px;
-    }
-
-    div#navigation ul li, div#navigation ul li a {
-      height: 54px;
-    }
-
-    body.px div#navigation ul li, body.px div#navigation ul li a {
-      width: 66px;
-    }
-
-    body.pct div#navigation ul li, body.pct div#navigation ul li a {
-      width: 22%;
+    nav div {
       min-width: 66px;
-    }
-
-    body.px div#navigation ul li {
-      margin-left: 12px;
-    }
-
-    body.pct div#navigation ul li {
-      margin-left: 4%;
-    }
-
-    body.px div#navigation ul li:first-child, body.pct div#navigation ul li:first-child {
-      margin-left: 0px;
-    }
-
-    body.px div#navigation ul li a.selected {
-      width: 64px;
-    }
-
-    body.pct div#navigation ul li a.selected {
-      width: 21.3333%;
     }
 
   /* END - Navigation Bar at the Top of the Page below the header - END */
 
-  /* BEGIN - Main Content Block - BEGIN */
+  /* BEGIN - section Content Block - BEGIN */
 
-    div#content div#main h2, div#content p {
-      clear: both;
-      margin-bottom: 18px;
+    main section h2, section p {
+      margin-bottom: 0.5rem;
     }
 
-    body#resume div#content div#main h2, body#resume div#content div#main h3 {
-      padding-top: 18px;
-    }
-
-    div#content #block1 h2 {
-      padding: 0px;
+    body#resume main section h2, body#resume main section h3 {
+      padding-top: 0.5rem;
+      padding-bottom: 0rem;
     }
 
     div.row h2 {
-      clear: both;
-      margin-top: 18px;
+      margin-top: 1.5rem;
     }
 
     div.row {
-      display: inline-block;
-      clear: both;
-      margin-top: 18px;
-      width: 100%
+      margin-top: 1.5rem;
     }
 
     /* Print Design Portfolio */
 
       body#printdesign h2 {
-        margin-top: 18px;
-        font-size: 20px;
-        line-height: 36px;
+        margin-top: 1.5rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
       }
 
       body#printdesign h3 {
-        font-family: museo-sans, sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-weight: 500;
-        margin-bottom: 18px;
-        font-size: 15px;
-        line-height: 18px;
+        margin-bottom: 1rem;
       }
 
-  /* END - Main Content Block - END */
+  /* END - section Content Block - END */
 
   /* BEGIN - Footer - BEGIN */
 
-    #page div#footer {
-      font-size: 9px;
-      line-height: 18px;
+    footer {
+      font-size: 0.8rem;
+      line-height: 1.0rem;
     }
 
   /* END - Footer - END */
-}
 
+  nav {
+    height: 2.5rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
 
-/* 748 Grid */
-
-@media screen and (max-width: 767px) {
-    #page div#navigation {
-      background: #eee;
-    }
 }
 
 /* 748 Grid */
 
 @media screen and (min-width: 768px) {
 
-  /* BEGIN - General HTML - BEGIN */
-
-    html { /* Set font / line height / background */
-      line-height: 18px;
-      font-size: 12px;
-    }
-
-    html.grid { /* Set Visible Baseline Grid */
-      background-image: url('img/18px-baseline.png');
-    }
-
-  /* END - General HTML - END */
-
   /* BEGIN - Body Widths - BEGIN */
 
-    body.px #page, body.pxg #page { /* Set #page to 748 plus 10 margin for 768 */
-      width: 768px;
-    }
-
-    body.pxg #page {
-      background-image: url('img/748-grid.png');
-    }
-
-    body.pct #page {
-      width: 90%;
+    body main {
       min-width: 748px; /* Set Minimum Width of 748 px */
     }
 
-    body.px #page > div {
-      padding: 18px 10px;
-    }
-
-    body.pct #page > div {
-      padding: 18px 1.3021%;
-    }
-
-    body.pct #page > div {
-      width: 100%;
-    }
-
-
   /* END - Body Widths - END */
+
+  /* BEGIN - Page order - BEGIN */
+
+    header {
+      order: 1;
+    }
+
+    nav {
+      order: 2;
+    }
+
+    main {
+      order: 3;
+    }
+
+    footer {
+      order: 4;
+    }
+
+  /* END - Page order - END */
 
   /* BEGIN - Header - BEGIN */
 
-    div#header {
-      height: 102px;
+    header {
+      height: 3.5rem;
+      padding: 1rem;
     }
 
-    div#header h1 {
+    header h1, header p {
       text-align: left;
     }
 
-    div#header p {
-      text-align: left;
+    header h1 {
+      font-size: 1.75rem;
+      line-height: 2rem;
     }
 
+    header p {
+      font-size: 0.9rem;
+      line-height: 1.3rem;
+    }
+
+    header div.topline {
+      display: flex;
+      flex-direction: row;
+      color: #fff;
+      width: 100%;
+      gap: 1rem;
+    }
+    
+    header div.topline div.tagline {
+      text-align: left;
+      text-wrap: balance;
+    }
+    
+    header div.topline div.contact {
+      text-align: right;
+      text-wrap: balance;
+    }
+    
+    /* Contact Details */
+    
+    header p.contact {
+      color: #EAF2EF;
+    }
+    
   /* END - Header - END */
 
   /* BEGIN - Navigation Bar at the Top of the Page below the header - BEGIN */
 
-    body.pct #page div#navigation { /* OK, this corrects the display:table issue between browsers */
-      margin: 0px;
-      width: 100%;
-      padding: 18px 1.3021%;
-    }
-
-    body.pct #page div#content, body.px #page div#content {
-      padding-bottom: 18px;
-    }
-
-    #page div#navigation {
-      position: absolute;
-      top: 84px;
-      clear: both;
-      display: inline-table;
-    }
-
-    body #page div#navigation ul li, body #page div#navigation ul li a {
-      height: 36px;
-    }
-
-    body.px #page div#navigation ul li, body.px #page div#navigation ul li a {
-      width: 108px;
-      margin-left: 20px;
-    }
-
-    body.pct #page div#navigation ul li, body.pct #page div#navigation ul li a {
-      width: 14.4385027%;
-      margin-left: 2.6737968%;
-    }
-
-    body #page div#navigation ul li:first-child {
-      margin-left: 0px;
+    nav {
+      padding: 1rem;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
     }
 
   /* END - Navigation Bar at the Top of the Page below the header - END */
 
-  /* BEGIN - Main Content Block - BEGIN */
+  /* BEGIN - section Content Block - BEGIN */
 
-    body.pct #page div#navigation, body.px #page div#navigation {
-      padding-top: 18px;
+    section h1 {
+      text-align: left;
+      line-height: 2rem;
+      font-size: 1.25rem;
     }
 
-    #page div#content {
-      overflow: auto;
-    }
-
-    div#content div.block {
-      float: left;
-    }
-
-    body.px #page div#content div.block {
-      width: 364px;
-      margin-left: 20px;
-    }
-
-    body.pct #page div#content div.block { /* 748px / 2 */
-      width: 48.6631016%;
-      margin-left: 2.6737968%;
-    }
-
-    div#content h2 {
-      padding-top: 0px;
-    }
-
-    body #page div#content div.main div.block:first-child, body #page div#content div#block3 {
-      margin-left: 0px;
-    }
-
-    body#printdesign div#row div.block:first-child {
-      margin-left: 0px;
-    }
-
-    div#row div.block:first-child {
-      margin-left: 0px;
-    }
-
-    div#content p:last-child {
-      margin-bottom: 0px;
-    }
-
-    table .hide {
-      display: table-cell;
-    }
-
-  /* END - Main Content Block - END */
+  /* END - section Content Block - END */
 
   /* BEGIN - Footer - BEGIN */
 
-    #page div#footer {
-      font-size: 12px;
-      line-height: 18px;
-    }
-    div#footer p.credits { }
+  footer {
+    font-size: 0.8rem;
+    line-height: 1.0rem;
+  }
 
   /* END - Footer - END */
 }
@@ -778,123 +676,93 @@ h2 {
   /* BEGIN - General HTML - BEGIN */
 
     html { /* Set font / line height / background */
-      line-height: 18px;
-      font-size: 14px;
-    }
-
-    html.grid {
-      background-image: url('img/18px-baseline.png');
+      line-height: 1.5rem;
+      font-size: 1rem;
     }
 
   /* BEGIN - General HTML - BEGIN */
 
+  /* BEGIN - Page order - BEGIN */
+
+    header {
+      order: 1;
+    }
+
+    nav {
+      order: 2;
+    }
+
+    main {
+      order: 3;
+    }
+
+    footer {
+      order: 4;
+    }
+
+  /* END - Page order - END */
+
   /* BEGIN - Body Widths - BEGIN */
-
-    body.px #page, body.pxg #page {
-      width: 1002px;
-    }
-
-    body.pxg #page {
-      background-image: url('img/978-grid.png');
-    }
-
-    body.pct #page {
-      width: 90%;
-    }
-
-    body.px #page > div {
-      padding: 18px 12px;
-    }
-
-    body.pct #page > div {
-      padding: 18px 1.1976%;
-    }
 
   /* END - Body Widths - END */
 
   /* BEGIN - Header Styles - BEGIN */
 
-    div#header {
-      height: 108px;
+    header {
+      height: 3.5rem;
+      padding: 1rem;
     }
 
-    div#header h1 {
+    header h1, header p {
       text-align: left;
+    }
+
+    header h1 {
+      font-size: 1.75rem;
+      line-height: 2rem;
+    }
+
+    header p {
+      font-size: 0.9rem;
+      line-height: 1.3rem;
     }
 
   /* END - Header Styles - END */
 
   /* BEGIN - Navigation Bar at the Top of the Page below the header - BEGIN */
 
-    body #page div#navigation {
-      top: 90px;
+    nav {
+      padding: 1rem;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
     }
 
-    body #page div#navigation ul li, body #page div#navigation ul li a {
-      height: 36px;
-      margin-bottom: 0px;
-    }
-
-    body.px #page div#navigation ul li, body.px #page div#navigation ul li a {
-      width: 138px;
-      margin-left: 30px;
-    }
-
-    body.pct #page div#navigation ul li, body.pct #page div#navigation ul li a {
-      width: 14.1104294%;
-      margin-left: 3.0674847%;
-    }
-
-    body #page div#navigation ul li:first-child {
-      margin-left: 0px;
-    }
 
   /* END - Navigation Bar at the Top of the Page below the header - END */
 
-  /* BEGIN - Main Content Block - BEGIN */
+  /* BEGIN - section Content Block - BEGIN */
 
-    div#content {
+  body#home main section {
+      padding: 1rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
     }
 
-    body #page div#content div.block, body #page div#content div#block3 {
-      float: left;
+    body main section h1 {
+      text-align: left;
+      line-height: 2rem;
+      font-size: 1.5rem;
     }
 
-    body.px #page div#content div.block, body.px #page div#content div#block3 {
-      width: 306px;
-      margin-left: 30px;
-    }
-
-    body.pct #page div#content div.block, body.pct #page div#content div#block3 { /* 978px / 3 */
-      width: 31.2883436%;
-      margin-left: 3.0674847%;
-    }
-
-    body#printdesign.px #page div#content div.block {
-      width: 474px;
-      margin-left: 30px;
-    }
-
-    body#printdesign.pct #page div#content div.block { /* 978px / 2 */
-      width: 48.4662577%;
-      margin-left: 3.0674847%;
-    }
-
-    body #page div#content div.block:first-child, body#printdesign #page div#content div.block:first-child { /* Need to declare both body and body#printdesign or this will not work */
-      margin-left: 0%;
-    }
-
-    div#content p:last-child {
-      margin-bottom: 0px;
-    }
-
-  /* END - Main Content Block - END */
+  /* END - section Content Block - END */
 
   /* BEGIN - Footer - BEGIN */
 
-    #page div#footer {
-      font-size: 12px;
-      line-height: 18px;
+    footer {
+      font-size: 0.8rem;
+      line-height: 1.0rem;
     }
 
   /* END - Footer - END */
@@ -907,157 +775,91 @@ h2 {
   /* BEGIN - General HTML - BEGIN */
 
     html { /* Set font / line height / background */
-      line-height: 18px;
-      font-size: 14px;
-    }
-
-    html.grid { /* Set font / line height / background */
-      background-image: url('img/18px-baseline.png');
+      line-height: 1.5rem;
+      font-size: 1rem;
     }
 
   /* BEGIN - General HTML - BEGIN */
 
+  /* BEGIN - Page order - BEGIN */
+
+    header {
+      order: 1;
+    }
+
+    nav {
+      order: 2;
+    }
+
+    main {
+      order: 3;
+    }
+
+    footer {
+      order: 4;
+    }
+
+  /* END - Page order - END */
+
   /* BEGIN - Body Widths - BEGIN */
-
-    body.px #page, body.pxg #page {
-      width: 1218px;
-    }
-
-    body.pxg #page {
-      background-image: url('img/1248-grid.png');
-    }
-
-    body.pct #page {
-      width: 90%; /*Total with works out to 1248*/
-    }
-
-    body.px #page > div {
-      padding: 18px 15px;
-    }
-
-    body.pct #page > div {
-      padding: 18px 1.2019%;
-    }
 
   /* END - Body Widths - END */
 
   /* BEGIN - Header Styles - BEGIN */
 
-    body div#header h1 {
+    header {
+      height: 4rem;
+      padding: 1rem;
+    }
+
+    body header h1 {
       text-align: left;
-      line-height: 36px;
-      font-size: 28px;
+      line-height: 2.5rem;
+      font-size: 2rem;
     }
 
-    #page p.contact, #page p.tagline {
-      position: absolute;
-      top: 54px;
+    body.pct main p.tagline {
+      width: 66%;
     }
 
-    body.px #page p.tagline {
-      width: 828px;
-    }
-
-    body.pct #page p.tagline {
-      width: 67.9802956%;
-    }
-
-    #page div#header {
-      height: 90px;
-    }
-
-    body div#header p.contact {
+    body header p.contact {
       text-align: right;
     }
 
-    body.px div#header p.contact {
-      left: 858px;
-      width: 350px;
-    }
-
-    body.pct div#header p.contact {
-      left: 69.6546871%;
-      width: 29.5566502%;
+    body.pct header p.contact {
+      left: 67%;
+      width: 33%;
     }
 
   /* END - Header Styles - END */
 
   /* BEGIN - Navigation Bar at the Top of the Page below the header - BEGIN */
 
-    body #page div#navigation {
-      top: 72px;
-      display: inline-table;
-      width: 100%;
-    }
-
-    body #page div#navigation ul li, body.px #page div#navigation ul li a {
-      height: 36px;
-    }
-
-    body.px #page div#navigation ul li, body.px #page div#navigation ul li a {
-      width: 178px;
-      margin-left: 30px;
-    }
-
-    body.pct #page div#navigation ul li, body.pct #page div#navigation ul li a {
-      width: 14.6141215%;
-      margin-left: 2.4630542%;
-    }
-
-    body #page div#navigation ul li {
-      margin-bottom: 0px;
-    }
-
-    body #page div#navigation ul li:first-child {
-      margin-left: 0px;
-    }
 
   /* END - Navigation Bar at the Top of the Page below the header - END */
 
-  /* BEGIN - Main Content Block - BEGIN */
+  /* BEGIN - section Content Block - BEGIN */
 
-    div#content {
+    body#home main section {
+      padding: 1rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
     }
 
-    body #page div#content div.block {
-      float: left;
+    body main section h1 {
+      text-align: left;
+      line-height: 2rem;
+      font-size: 1.5rem;
     }
 
-    body.px #page div#content div.block, body.px #page div#content div#block3 {
-      width: 386px;
-      margin-left: 30px;
-    }
-
-    body.pct #page div#content div.block, body.pct #page div#content div#block3 { /* 1218px / 3 */
-      width: 31.6912972%;
-      margin-left: 2.4630542%;
-    }
-
-    body#printdesign.px #page div#content div.block {
-      width: 594px;
-      margin-left: 30px;
-    }
-
-    body#printdesign.pct #page div#content div.block { /* 1218px / 2 */
-      width: 48.7684729%;
-      margin-left: 2.4630542%;
-    }
-
-    body #page div#content div.block:first-child, body#printdesign #page div#content div.block:first-child { /* Need to declare both body and body#printdesign or this will not work */
-      margin-left: 0%;
-    }
-
-    div#content p:last-child {
-      margin-bottom: 0px;
-    }
-
-  /* END - Main Content Block - END */
+  /* END - section Content Block - END */
 
   /* BEGIN - Footer - BEGIN */
 
-    #page div#footer {
-      font-size: 12px;
-      line-height: 18px;
+    footer {
+      font-size: 0.8rem;
+      line-height: 1.0rem;
     }
 
   /* END - Footer - END */
@@ -1071,159 +873,93 @@ h2 {
   /* BEGIN - General HTML - BEGIN */
 
     html { /* Set font / line height / background */
-      line-height: 24px;
-      font-size: 18px;
-    }
-
-    html.grid { /* Set font / line height / background */
-      background-image: url('img/24px-baseline.png');
+      line-height: 1.5rem;
+      font-size: 1.25rem;
     }
 
   /* BEGIN - General HTML - BEGIN */
 
+  /* BEGIN - Page order - BEGIN */
+
+    header {
+      order: 1;
+    }
+
+    nav {
+      order: 2;
+    }
+
+    main {
+      align-self: center;
+      order: 3;
+    }
+
+    footer {
+      order: 4;
+    }
+
+  /* END - Page order - END */
+  
   /* BEGIN - Body Widths - BEGIN */
 
-    body.px #page, body.pxg #page {
-      width: 1408px;
-    }
-
-    body.pxg #page {
-      background-image: url('img/1378-grid.png');
-    }
-
-    body.pct #page {
-      width: 90%;
+    body.pct main {
       max-width: 1408px;
-    }
-
-    body.px #page > div {
-      padding: 24px 15px;
-    }
-
-    body.pct #page > div {
-      padding: 24px 1.0653%;
     }
 
   /* END - Body Widths - END */
 
   /* BEGIN - Header Styles - BEGIN */
 
-    #page div#header {
-      height: 78px;
+    body header {
+      height: 4rem;
+      padding: 1rem;
     }
 
-    div#header h1 {
-      line-height: 48px;
-      font-size: 42px;
-    }
-
-    div#header p {
-      font-size: 15px;
-    }
-
-    div#header > p {
-      position: absolute;
-      top: 72px;
-    }
-
-    body.px #page div#header p.tagline {
-      width: 938px;
-    }
-
-    body.pct #page div#header p.tagline {
-      width: 68.0696662%;
-    }
-
-    body #page div#header p.contact {
-      text-align: right;
-    }
-
-    body.px #page div#header p.contact {
-      left: 968px;
-      width: 400px;
-    }
-
-    body.pct #page div#header p.contact {
-      left: 69.5515893%;
-      width: 29.7532656%;
+    header h1 {
+      line-height: 3.25rem;
+      font-size: 3rem;
     }
 
   /* END - Header Styles - END */
 
   /* BEGIN - Navigation Bar at the Top of the Page below the header - BEGIN */
 
-    body #page div#navigation {
-      top: 72px;
-    }
-
-    body #page div#navigation ul li, body #page div#navigation ul li a {
-      height: 36px;
-      font-size: 18px;
-      margin-bottom: 0px;
-    }
-
-    body.px #page div#navigation ul li, body.px #page div#navigation ul li a {
-      width: 204.66px;
-      margin-left: 30px;
-    }
-
-    body.pct #page div#navigation ul li, body.pct #page div#navigation ul li a {
-      width: 14.8523905%;
-      margin-left: 2.1770682%;
-    }
-
-    body #page div#navigation ul li:first-child {
-      margin-left: 0px;
+    nav {
+      padding: 1rem;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
     }
 
   /* END - Navigation Bar at the Top of the Page below the header - END */
 
-  /* BEGIN - Main Content Block - BEGIN */
+  /* BEGIN - section Content Block - BEGIN */
 
-    div#content {
+    body#home main section {
+      padding: 1rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
     }
 
-    body #page div#content div.block {
-      float: left;
-    }
-
-    body.px #page div#content div.block, body.px #page div#content div#block3 {
-      width: 439px;
-      margin-left: 30px;
-    }
-
-    body.pct #page div#content div.block, body.pct #page div#content div#block3 { /* 1378px / 3 */
-      width: 31.8819545%;
-      margin-left: 2.1770682%;
-    }
-
-    body#printdesign.px #page div#content div.block {
-      width: 674px;
-      margin-left: 30px;
-    }
-
-    body#printdesign.pct #page div#content div.block { /* 1378px / 2 */
-      width: 48.9114659%;
-      margin-left: 2.1770682%;
-    }
-
-    body #page div#content div.block:first-child, body#printdesign #page div#content div.block:first-child { /* Need to declare both body and body#printdesign or this will not work */
-      margin-left: 0px;
+    body main section h1 {
+      text-align: left;
+      line-height: 2rem;
+      font-size: 1.5rem;
     }
 
     /* Enlarging the fonts for the maximum browser size */
 
-      body#resume div#content ul.tools li {
-        font-size: 15px;
-        line-height: 24px;
+      body#resume section ul.tools li {
+        font-size: 0.8rem;
+        line-height: 1rem;
         list-style-type: none;
-        padding: 12px;
+        padding: 1rem;
       }
 
-      body#resume div#content ul.tools > li {
+      body#resume section ul.tools > li {
         list-style-type: none;
-        margin-left: 3.5em;
-        text-indent: -3.5em;
+        text-indent: -2rem;
       }
 
       tr > td, tr > th {
@@ -1232,7 +968,7 @@ h2 {
       }
 
       div.row + h2, ul + h2, ul + h3, ul + h4 {
-        margin-top: 24px;
+        margin-top: 2rem;
       }
 
     /* Print Design Portfolio */
@@ -1251,14 +987,9 @@ h2 {
 
     /* End enlargement */
 
-  /* END - Main Content Block - END */
+  /* END - section Content Block - END */
 
   /* BEGIN - Footer - BEGIN */
-
-    #page div#footer p.credits, #page div#footer ul.validators li {
-      font-size: 12px;
-      line-height: 24px;
-    }
 
   /* END - Footer - END */
 
