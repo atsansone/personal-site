@@ -1,9 +1,11 @@
-----
-layout: default
+---
 title: Anthony T. Sansone
-----
+layout: default
+id: index
+---
 
-I am a native of [Milwaukee][], [Wisconsin][] and now live in [Oak Park][], [Illinois][] with my family.
+I am a native of [Milwaukee][], [Wisconsin][] and now live in [Oak Park][], [Illinois][] with my family. ![Agrigento](media/img/agrigento.jpg){:height="240px" width="180px"}
+
 
 The [University of Wisconsin-Madison][] conferred my Bachelors degree in [Political Science][] in 1994.
 
@@ -29,10 +31,7 @@ Anything else about me can be found on [X][], [LinkedIn][] or [Facebook][]. Aski
 
 If we haven't met and you would like to meet, [reach out and schedule a call][reach-out].
 
-<figure>
-  <img src="media/img/agrigento.jpg" alt="Anthony Sansone in front of the Temple of Hercules in Agrigento, Sicily on 22 July 2022">
-  <figcaption>Agrigento, Sicily, 22 July 2022</caption>
-</figure>
+
 
 [Facebook]: http://www.facebook.com/anthony.sansone  
 [iit]: http://www.iit.edu 
