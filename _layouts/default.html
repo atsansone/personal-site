@@ -19,7 +19,7 @@
 
 </head>
 
-<body id="about" class="pct">
+<body id="{{page.id}}" class="pct">
 
   <header>
 
@@ -42,14 +42,16 @@
   </header>
 
   <main>
+    <section>
 
     {{ content }}
 
+    </section>
   </main>
 
   <nav>
     <div><a href="index.html">Home</a></div>
-    <div class="selected"><a href="about.html">About</a></div>
+    <div><a href="about.html">About</a></div>
     <div><a href="resume.html">Resume</a></div>
     <div><a href="cv.html">CV</a></div>
   </nav>
