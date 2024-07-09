@@ -9,3 +9,5 @@ markdown: kramdown
 kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
+domain: tonysansone.me           # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
+url: https://www.tonysansone.me  # the base hostname and protocol for your site, e.g. http://example.com
