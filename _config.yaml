@@ -15,3 +15,6 @@ kramdown:
   input: GFM
   parse_block_html: true
 livereload: true
+sass:
+  sass_dir: _assets/sass
+  style: compressed
