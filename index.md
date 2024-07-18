@@ -10,7 +10,6 @@ id: index
 
 I am a native of [Milwaukee][], [Wisconsin][] and now live in [Oak Park][], [Illinois][] with my family. 
 
-
 The [University of Wisconsin-Madison][] conferred my Bachelors degree in [Political Science][] in 1994.
 
 The [Illinois Institute of Technology][iit] conferred a Master's of Science degree in [Technical Communication and Information Design][tcid] in 2013.
@@ -38,7 +37,7 @@ If we haven't met and you would like to meet, [reach out and schedule a call][re
 </div>
 
 <div markdown="1">
-![Anthony Sansone in front of the Temple of Hercules in Agrigento, Sicily on 22 July 2022](media/img/agrigento.jpg)
+![Anthony Sansone in front of the Temple of Hercules in Agrigento, Sicily on 22 July 2022](/assets/img/agrigento.jpg)
 Agrigento, Sicily, 22 July 2022
 </div>
 
