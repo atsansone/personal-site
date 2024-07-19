@@ -3,20 +3,7 @@
 
 <head>
 
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
-
-  <!--Change the path to respond.min.js to reflect its location in your site-->
-  <script type="text/javascript" src="/assets/js/respond.min.js"></script>
-
-  <title>{{ page.title }}</title>
-
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <link rel="stylesheet" type="text/css" media="screen, print" href="/assets/css/reset.css" />
-  <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/screen.css" />
-  <link rel="stylesheet" type="text/css" media="print" href="/assets/css/print.css" />
-  <link rel="icon" href="favicon.png" type="image/png" />
+{% include metadata.html %}
 
 </head>
 
@@ -48,12 +35,7 @@
 
   </main>
 
-  <nav>
-    <div><a href="index.html">Home</a></div>
-    <div><a href="resume.html">Resume</a></div>
-    <div><a href="cv.html">CV</a></div>
-    <div><a href="portfolio.html">Portfolio</a></div>
-  </nav>
+  {% include nav.html %}
 
   <footer>
     Site built with valid <a href="http://validator.w3.org/check?uri=referer" title="Validate this page's XHTML">XHTML</a>, <a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3" title="Validate this page's CSS">CSS3</a> and (mostly) <a href="http://jigsaw.w3.org/css-validator/check/referer" title="Validate this page's CSS">CSS2</a>, with the exception of Media Queries. Content and design by <a href="http://anthony-sansone.com" title="Check out the Home Page">Anthony T. Sansone</a>.

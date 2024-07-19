@@ -1,0 +1,56 @@
+body#resume main section {
+  display: flex;
+  flex-direction: column;
+  dl.tools {
+    background-color: #fff;
+    padding: 1rem;
+    display: table-row;
+    border: 1px #AB3665 solid;
+    margin: 1rem 0;
+    dt, dd {
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      display: table-cell;
+    }
+    dt {
+      font-weight: bold;
+    }
+    dd {
+      padding-left: 1rem;
+    }
+  }  
+  p.company {
+    border-top: 1px #AB3665 solid;
+    font-size: 0.875rem;
+  }
+}  
+
+section {
+  h3.job, ul.job {
+    margin-bottom: 0.2rem;
+  }
+  ul.job {
+    display: table-row;
+    // border: 1px solid black;
+    flex-direction: row;
+    width: 100%;
+    gap: 1rem;
+    flex-wrap: nowrap;
+    & > li {
+      margin-left: 0rem;
+      list-style-type: none;
+      display: table-cell;
+    }
+    & > li + li {
+      padding-left: 1.5rem;
+    }
+    & > li + li::before {
+      font-family: "Material Symbols Outlined";
+      content: "star";
+      float: left;
+      text-indent: -1.25rem;
+      font-size: 1rem;
+      padding-top: 0.5rem;
+    }
+  }
+}  
