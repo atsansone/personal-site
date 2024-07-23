@@ -5,7 +5,7 @@ body#resume main section {
     background-color: #fff;
     padding: 1rem;
     display: table-row;
-    border: 1px #AB3665 solid;
+    border: 1px $main-accent-color solid;
     margin: 1rem 0;
     dt, dd {
       font-size: 0.875rem;
@@ -20,7 +20,7 @@ body#resume main section {
     }
   }  
   p.company {
-    border-top: 1px #AB3665 solid;
+    border-top: 1px $main-accent-color solid;
     font-size: 0.875rem;
   }
 }  

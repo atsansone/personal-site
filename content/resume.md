@@ -15,7 +15,7 @@ id: resume
 
 <h2>Achievements</h2>
 <ul>
-<li>Led team to highest ever developer satisfaction with documentation in four years.</li>
+<li>Drove documentation to highest ever customer satisfaction score in four years, a five percent bump in 6 months.</li>
 <li>Transformed REST API deliverables for large-scale cloud applications using OpenAPI and Swagger-Core.</li>
 <li>Presented at two API the Docs conferences (Amsterdam, 2017 and Paris, 2018) about converting to OpenAPI.</li>
 <li>Developed documentation systems using document systems, wikis, and docs-as-code methods.</li>

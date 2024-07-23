@@ -11,7 +11,7 @@ i,em,cite { font-style: italic; }
 abbr,acronym { border-bottom: 1px dotted; cursor: help; }
 
 html {
-  background: #361F27;
+  background: $main-background-color;
   font-size: 14px;
   font-family: 'Roboto', sans-serif;
   line-height: 1.5rem;
@@ -30,7 +30,7 @@ body {
 /* Page (Containing Div) */
 
 main {
-  background-color: $main-background-color;
+  background-color: $main-content-background-color;
   margin-bottom: 1rem;
 }
 
@@ -51,10 +51,10 @@ p, ul, ol, dl, h1,h2,h3,h4,h5,h6 {
 /* Header */
 
 header {
-  background-color: #AB3665;
+  background-color: $main-header-background-color;
   
   h1 {
-    font-family: 'Roboto Slab', serif;
+    font-family: $main-header-font;
     font-weight: 800;
     a {
       text-decoration: none;
@@ -74,7 +74,7 @@ header {
 /* Content */
 
 section {
-  background-color: #EAF2EF;
+  background-color: $main-content-background-color;
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -98,9 +98,9 @@ section {
 body#index main section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  gap: 2rem;
   &.foto-right {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 2fr 1fr;
   }
 }
 
@@ -119,23 +119,23 @@ nav div {
   font-family: 'Roboto', sans-serif;
   text-align: center;
   padding: 0.5rem;
-  background: #AB3665;
+  background: $main-accent-color;
   &.selected, &:hover {
-    background-color: #CAE6E8;
-    color: #AB3665;
+    background-color: $main-light-color;
+    color: $main-accent-color;
     & a {
-      color: #595855;
+      color: $main-accent-color;
     }
   }
   &.selected:hover {
-    background: #AB3665;
+    background: $main-accent-color;
     & a {
-      color: #fff;
+      color: $main-light-color;
     }
   }
   a {
     text-decoration:none;
-    color: #fff;
+    color: $main-light-color;
   }
 }
 
@@ -143,7 +143,7 @@ nav div {
 
 section {
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto Slab', serif;
+    font-family: $main-header-font;
   }
   h1  {
     font-size: 2rem;
@@ -153,7 +153,7 @@ section {
   h2 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    border-bottom: 1px #444 solid;
+    border-bottom: 1px $main-accent-color solid;
   }
   h3 {
     font-size: 1.25rem;
@@ -183,7 +183,7 @@ section {
     margin-left: 2rem;
   }
   a {
-    color: #AB3665;
+    color: $main-accent-color;
     text-decoration: none;
     &:visited {
       color: #444;
@@ -220,28 +220,29 @@ th, td {
 
 tr {
   & > th {
-    background-color: #ccc;
+    background-color: $table-header-color;
     padding: 0.3rem;
     font-weight: 800;
     text-align: center;
+    color: $main-light-color;
   }
 
   &:nth-child(odd) {
-    background-color:#eee;
+    background-color: $table-odd-color;
   }
 
   &:nth-child(even) {
-    background-color:#fff;
+    background-color: $table-even-color;
   }
 }
 table {
   &.general {
     margin-bottom: 1rem;
-    border: 1px solid #ccc;
+    border: 1px solid $table-header-color;
     width: 100%;
     &:last-child {
       margin: 0rem;
-      border: 1px solid #ccc;
+      border: 1px solid $table-header-color;
       width: 100%;
     }
   }
@@ -267,21 +268,19 @@ tr > td {
 /* Skills Tables */
 
 table.skills tr {
-  & > td {
-    width: 60%;
-    padding-left: 10px;
+  & td:first-child {
+    padding-left: 1rem;
   }
   & > td + td {
     text-align: center;
     width: 15%;
-    padding-left: 0px;
   }
   &.skilldiv {
-    background-color: #ddd;
+    background-color: $main-accent-color;
     & > td {
-      padding-left: 20px;
+      padding-left: .5rem;
       font-weight: 800;
-      padding-left: 7px;
+      color: $main-light-color;
     }
   }
 }
@@ -292,11 +291,9 @@ table {
   &.resumewriting tr th {
     text-align: center;
     width: 5%;
-    padding-left: 0px;
     &.wide {
       text-align: center;
       width: 15%;
-      padding-left: 0px;
     }
   }
 }
@@ -419,7 +416,7 @@ img {
       line-height: 1.3rem;
     }
     div.topline {
-      color: #fff;
+      color: $main-light-color;
       display: flex; /* Enable flexbox layout */
       justify-content: space-between; /* Align items at opposite ends */
       width: 100%;

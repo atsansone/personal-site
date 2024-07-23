@@ -1,4 +1,17 @@
 // Variables
 
-$main-background-color: #FCFCFC;
+$main-accent-color: #AB3665;
+$main-light-color: #FCFCFC;
+$main-dark-color: #891149;
+
+$main-content-background-color: $main-light-color;
 $main-text-color: #212121;
+$main-background-color: #891149;
+$main-header-background-color: $main-accent-color;
+$table-header-color: $main-dark-color;
+$table-even-color: #fff1f5;
+$table-odd-color: $main-light-color;
+
+
+$main-font: 'Roboto', sans-serif;
+$main-header-font: 'Roboto Slab', serif;
