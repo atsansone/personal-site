@@ -2,6 +2,7 @@
 title: Curriculum Vitae | Anthony T. Sansone
 layout: default
 id: cv
+permalink: /cv/
 ---
 
 <section markdown="1">

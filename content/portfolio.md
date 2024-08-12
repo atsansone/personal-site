@@ -2,6 +2,7 @@
 title: Portfolio | Anthony T. Sansone
 layout: default
 id: portfolio
+permalink: /portfolio/
 ---
 
 <section markdown="1">

@@ -30,6 +30,7 @@ twitter_username: atsansone
 github_username:  atsansone
 
 # Build settings
+theme: minima
 plugins:
   - jekyll-feed
 
@@ -39,6 +40,8 @@ include:
   - content
   - assets
   - _layouts
+
+livereload: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.

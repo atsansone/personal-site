@@ -3,3 +3,7 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
+<<<<<<< HEAD
+=======
+Gemfile.lock
+>>>>>>> 5f41cdf (Refactor commit)

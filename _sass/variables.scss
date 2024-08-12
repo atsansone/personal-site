@@ -6,8 +6,9 @@ $main-dark-color: #891149;
 
 $main-content-background-color: $main-light-color;
 $main-text-color: #212121;
-$main-background-color: #891149;
+$main-background-color: $main-dark-color;
 $main-header-background-color: $main-accent-color;
+$link-visited-color: $main-dark-color;
 $table-header-color: $main-dark-color;
 $table-even-color: #fff1f5;
 $table-odd-color: $main-light-color;

@@ -2,6 +2,7 @@
 title: Resume | Anthony T. Sansone
 layout: default
 id: resume
+permalink: /resume/
 ---
 
 {::nomarkdown}
@@ -37,7 +38,7 @@ id: resume
 <h2>Professional Experience</h2>
 
 <h3 class="job">Lead Technical Writer, Dart and Flutter</h3>
-<p class="company"><a href="https://www.google.com">Google, LLC</a> [dart.dev and docs.flutter.dev]</p>
+<p class="company"><a href="https://www.google.com">Google, LLC</a> [dart.dev and docs.flutter.dev], July 2022 to July 2024</p>
 Develop user content and coach junior writers for USD 543 MM data platform company.
 <ul>
 <li>Document the Dart language and Flutter app framework.</li>
@@ -105,7 +106,7 @@ Created documentation for data analytics company focused on real estate. Covered
 
 
 <h3 class="job">Senior Technical Writer</h3>
-<p class="company"><a href="http://www.emc.com">EMC Corporation</a> / <a href="http://www.vce.com">VCE Company</a>, July 2007 to Present</p>
+<p class="company"><a href="http://www.emc.com">EMC Corporation</a> / <a href="http://www.vce.com">VCE Company</a>, July 2007 to April 2013</p>
 <ul>
 <li>Document, edit, design and diagram application functionality, configuration, architecture, applications and capabilities for customers throughout central sales division</li>
 <li>Document, edit, design and diagram proposals, white papers and solutions for customers</li>
@@ -271,6 +272,7 @@ Created documentation for data analytics company focused on real estate. Covered
 
 <h2>Awards</h2>
 <ul>
+<li>4 spot bonus, 6 peer bonus at Google</li>
 <li>Graduate School Dean Fellowship (2011&ndash;12)</li>
 <li>3 EMC Rewards (2009&ndash;11)</li>
 <li>4 Arthur C. Nielsen Jr. Individual Awards (2000)</li>
@@ -342,28 +344,53 @@ Created documentation for data analytics company focused on real estate. Covered
 
 <table class="general skills">
 <tr>
-<th>Skill</th>
-<th>Proficiency</th>
+<th>Language</th>
+<th>Reading</th>
+<th>Listening</th>
+<th>Writing</th>
+<th>Speaking</th>
 </tr>
 <tr>
 <td>English</td>
-<td>Native Speaker</td>
+<td>Native</td>
+<td>Native</td>
+<td>Native</td>
+<td>Native</td>
 </tr>
 <tr>
 <td>French</td>
+<td>Intermediate</td>
+<td>Basic</td>
+<td>Basic</td>
 <td>Basic</td>
 </tr>
 <tr>
 <td>Spanish</td>
+<td>Intermediate</td>
+<td>Basic</td>
+<td>Basic</td>
 <td>Basic</td>
 </tr>
 <tr>
-<td>Portugese</td>
+<td>German</td>
+<td>Learning</td>
+<td>Learning</td>
+<td>Learning</td>
 <td>Learning</td>
 </tr>
 <tr>
 <td>Italian</td>
 <td>Intermediate</td>
+<td>Basic</td>
+<td>Basic</td>
+<td>Learning</td>
+</tr>
+<tr>
+<td>Portuguese</td>
+<td>Learning</td>
+<td>Learning</td>
+<td>Learning</td>
+<td>Learning</td>
 </tr>
 </table>
 
@@ -373,19 +400,19 @@ Created documentation for data analytics company focused on real estate. Covered
 <table class="general skills">
 <tr>
 <th>Skill</th>
-<th>Years Exp.</th>
+<th>Years</th>
 <th>Last Used</th>
 <th>Proficiency</th>
 </tr>
 <tr>
 <td>Academic Writing</td>
-<td>7</td>
-<td>2023</td>
+<td>9</td>
+<td>2024</td>
 <td>Intermediate</td>
 </tr>
 <tr>
 <td>Application Administration</td>
-<td>8</td>
+<td>9</td>
 <td>2023</td>
 <td>Advanced</td>
 </tr>
@@ -393,24 +420,24 @@ Created documentation for data analytics company focused on real estate. Covered
 <td>Application Architecture</td>
 <td>11</td>
 <td>2023</td>
-<td>Advanced</td>
+<td>Intermediate</td>
 </tr>
 <tr>
 <td>Budgeting</td>
-<td>25</td>
-<td>2023</td>
+<td>26</td>
+<td>{{ 'now' | date: '%Y' }}</td>
 <td>Intermediate</td>
 </tr>
 <tr>
 <td>Business Writing</td>
-<td>25</td>
-<td>2023</td>
+<td>26</td>
+<td>{{ 'now' | date: '%Y' }}</td>
 <td>Expert</td>
 </tr>
 <tr>
 <td>Content Management Systems</td>
-<td>11</td>
-<td>2023</td>
+<td>12</td>
+<td>{{ 'now' | date: '%Y' }}</td>
 <td>Advanced</td>
 </tr>
 <tr>
@@ -427,38 +454,38 @@ Created documentation for data analytics company focused on real estate. Covered
 </tr>
 <tr>
 <td>Graphic Design</td>
-<td>32</td>
-<td>2023</td>
-<td>Expert</td>
+<td>33</td>
+<td>{{ 'now' | date: '%Y' }}</td>
+<td>Advanced</td>
 </tr>
 <tr>
 <td>Information Architecture</td>
-<td>13</td>
-<td>2023</td>
+<td>14</td>
+<td>{{ 'now' | date: '%Y' }}</td>
 <td>Advanced</td>
 </tr>
 <tr>
 <td>Internationalization and Localization</td>
-<td>10</td>
-<td>2007</td>
+<td>11</td>
+<td>{{ 'now' | date: '%Y' }}</td>
 <td>Advanced</td>
 </tr>
 <tr>
 <td>Marketing</td>
-<td>25</td>
-<td>2023</td>
+<td>26</td>
+<td>{{ 'now' | date: '%Y' }}</td>
 <td>Intermediate</td>
 </tr>
 <tr>
 <td>Personnel Management</td>
-<td>20</td>
-<td>2023</td>
+<td>21</td>
+<td>{{ 'now' | date: '%Y' }}</td>
 <td>Intermediate</td>
 </tr>
 <tr>
 <td>Project Management</td>
-<td>20</td>
-<td>2023</td>
+<td>21</td>
+<td>{{ 'now' | date: '%Y' }}</td>
 <td>Advanced</td>
 </tr>
 <tr>
@@ -487,14 +514,14 @@ Created documentation for data analytics company focused on real estate. Covered
 </tr>
 <tr>
 <td>Training</td>
-<td>30</td>
-<td>2023</td>
+<td>31</td>
+<td>2024</td>
 <td>Expert</td>
 </tr>
 <tr>
 <td>UNIX Server Administration</td>
-<td>15</td>
-<td>2023</td>
+<td>16</td>
+<td>2024</td>
 <td>Advanced</td>
 </tr>
 <tr>
@@ -505,9 +532,9 @@ Created documentation for data analytics company focused on real estate. Covered
 </tr>
 <tr>
 <td>Web Development</td>
-<td>28</td>
+<td>29</td>
 <td>2023</td>
-<td>Expert</td>
+<td>Advanced</td>
 </tr>
 <tr>
 <td>Windows Server Administration</td>
@@ -517,874 +544,13 @@ Created documentation for data analytics company focused on real estate. Covered
 </tr>
 </table>
 
-<h3>Desktop Productivity Applications</h3>
-<p>Experienced user of Microsoft Office and most major web browsers and mail applications.</p>
+{% include resume/general.md %}
 
-<table class="general skills">
-<tr>
-<th>Application</th>
-<th>Versions</th>
-<th>Years</th>
-<th>Last </th>
-<th>Proficiency</th>
-</tr>
-<tr class="skilldiv">
-<td colspan="5">Productivity Application</td>
-</tr>
-<tr>
-<td><a href="http://office.microsoft.com/en-us/excel/">Microsoft Excel</a></td>
-<td>3-365</td>
-<td>32</td>
-<td>2023</td>
-<td>Expert</td>
-</tr>
-<tr>
-<td><a href="http://office.microsoft.com/en-us/powerpoint/">Microsoft PowerPoint</a></td>
-<td>2000-365</td>
-<td>24</td>
-<td>2023</td>
-<td>Expert</td>
-</tr>
-<tr>
-<td><a href="http://office.microsoft.com/en-us/project-help/">Microsoft Project</a></td>
-<td>2000-2003</td>
-<td>7</td>
-<td>2007</td>
-<td>Intermediate</td>
-</tr>
-<tr>
-<td><a href="http://office.microsoft.com/en-us/word/">Microsoft Word</a></td>
-<td>3-365</td>
-<td>32</td>
-<td>2023</td>
-<td>Expert</td>
-</tr>
-<tr>
-<td><a href="http://en.wikipedia.org/wiki/AppleWorks">AppleWorks</a></td>
-<td>3-6.0</td>
-<td>7</td>
-<td>2005</td>
-<td>Intermediate</td>
-</tr>
-<tr class="skilldiv">
-<td colspan="5">Financial Application</td>
-</tr>
-<tr>
-<td><a href="http://quickbooks.intuit.com/">Intuit QuickBooks</a></td>
-<td>6, 99, 2000-2007</td>
-<td>5</td>
-<td>2004</td>
-<td>Intermediate</td>
-</tr>
-<tr>
-<td><a href="http://quicken.intuit.com/">Intuit Quicken</a></td>
-<td>99, 2000-2011</td>
-<td>12</td>
-<td>2011</td>
-<td>Advanced</td>
-</tr>
-<tr class="skilldiv">
-<td colspan="5">Mail Application</td>
-</tr>
-<tr>
-<td><a href="http://office.microsoft.com/en-us/outlook/">Microsoft Outlook</a></td>
-<td>5.5-365</td>
-<td>14</td>
-<td>2011</td>
-<td>Advanced</td>
-</tr>
-<tr>
-<td>Mozilla Thunderbird</td>
-<td>0.7-3.0</td>
-<td>4</td>
-<td>2009</td>
-<td>Advanced</td>
-</tr>
-<tr class="skilldiv">
-<td colspan="5">Web Browser</td>
-</tr>
-<tr>
-<td>Mozilla Firefox</td>
-<td>0.8-Latest</td>
-<td>20</td>
-<td>2023</td>
-<td>Expert</td>
-</tr>
-<tr>
-<td>Microsoft Internet Explorer </td>
-<td>2.0-11.0</td>
-<td>25</td>
-<td>2021</td>
-<td>Expert</td>
-</tr>
-<tr>
-<td>Safari</td>
-<td>3.0-Latest</td>
-<td>8</td>
-<td>2023</td>
-<td>Intermediate</td>
-</tr>
-<tr>
-<td>Google Chrome</td>
-<td>6.0-Latest</td>
-<td>16</td>
-<td>2023</td>
-<td>Intermediate</td>
-</tr>
-<tr>
-<td>Lynx</td>
-<td></td>
-<td>3</td>
-<td>1997</td>
-<td>Advanced</td>
-</tr>
-</table>
+{% include resume/graphic-design.md %}
 
-<h3>Graphic and Web Design</h3>
-<p>Detailed knowledge of all areas, skills including: typography; page composition; infographics, including tables, charts, graphs and maps; four-color design, including separations; digital publishing and HTML; online and hard copy research; interviewing; reporting; copy editing; and creating and giving presentations.</p>
+{% include resume/web-dev.md %}
 
-<table class="general skills">
-<tr>
-<th>Application</th>
-<th>Versions</th>
-<th>Years</th>
-<th>Last </th>
-<th>Proficiency</th>
-</tr>
-<tr class="skilldiv">
-<td colspan="5">Graphic Design</td>
-</tr>
-<tr>
-<td><a href="http://www.adobe.com/products/acrobatpro.html">Adobe Acrobat</a></td>
-<td>1-DC</td>
-<td>30</td>
-<td>2023</td>
-<td>Expert</td>
-</tr>
-<tr>
-<td><a href="http://www.adobe.com/products/fireworks.html">Adobe Fireworks</a></td>
-<td>4-CS5</td>
-<td>8</td>
-<td>2007</td>
-<td>Intermediate</td>
-</tr>
-<tr>
-<td><a href="http://www.adobe.com/products/illustrator.html">Adobe Illustrator</a></td>
-<td>3-25</td>
-<td>30</td>
-<td>2023</td>
-<td>Intermediate</td>
-</tr>
-<tr>
-<td><a href="http://www.adobe.com/products/indesign.html">Adobe InDesign</a></td>
-<td>CS-25</td>
-<td>18</td>
-<td>2023</td>
-<td>Expert</td>
-</tr>
-<tr>
-<td><a href="http://www.adobe.com/products/pagemaker/">Adobe PageMaker</a></td>
-<td>3-7</td>
-<td>14</td>
-<td>2003</td>
-<td>Expert</td>
-</tr>
-<tr>
-<td><a href="http://www.adobe.com/products/photoshopextended.html">Adobe Photoshop</a></td>
-<td>3-25</td>
-<td>33</td>
-<td>2023</td>
-<td>Advanced</td>
-</tr>
-<tr>
-<td><a href="http://www.adobe.com/products/freehand/">Macromedia FreeHand</a></td>
-<td>3-11</td>
-<td>14</td>
-<td>2005</td>
-<td>Expert</td>
-</tr>
-<tr>
-<td><a href="http://office.microsoft.com/en-us/visio/">Microsoft Visio</a></td>
-<td>5-2016</td>
-<td>24</td>
-<td>2023</td>
-<td>Advanced</td>
-</tr>
-<tr>
-<td><a href="http://www.quark.com/Products/QuarkXPress/">QuarkXPress</a></td>
-<td>3.1-7.2</td>
-<td>14</td>
-<td>2009</td>
-<td>Expert</td>
-</tr>
-<tr class="skilldiv">
-<td colspan="5">Web Design</td>
-</tr>
-<tr class="skilldiv">
-<td colspan="5">Instructional Design</td>
-</tr>
-<tr>
-<td><a href="http://www.adobe.com/products/captivate.html">Adobe Captivate</a></td>
-<td>1</td>
-<td>4</td>
-<td>2007</td>
-<td>Intermediate</td>
-</tr>
-</table>
-
-<h3>Web Development</h3>
-<p>Knowledgeable development professional with strong interests and aptitudes in database and programming languages.</p>
-
-<table class="general skills">
-<tr>
-<th>Application</th>
-<th>Versions</th>
-<th>Years</th>
-<th>Last </th>
-<th>Proficiency</th>
-</tr>
-<tr class="skilldiv">
-<td colspan="5">Programming Languages</td>
-</tr>
-<tr>
-<td><a href="http://en.wikipedia.org/wiki/SQL">ANSI SQL</a></td>
-<td></td>
-<td>12</td>
-<td>2021</td>
-<td>Intermediate</td>
-</tr>
-<tr>
-<td><a href="http://msdn.microsoft.com/en-us/vcsharp/aa336809">C#</a></td>
-<td></td>
-<td>1</td>
-<td>2005</td>
-<td>Learning</td>
-</tr>
-<tr>
-<td><a href="http://dart.dev">Dart</a></td>
-<td>2-3</td>
-<td>2</td>
-<td>2023</td>
-<td>Basic</td>
-</tr>
-<tr>
-<td><a href="http://java.com/en/">Java</a></td>
-<td>1.2-18</td>
-<td>6</td>
-<td>2007</td>
-<td>Learning</td>
-</tr>
-<tr>
-<td><a href="https://developer.mozilla.org/en/JavaScript">JavaScript</a></td>
-<td>1.5-Latest</td>
-<td>14</td>
-<td>2023</td>
-<td>Basic</td>
-</tr>
-<tr>
-<td><a href="http://dev.mysql.com/doc/">MySQL</a></td>
-<td>3-8</td>
-<td>10</td>
-<td>2019</td>
-<td>Intermediate</td>
-</tr>
-<tr>
-<td><a href="http://www.perl.org/">Perl</a></td>
-<td>6</td>
-<td>10</td>
-<td>2007</td>
-<td>Basic</td>
-</tr>
-<tr>
-<td><a href="http://www.php.net/">PHP</a></td>
-<td>3-5</td>
-<td>9</td>
-<td>2009</td>
-<td>Advanced</td>
-</tr>
-<tr>
-<td><a href="http://www.oracle.com/technetwork/database/features/plsql/index.html">PL/SQL</a></td>
-<td>8i-9i</td>
-<td>3</td>
-<td>2007</td>
-<td>Intermediate</td>
-</tr>
-<tr>
-<td><a href="http://www.python.org/">Python</a></td>
-<td>2.5.1-3.0</td>
-<td>7</td>
-<td>2021</td>
-<td>Basic</td>
-</tr>
-<tr>
-<td><a href="http://www.ruby-lang.org/en/">Ruby</a></td>
-<td>1.8.6-3.4</td>
-<td>5</td>
-<td>2023</td>
-<td>Basic</td>
-</tr>
-<tr>
-<td><a href="http://www.sqlpl-guide.com/">SQL PL</a></td>
-<td>8.01</td>
-<td>2</td>
-<td>2007</td>
-<td>Intermediate</td>
-</tr>
-<tr>
-<td><a href="http://msdn.microsoft.com/en-us/library/aa260642(v=sql.80).aspx">Transact-SQL</a></td>
-<td>2000</td>
-<td>3</td>
-<td>2006</td>
-<td>Intermediate</td>
-</tr>
-<tr class="skilldiv">
-<td colspan="5">Markup Languages</td>
-</tr>
-<tr>
-<td><a href="http://www.w3.org/Style/CSS/Overview.en.html">CSS</a></td>
-<td>1-3</td>
-<td>10</td>
-<td>2023</td>
-<td>Advanced</td>
-</tr>
-<tr>
-<td><a href="http://www.w3.org/wiki/HTML">HTML</a></td>
-<td>2-5</td>
-<td>20</td>
-<td>2023</td>
-<td>Expert</td>
-</tr>
-<tr>
-<td><a href="http://www.whatisrss.com/">RSS</a></td>
-<td>0.9.1, 0.9.2, 2.0</td>
-<td>3</td>
-<td>2007</td>
-<td>Advanced</td>
-</tr>
-<tr>
-<td><a href="http://saml.xml.org/">SAML</a></td>
-<td>1-2</td>
-<td>5</td>
-<td>2007</td>
-<td>Basic</td>
-</tr>
-<tr>
-<td><a href="http://www.isgmlug.org/sgmlhelp/g-index.htm">SGML</a></td>
-<td></td>
-<td>5</td>
-<td>2007</td>
-<td>Basic</td>
-</tr>
-<tr>
-<td><a href="http://www.w3.org/TR/wsdl">WSDl</a></td>
-<td></td>
-<td>4</td>
-<td>2005</td>
-<td>Intermediate</td>
-</tr>
-<tr>
-<td><a href="http://www.xml.org/">XML</a></td>
-<td></td>
-<td>6</td>
-<td>2011</td>
-<td>Intermediate</td>
-</tr>
-<tr class="skilldiv">
-<td colspan="5">Integrated Development Environments and Editors</td>
-</tr>
-<tr>
-<td><a href="http://www.adobe.com/products/dreamweaver.html">Adobe Dreamweaver</a></td>
-<td>8-CS5</td>
-<td>11</td>
-<td>2011</td>
-<td>Expert</td>
-</tr>
-<tr>
-<td><a href="http://www.adobe.com/support/documentation/en/homesite/">Adobe HomeSite</a></td>
-<td>5.5</td>
-<td>10</td>
-<td>2006</td>
-<td>Expert</td>
-</tr>
-<tr>
-<td><a href="http://www.barebones.com/products/bbedit/">BBEdit</a></td>
-<td>8.0</td>
-<td>6</td>
-<td>2000</td>
-<td>Advanced</td>
-</tr>
-<tr>
-<td><a href="http://www.gnu.org/software/emacs/">GNU EMACS</a></td>
-<td></td>
-<td>7</td>
-<td>2002</td>
-<td>Intermediate</td>
-</tr>
-<tr>
-<td><a href="https://www.sublimetext.com/">Sublime Text</a></td>
-<td></td>
-<td>2-4</td>
-<td>2023</td>
-<td>Advanced</td>
-</tr>
-<tr>
-<td><a href="http://www.textpad.com/">TextPad</a></td>
-<td>5.4.2-8.17</td>
-<td>9</td>
-<td>2020</td>
-<td>Expert</td>
-</tr>
-<tr>
-<td><a href="http://thomer.com/vi/vi.html">vi</a></td>
-<td></td>
-<td>9</td>
-<td>2023</td>
-<td>Intermediate</td>
-</tr>
-<tr>
-<td><a href="https://code.visualstudio.com/">VS Code</a></td>
-<td></td>
-<td>1.5-1.81</td>
-<td>2023</td>
-<td>Advanced</td>
-</tr>
-<tr class="skilldiv">
-<td colspan="5">Version Control Systems</td>
-</tr>
-<tr>
-<td><a href="http://www.nongnu.org/cvs/">CVS</a>, <a href="http://www.thathost.com/wincvs-howto/">WinCVS</a></td>
-<td>1.3-2.4</td>
-<td>4</td>
-<td>2007</td>
-<td>Basic</td>
-</tr>
-<tr>
-<td><a href="http://git-scm.com/">Git</a></td>
-<td>10</td>
-<td>1-2.4</td>
-<td>2023</td>
-<td>Advanced</td>
-</tr>
-<tr class="skilldiv">
-<td colspan="5">Operating System Shells</td>
-</tr>
-<tr>
-<td><a href="http://tiswww.case.edu/php/chet/bash/bashtop.html">bash</a></td>
-<td></td>
-<td>24</td>
-<td>2023</td>
-<td>Advanced</td>
-</tr>
-<tr>
-<td><a href="http://www.kornshell.com/">ksh</a></td>
-<td></td>
-<td>3</td>
-<td>2007</td>
-<td>Intermediate</td>
-</tr>
-<tr>
-<td><a href="http://en.wikipedia.org/wiki/Windows_Script_Host">wsh</a></td>
-<td></td>
-<td>2</td>
-<td>2007</td>
-<td>Intermediate</td>
-</tr>
-<tr>
-<td><a href="http://www.zsh.org">zsh</a></td>
-<td></td>
-<td>13</td>
-<td>2023</td>
-<td>Advanced</td>
-</tr>
-<tr class="skilldiv">
-<td colspan="5">Internet Protocols</td>
-</tr>
-<tr>
-<td><a href="http://en.wikipedia.org/wiki/File_Transfer_Protocol">FTP</a></td>
-<td></td>
-<td>20</td>
-<td>2018</td>
-<td>Intermediate</td>
-</tr>
-<tr>
-<td><a href="http://searchwindevelopment.techtarget.com/definition/HTTP">HTTP</a></td>
-<td>1.0-2.0</td>
-<td>28</td>
-<td>2023</td>
-<td>Advanced</td>
-</tr>
-<tr>
-<td><a href="http://en.wikipedia.org/wiki/Internet_Message_Access_Protocol">IMAP</a></td>
-<td></td>
-<td>7</td>
-<td>2007</td>
-<td>Basic</td>
-</tr>
-<tr>
-<td><a href="http://www.ldapman.org/articles/intro_to_ldap.html">LDAP</a></td>
-<td></td>
-<td>10</td>
-<td>2020</td>
-<td>Intermediate</td>
-</tr>
-<tr>
-<td><a href="http://en.wikipedia.org/wiki/Post_Office_Protocol">POP</a></td>
-<td></td>
-<td>15</td>
-<td>2010</td>
-<td>Intermediate</td>
-</tr>
-<tr>
-<td><a href="http://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol">STMP</a></td>
-<td></td>
-<td>15</td>
-<td>2010</td>
-<td>Intermediate</td>
-</tr>
-<tr>
-<td><a href="http://tomcat.apache.org/connectors-doc/ajp/ajpv13ext.html">ajpv13</a></td>
-<td>1.3</td>
-<td>3</td>
-<td>2007</td>
-<td>Intermediate</td>
-</tr>
-<tr>
-<td><a href="http://en.wikipedia.org/wiki/Transparent_Network_Substrate">TNS</a></td>
-<td></td>
-<td>1</td>
-<td>2007</td>
-<td>Basic</td>
-</tr>
-<tr>
-<td><a href="http://www.orafaq.com/wiki/IFS">iFS</a></td>
-<td></td>
-<td>1</td>
-<td>2007</td>
-<td>Basic</td>
-</tr>
-</table>
-
-<h3>Enterprise Applications and Servers</h3>
-<p>Solid experience with enterprise technologies for n-tier web-based applications, portals and tools.</p>
-
-<table class="general skills">
-<tr>
-<th>Application</th>
-<th>Versions</th>
-<th>Years</th>
-<th>Last</th>
-<th>Proficiency</th>
-</tr>
-<tr class="skilldiv">
-<td colspan="5">Database Systems</td>
-</tr>
-<tr>
-<td><a href="http://www-01.ibm.com/software/data/db2/">IBM DB2</a></td>
-<td>8.01</td>
-<td>2</td>
-<td>2007</td>
-<td>Intermediate</td>
-</tr>
-<tr>
-<td><a href="www.filemaker.com/products/filemaker-pro/">FileMaker Pro</a></td>
-<td>3-19</td>
-<td>33</td>
-<td>2023</td>
-<td>Expert</td>
-</tr>
-<tr>
-<td><a href="http://office.microsoft.com/en-us/access/">Microsoft Access</a></td>
-<td>2000-2010</td>
-<td>5</td>
-<td>2007</td>
-<td>Basic</td>
-</tr>
-<tr>
-<td><a href="www.microsoft.com/sqlserver/">Microsoft SQL Server</a></td>
-<td>2000-2005</td>
-<td>5</td>
-<td>2010</td>
-<td>Intermediate</td>
-</tr>
-<tr>
-<td><a href="http://dev.mysql.com/doc/">MySQL</a></td>
-<td>3-8</td>
-<td>10</td>
-<td>2019</td>
-<td>Intermediate</td>
-</tr>
-<tr>
-<td><a href="http://www.oracle.com/us/products/database/index.html">Oracle</a></td>
-<td>8i-9i</td>
-<td>3</td>
-<td>2007</td>
-<td>Intermediate</td>
-</tr>
-<tr class="skilldiv">
-<td colspan="5">Directory Servers</td>
-</tr>
-<tr>
-<td><a href="http://www.oracle.com/technetwork/middleware/id-mgmt/overview/index-082035.html">Oracle Internet Directory</a></td>
-<td>9i</td>
-<td>3</td>
-<td>2007</td>
-<td>Advanced</td>
-</tr>
-<tr>
-<td><a href="http://www.microsoft.com/en-us/server-cloud/windows-server/active-directory-overview.aspx">Microsoft Active Directory</a></td>
-<td>2003</td>
-<td>3</td>
-<td>2007</td>
-<td>Basic</td>
-</tr>
-<tr class="skilldiv">
-<td colspan="5">Mail Servers</td>
-</tr>
-<tr>
-<td><a href="www.microsoft.com/exchange/en-us/default.aspx">Microsoft Exchange Server</a></td>
-<td>2003</td>
-<td>2</td>
-<td>2006</td>
-<td>Basic</td>
-</tr>
-<tr class="skilldiv">
-<td colspan="5">Application Servers</td>
-</tr>
-<tr>
-<td><a href="http://www.adobe.com/products/jrun/">Adobe JRun</a></td>
-<td>3-4</td>
-<td>3</td>
-<td>2004</td>
-<td>Intermediate</td>
-</tr>
-<tr>
-<td><a href="http://www.oracle.com/us/products/middleware/application-server/index.html">Oracle WebLogic Server</a></td>
-<td>8.1</td>
-<td>4</td>
-<td>2007</td>
-<td>Intermediate</td>
-</tr>
-<tr>
-<td><a href="http://www.adobe.com/products/coldfusion/">Cold Fusion Application Server</a></td>
-<td>3-7</td>
-<td>3</td>
-<td>2005</td>
-<td>Intermediate</td>
-</tr>
-<tr>
-<td><a href="http://www.ibm.com/software/webservers/appserv/was/">IBM WebSphere Application Server</a></td>
-<td>5.1</td>
-<td>2</td>
-<td>2007</td>
-<td>Basic</td>
-</tr>
-<tr>
-<td><a href="">IBM WebSphere Commerce Server</a></td>
-<td>5.6</td>
-<td>2</td>
-<td>2007</td>
-<td>Basic</td>
-</tr>
-<tr>
-<td><a href="http://www.oracle.com/technetwork/middleware/ias/overview/index.html">Oracle Application Server</a></td>
-<td>9i, 10g</td>
-<td>3</td>
-<td>2007</td>
-<td>Intermediate</td>
-</tr>
-<tr class="skilldiv">
-<td colspan="5">Web Servers</td>
-</tr>
-<tr>
-<td><a href="http://httpd.apache.org">Apache HTTPD Server</a></td>
-<td>0.8-2.4</td>
-<td>15</td>
-<td>2018</td>
-<td>Advanced</td>
-</tr>
-<tr>
-<td><a href="http://www.iis.net/">Microsoft Internet Information Server</a></td>
-<td>4-6</td>
-<td>7</td>
-<td>2007</td>
-<td>Intermediate</td>
-</tr>
-<tr class="skilldiv">
-<td colspan="5">Virtualization Systems</td>
-</tr>
-<tr>
-<td><a href="https://www.virtualbox.org/">Oracle VirtualBox</a></td>
-<td>5.x-6.1.22</td>
-<td>8</td>
-<td>2022</td>
-<td>Intermediate</td>
-</tr>
-<tr>
-<td><a href="http://www.vmware.com/products/server/overview.html">VMware Server</a></td>
-<td>5.5-7.0</td>
-<td>2</td>
-<td>2007</td>
-<td>Basic</td>
-</tr>
-<tr>
-<td><a href="http://www.vmware.com/products/workstation/">VMware Workstation</a></td>
-<td>5.5-7.0</td>
-<td>6</td>
-<td>2011</td>
-<td>Intermediate</td>
-</tr>
-<tr class="skilldiv">
-<td colspan="5">Customer Relationship Management Applications</td>
-</tr>
-<tr>
-<td><a href="www.oracle.com/us/siebel/index.html">Oracle Siebel</a></td>
-<td>6.2, 7.8</td>
-<td>3</td>
-<td>2007</td>
-<td>Intermediate</td>
-</tr>
-<tr>
-<td><a href="http://www.salesforce.com">Salesforce.com</a></td>
-<td></td>
-<td>1</td>
-<td>2007</td>
-<td>Learning</td>
-</tr>
-<tr class="skilldiv">
-<td colspan="5">Web Applications and Portals</td>
-</tr>
-<tr>
-<td><a href="https://negotiations-live.p.agentrics.com/ezmarket/app/Login.action">Agentrics ezMarket</a></td>
-<td>5.5</td>
-<td>3</td>
-<td>2007</td>
-<td>Advanced</td>
-</tr>
-<tr>
-<td><a href="http://www.emptoris.com/solutions/strategic_sourcing_solutions.asp">Emptoris Sourcing Portfolio</a></td>
-<td>5.2 SP5</td>
-<td>3</td>
-<td>2007</td>
-<td>Advanced</td>
-</tr>
-<tr>
-<td><a href="http://sharepoint.microsoft.com/">Microsoft SharePoint</a></td>
-<td>2003, 2007</td>
-<td>3</td>
-<td>2007</td>
-<td>Intermediate</td>
-</tr>
-<tr>
-<td>Oracle Exchange </td>
-<td>6.2.3</td>
-<td>3</td>
-<td>2007</td>
-<td>Advanced</td>
-</tr>
-<tr>
-<td><a href="https://www.opentext.com/products/experience-cloud">Vignette Application Portal</a></td>
-<td>3-7.1</td>
-<td>5</td>
-<td>2005</td>
-<td>Advanced</td>
-</tr>
-<tr class="skilldiv">
-<td colspan="5">Monitoring Tools</td>
-</tr>
-<tr>
-<td>HP Managed Services</td>
-<td>6.1</td>
-<td>3</td>
-<td>2007</td>
-<td>Advanced</td>
-</tr>
-<tr>
-<td><a href="http://www8.hp.com/us/en/software/software-product.html?compURI=tcm:245-937086&amp;pageTitle=SiteScope">HP SiteScope</a></td>
-<td>8.1.2</td>
-<td>3</td>
-<td>2007</td>
-<td>Intermediate</td>
-</tr>
-<tr class="skilldiv">
-<td colspan="5">Web Analysis Tools</td>
-</tr>
-<tr>
-<td><a href="http://analytics.google.com/">Google Analytics</a></td>
-<td>3-4</td>
-<td>8</td>
-<td>2023</td>
-<td>Basic</td>
-</tr>
-<tr>
-<td><a href="http://webtrends.com/products/analytics/">WebTrends Professional</a></td>
-<td>3-7</td>
-<td>7</td>
-<td>2004</td>
-<td>Advanced</td>
-</tr>
-<tr class="skilldiv">
-<td colspan="5">Desktop Operating Systems</td>
-</tr>
-<tr>
-<td><a href="http://www.e-fense.com/helix3pro.php">Helix</a></td>
-<td>1.7</td>
-<td>3</td>
-<td>2007</td>
-<td>Intermediate</td>
-</tr>
-<tr>
-<td><a href="http://www.knopper.net/knoppix/index-en.html">Knoppix</a></td>
-<td>3.9-4.0</td>
-<td>3</td>
-<td>2007</td>
-<td>Intermediate</td>
-</tr>
-<tr>
-<td><a href="http://www.linux.org">Linux</a></td>
-<td></td>
-<td>28</td>
-<td>2023</td>
-<td>Advanced</td>
-</tr>
-<tr>
-<td><a href="http://www.apple.com/macosx/">macOS</a></td>
-<td>5-10.14</td>
-<td>34</td>
-<td>2023</td>
-<td>Advanced</td>
-</tr>
-<tr>
-<td><a href="windows.microsoft.com/">Microsoft Windows</a></td>
-<td>3.1-11</td>
-<td>31</td>
-<td>2023</td>
-<td>Expert</td>
-</tr>
-<tr class="skilldiv">
-<td colspan="5">Server Operating Systems</td>
-</tr>
-<tr>
-<td><a href="http://www.microsoft.com/windowsserver/">Microsoft Windows Server</a></td>
-<td>NT 4-2008 </td>
-<td>12</td>
-<td>2009</td>
-<td>Intermediate</td>
-</tr>
-<tr>
-<td><a href="www.redhat.com/rhel/">Red Hat Enterprise</a></td>
-<td>3, 4</td>
-<td>4</td>
-<td>2007</td>
-<td>Advanced</td>
-</tr>
-<tr>
-<td><a href="www.oracle.com/us/solaris/index.html">Oracle Solaris</a></td>
-<td>8-10</td>
-<td>10</td>
-<td>2007</td>
-<td>Advanced</td>
-</tr>
-</table>
+{% include resume/enterprise.md %}
 
 </section>
 

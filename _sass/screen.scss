@@ -1,5 +1,6 @@
 @import "variables";
 @import "resume";
+@import "portfolio";
 
 /* Base Styles */
 
@@ -56,6 +57,8 @@ header {
   h1 {
     font-family: $main-header-font;
     font-weight: 800;
+    font-size: 2rem;
+    line-height: 2.5rem;
     a {
       text-decoration: none;
       color: #EAF2EF;
@@ -148,7 +151,7 @@ section {
   h1  {
     font-size: 2rem;
     line-height: 2rem;
-    margin-bottom: 0rem;
+    margin-bottom: 1rem;
   }
   h2 {
     font-size: 1.5rem;
@@ -186,7 +189,7 @@ section {
     color: $main-accent-color;
     text-decoration: none;
     &:visited {
-      color: #444;
+      color: $link-visited-color;
     }
   }
   * li ul li, h2 > ul li, h3 > ul li {
@@ -201,7 +204,7 @@ footer a {
   color: #521945;
   text-decoration: none;
   &:visited {
-    color: #444;
+    color: $link-visited-color;
   }
 }
 
@@ -316,7 +319,7 @@ img {
 
   html { /* Set font / line height / background */
     line-height: 1.5rem;
-    font-size: 0.9rem;
+    font-size: 0.875rem;
   }
 
   header {
@@ -407,10 +410,6 @@ img {
     h1, p {
       text-align: left;
     }
-    h1 {
-      font-size: 1.75rem;
-      line-height: 2rem;
-    }
     p {
       font-size: 0.9rem;
       line-height: 1.3rem;
@@ -424,6 +423,10 @@ img {
       div.tagline,
       div.contact {
         text-wrap: balance;
+        a {
+          text-decoration: none;
+          color: #EAF2EF;
+        }
       }
     }
     
@@ -442,8 +445,6 @@ img {
     section {
       h1 {
         text-align: left;
-        line-height: 2rem;
-        font-size: 1.25rem;
       }
       ul.job {
         & > li + li::before {
@@ -476,10 +477,6 @@ img {
     padding: 1rem;
     h1, p {
       text-align: left;
-    }
-    h1 {
-      font-size: 1.75rem;
-      line-height: 2rem;
     }
     p {
       font-size: 0.875rem;
@@ -514,8 +511,6 @@ img {
 
   body main section h1 {
     text-align: left;
-    line-height: 2rem;
-    font-size: 1.5rem;
   }
 
 }
@@ -535,8 +530,6 @@ img {
     padding: 1rem;
     h1 {
       text-align: left;
-      line-height: 2.5rem;
-      font-size: 2rem;
     }
     div.contact {
       text-align: right;
@@ -586,7 +579,6 @@ img {
     padding: 1rem;
     h1 {
       line-height: 3.25rem;
-      font-size: 3rem;
     }
   }
 
@@ -616,12 +608,6 @@ img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
-  }
-
-  body main section h1 {
-    text-align: left;
-    line-height: 2rem;
-    font-size: 1.5rem;
   }
 
   tr > td, tr > th {
