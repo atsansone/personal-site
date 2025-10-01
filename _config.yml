@@ -1,26 +1,11 @@
-<<<<<<< Updated upstream
-lsi: false
-safe: true
-source: ./
-incremental: false
-highlighter: rouge
-gist:
-  noscript: false
-markdown: kramdown
-kramdown:
-  math_engine: mathjax
-  syntax_highlighter: rouge
-domain: tonysansone.me           # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
-url: https://www.tonysansone.me  # the base hostname and protocol for your site, e.g. http://example.com
-=======
 lsi: false
 safe: true
 disable_disk_cache: true
 profile: true
-incremental: true
+incremental: false
 livereload: true
 
-source: .
+source: ./
 destination: ./_site
 layouts_dir: ./_layouts
 sass:
@@ -38,7 +23,6 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
 
-
 gist:
   noscript: false
 
@@ -49,6 +33,5 @@ kramdown:
   input: GFM
   parse_block_html: true
 highlighter: rouge
-
-
->>>>>>> Stashed changes
+domain: tonysansone.me           # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
+url: https://www.tonysansone.me  # the base hostname and protocol for your site, e.g. http://example.com
